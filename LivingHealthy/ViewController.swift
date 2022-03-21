@@ -8,9 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+ 
+    
+    @IBOutlet weak var trailing: NSLayoutConstraint!
     
     @IBOutlet weak var leading: NSLayoutConstraint!
-    @IBOutlet weak var trailing: NSLayoutConstraint!
     
     var menuOut = false
     
@@ -20,17 +22,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func menutapped(_ sender: Any) {
-        if menuOut == false {
-            leading.constant = 150
-            trailing.constant = -150
-            menuOut = true
-        } else  {
-            leading.constant = 0
-            trailing.constant = 0
-            menuOut = false
-        }
+            if menuOut == false {
+                leading.constant = 150
+                trailing.constant = -150
+                menuOut = true
+            } else  {
+                leading.constant = 0
+                trailing.constant = 0
+                menuOut = false
+            }
         
-    }
-    
+        }
     
 }
