@@ -18,16 +18,19 @@ class SigninViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 
     override func viewDidAppear(_ animated: Bool) {
         checkUserInfo()
-    }
+}
     
     @IBAction func loginTapped(_ sender: Any) {
+        validateFields()
     }
+    
+    
+    
     
     func validateFields() {
         if email.text?.isEmpty == true {
