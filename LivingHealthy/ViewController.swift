@@ -5,20 +5,24 @@
 //  Created by Rachael Hanson on 09/03/2022.
 //
 
+import youtube_ios_player_helper
 import UIKit
 
 class ViewController: UIViewController {
  
     
+    @IBOutlet weak var playerView: YTPlayerView!
     @IBOutlet weak var trailing: NSLayoutConstraint!
-    
     @IBOutlet weak var leading: NSLayoutConstraint!
+    @IBOutlet weak var player : YTPlayerView!
+    
     
     var menuOut = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        player.load(withVideoId: "bsM1qdGAVbU")
     }
     
     @IBAction func menutapped(_ sender: Any) {

@@ -7,24 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		561C4E1127F330C400AFAFCA /* AllWorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561C4E1027F330C400AFAFCA /* AllWorkoutsViewController.swift */; };
 		56AAE41C27EDDA8400FAECE3 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAE41B27EDDA8400FAECE3 /* SigninViewController.swift */; };
 		56AAE41E27EDDA9300FAECE3 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAE41D27EDDA9300FAECE3 /* SignupViewController.swift */; };
 		56AAE42027EDE03A00FAECE3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56AAE41F27EDE03A00FAECE3 /* GoogleService-Info.plist */; };
 		56AAE45A27EDEDEF00FAECE3 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 56AAE45927EDEDEF00FAECE3 /* FirebaseAnalytics */; };
 		56AAE45C27EDEDEF00FAECE3 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 56AAE45B27EDEDEF00FAECE3 /* FirebaseAppCheck */; };
 		56AAE45E27EDEDEF00FAECE3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 56AAE45D27EDEDEF00FAECE3 /* FirebaseAuth */; };
+		56AAE46027F2278600FAECE3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAE45F27F2278500FAECE3 /* ProfileViewController.swift */; };
 		56EBE3F727D8E31D00B8BDDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EBE3F627D8E31D00B8BDDF /* AppDelegate.swift */; };
 		56EBE3F927D8E31D00B8BDDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EBE3F827D8E31D00B8BDDF /* SceneDelegate.swift */; };
 		56EBE3FB27D8E31D00B8BDDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EBE3FA27D8E31D00B8BDDF /* ViewController.swift */; };
 		56EBE3FE27D8E31D00B8BDDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56EBE3FC27D8E31D00B8BDDF /* Main.storyboard */; };
 		56EBE40027D8E32000B8BDDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56EBE3FF27D8E32000B8BDDF /* Assets.xcassets */; };
 		56EBE40327D8E32000B8BDDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56EBE40127D8E32000B8BDDF /* LaunchScreen.storyboard */; };
+		8036B1AF0A7EF2ED1963B6C1 /* Pods_LivingHealthy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1B8FE9352E070483BF1DAC /* Pods_LivingHealthy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C1B8FE9352E070483BF1DAC /* Pods_LivingHealthy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LivingHealthy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FC4796EAF53E70011CB12B8 /* Pods-LivingHealthy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LivingHealthy.release.xcconfig"; path = "Target Support Files/Pods-LivingHealthy/Pods-LivingHealthy.release.xcconfig"; sourceTree = "<group>"; };
+		561C4E1027F330C400AFAFCA /* AllWorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWorkoutsViewController.swift; sourceTree = "<group>"; };
 		56AAE41B27EDDA8400FAECE3 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		56AAE41D27EDDA9300FAECE3 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		56AAE41F27EDE03A00FAECE3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		56AAE45F27F2278500FAECE3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		56EBE3F327D8E31D00B8BDDF /* LivingHealthy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivingHealthy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56EBE3F627D8E31D00B8BDDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56EBE3F827D8E31D00B8BDDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +40,7 @@
 		56EBE3FF27D8E32000B8BDDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56EBE40227D8E32000B8BDDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56EBE40427D8E32000B8BDDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81AC9838E627289B5078D95B /* Pods-LivingHealthy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LivingHealthy.debug.xcconfig"; path = "Target Support Files/Pods-LivingHealthy/Pods-LivingHealthy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +51,28 @@
 				56AAE45C27EDEDEF00FAECE3 /* FirebaseAppCheck in Frameworks */,
 				56AAE45E27EDEDEF00FAECE3 /* FirebaseAuth in Frameworks */,
 				56AAE45A27EDEDEF00FAECE3 /* FirebaseAnalytics in Frameworks */,
+				8036B1AF0A7EF2ED1963B6C1 /* Pods_LivingHealthy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DF89CE5D5E12315539B0D6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C1B8FE9352E070483BF1DAC /* Pods_LivingHealthy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		56EBE3EA27D8E31D00B8BDDF = {
 			isa = PBXGroup;
 			children = (
 				56EBE3F527D8E31D00B8BDDF /* LivingHealthy */,
 				56EBE3F427D8E31D00B8BDDF /* Products */,
+				8A009015D926BD183B293727 /* Pods */,
+				0DF89CE5D5E12315539B0D6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,13 +92,25 @@
 				56EBE3F827D8E31D00B8BDDF /* SceneDelegate.swift */,
 				56EBE3FA27D8E31D00B8BDDF /* ViewController.swift */,
 				56EBE3FC27D8E31D00B8BDDF /* Main.storyboard */,
+				56AAE45F27F2278500FAECE3 /* ProfileViewController.swift */,
 				56AAE41B27EDDA8400FAECE3 /* SigninViewController.swift */,
 				56AAE41D27EDDA9300FAECE3 /* SignupViewController.swift */,
 				56EBE3FF27D8E32000B8BDDF /* Assets.xcassets */,
 				56EBE40127D8E32000B8BDDF /* LaunchScreen.storyboard */,
 				56EBE40427D8E32000B8BDDF /* Info.plist */,
+				561C4E1027F330C400AFAFCA /* AllWorkoutsViewController.swift */,
 			);
 			path = LivingHealthy;
+			sourceTree = "<group>";
+		};
+		8A009015D926BD183B293727 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81AC9838E627289B5078D95B /* Pods-LivingHealthy.debug.xcconfig */,
+				4FC4796EAF53E70011CB12B8 /* Pods-LivingHealthy.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56EBE40727D8E32000B8BDDF /* Build configuration list for PBXNativeTarget "LivingHealthy" */;
 			buildPhases = (
+				0357E9474398D992A8BC296D /* [CP] Check Pods Manifest.lock */,
 				56EBE3EF27D8E31D00B8BDDF /* Sources */,
 				56EBE3F027D8E31D00B8BDDF /* Frameworks */,
 				56EBE3F127D8E31D00B8BDDF /* Resources */,
+				0B835E3ACA315C8E77E7120F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,11 +190,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0357E9474398D992A8BC296D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LivingHealthy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0B835E3ACA315C8E77E7120F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LivingHealthy/Pods-LivingHealthy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LivingHealthy/Pods-LivingHealthy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LivingHealthy/Pods-LivingHealthy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		56EBE3EF27D8E31D00B8BDDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56AAE46027F2278600FAECE3 /* ProfileViewController.swift in Sources */,
+				561C4E1127F330C400AFAFCA /* AllWorkoutsViewController.swift in Sources */,
 				56AAE41C27EDDA8400FAECE3 /* SigninViewController.swift in Sources */,
 				56EBE3FB27D8E31D00B8BDDF /* ViewController.swift in Sources */,
 				56AAE41E27EDDA9300FAECE3 /* SignupViewController.swift in Sources */,
@@ -310,6 +387,7 @@
 		};
 		56EBE40827D8E32000B8BDDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81AC9838E627289B5078D95B /* Pods-LivingHealthy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -338,6 +416,7 @@
 		};
 		56EBE40927D8E32000B8BDDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FC4796EAF53E70011CB12B8 /* Pods-LivingHealthy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

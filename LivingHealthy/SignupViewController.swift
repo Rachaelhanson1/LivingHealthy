@@ -15,6 +15,9 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     
+    @IBOutlet weak var firstName: UITextField!
+    @IBOutlet weak var lastName: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,6 +36,8 @@ class SignupViewController: UIViewController {
             print("No text in password field")
             return
         }
+        
+//        NotificationCenter.default.post(name: Notification.Name("text"), object: firstName.text)
         
         signUp()
     }

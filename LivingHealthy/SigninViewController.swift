@@ -58,10 +58,14 @@ class SigninViewController: UIViewController {
     func checkUserInfo() {
         if Auth.auth().currentUser != nil {
             print(Auth.auth().currentUser?.uid)
+            
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "homePage")
+            let vc = storyboard.instantiateViewController(withIdentifier: "tabBarController")
             vc.modalPresentationStyle = .overFullScreen
             present(vc, animated:true)
+            
+            
+        
         }
     }
 }
