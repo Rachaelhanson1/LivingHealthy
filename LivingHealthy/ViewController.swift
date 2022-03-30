@@ -10,19 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
  
-    
-    @IBOutlet weak var playerView: YTPlayerView!
     @IBOutlet weak var trailing: NSLayoutConstraint!
     @IBOutlet weak var leading: NSLayoutConstraint!
-    @IBOutlet weak var player : YTPlayerView!
     
     
     var menuOut = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        player.load(withVideoId: "bsM1qdGAVbU")
     }
     
     @IBAction func menutapped(_ sender: Any) {
