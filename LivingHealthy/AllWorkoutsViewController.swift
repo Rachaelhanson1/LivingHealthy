@@ -12,6 +12,7 @@ class AllWorkoutsViewController: UIViewController {
     
     @IBOutlet weak var playerView: YTPlayerView!
     
+
     @IBOutlet weak var trailing: NSLayoutConstraint!
     @IBOutlet weak var leading: NSLayoutConstraint!
     
@@ -20,10 +21,10 @@ class AllWorkoutsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        playerView.load(withVideoId: "bsM1qdGAVbU")
+        playerView.load(withVideoId: "okxbGxbj03s")
     }
     
-    @IBAction func menuTapped(_ sender: Any) {
+    @IBAction func menutapped(_ sender: Any) {
             if menuOut == false {
                 leading.constant = 150
                 trailing.constant = -150
