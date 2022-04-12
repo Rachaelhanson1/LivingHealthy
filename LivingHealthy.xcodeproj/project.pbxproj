@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		561A0FFA2805CBDF0097BBE7 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561A0FE82805CBDF0097BBE7 /* Workout.swift */; };
+		561A0FFB2805CBDF0097BBE7 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561A0FEA2805CBDF0097BBE7 /* StoreView.swift */; };
+		561A0FFC2805CBDF0097BBE7 /* ListVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561A0FEC2805CBDF0097BBE7 /* ListVIewModel.swift */; };
+		561A0FFD2805CBDF0097BBE7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561A0FEE2805CBDF0097BBE7 /* Extensions.swift */; };
+		561A0FFE2805CBDF0097BBE7 /* DBdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 561A0FEF2805CBDF0097BBE7 /* DBdata.json */; };
+		561A0FFF2805CBDF0097BBE7 /* american.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 561A0FF12805CBDF0097BBE7 /* american.jpg */; };
+		561A10002805CBDF0097BBE7 /* europian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 561A0FF22805CBDF0097BBE7 /* europian.jpg */; };
+		561A10012805CBDF0097BBE7 /* oceanian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 561A0FF32805CBDF0097BBE7 /* oceanian.jpg */; };
+		561A10022805CBDF0097BBE7 /* african.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 561A0FF42805CBDF0097BBE7 /* african.jpg */; };
+		561A10032805CBDF0097BBE7 /* asian.png in Resources */ = {isa = PBXBuildFile; fileRef = 561A0FF52805CBDF0097BBE7 /* asian.png */; };
+		561A10042805CBDF0097BBE7 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561A0FF72805CBDF0097BBE7 /* ListView.swift */; };
+		561A10052805CBDF0097BBE7 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561A0FF82805CBDF0097BBE7 /* WorkoutView.swift */; };
+		561A10062805CBDF0097BBE7 /* AppBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561A0FF92805CBDF0097BBE7 /* AppBarView.swift */; };
 		561C4E1127F330C400AFAFCA /* AllWorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561C4E1027F330C400AFAFCA /* AllWorkoutsViewController.swift */; };
 		56AAE41C27EDDA8400FAECE3 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAE41B27EDDA8400FAECE3 /* SigninViewController.swift */; };
 		56AAE41E27EDDA9300FAECE3 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAE41D27EDDA9300FAECE3 /* SignupViewController.swift */; };
@@ -22,18 +35,6 @@
 		56EBE40027D8E32000B8BDDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56EBE3FF27D8E32000B8BDDF /* Assets.xcassets */; };
 		56EBE40327D8E32000B8BDDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56EBE40127D8E32000B8BDDF /* LaunchScreen.storyboard */; };
 		56ED51142805A3DB005CD48E /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ED51132805A3DB005CD48E /* WorkoutsViewController.swift */; };
-		56ED512A2805A6EE005CD48E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ED51172805A6ED005CD48E /* Extensions.swift */; };
-		56ED512B2805A6EE005CD48E /* DBdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 56ED51182805A6ED005CD48E /* DBdata.json */; };
-		56ED512C2805A6EE005CD48E /* american.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 56ED511A2805A6ED005CD48E /* american.jpg */; };
-		56ED512D2805A6EE005CD48E /* europian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 56ED511B2805A6ED005CD48E /* europian.jpg */; };
-		56ED512E2805A6EE005CD48E /* oceanian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 56ED511C2805A6ED005CD48E /* oceanian.jpg */; };
-		56ED512F2805A6EE005CD48E /* african.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 56ED511D2805A6ED005CD48E /* african.jpg */; };
-		56ED51302805A6EE005CD48E /* asian.png in Resources */ = {isa = PBXBuildFile; fileRef = 56ED511E2805A6ED005CD48E /* asian.png */; };
-		56ED51312805A6EE005CD48E /* ListVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ED51202805A6ED005CD48E /* ListVIewModel.swift */; };
-		56ED51322805A6EE005CD48E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ED51222805A6ED005CD48E /* ListView.swift */; };
-		56ED51332805A6EE005CD48E /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ED51232805A6ED005CD48E /* StoreView.swift */; };
-		56ED51342805A6EE005CD48E /* AppBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ED51242805A6ED005CD48E /* AppBarView.swift */; };
-		56ED51362805A6EE005CD48E /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ED51282805A6ED005CD48E /* Store.swift */; };
 		56EDE66327F60AD600E6E806 /* FavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EDE66227F60AD600E6E806 /* FavViewController.swift */; };
 		8036B1AF0A7EF2ED1963B6C1 /* Pods_LivingHealthy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1B8FE9352E070483BF1DAC /* Pods_LivingHealthy.framework */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,19 @@
 /* Begin PBXFileReference section */
 		1C1B8FE9352E070483BF1DAC /* Pods_LivingHealthy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LivingHealthy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FC4796EAF53E70011CB12B8 /* Pods-LivingHealthy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LivingHealthy.release.xcconfig"; path = "Target Support Files/Pods-LivingHealthy/Pods-LivingHealthy.release.xcconfig"; sourceTree = "<group>"; };
+		561A0FE82805CBDF0097BBE7 /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		561A0FEA2805CBDF0097BBE7 /* StoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
+		561A0FEC2805CBDF0097BBE7 /* ListVIewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListVIewModel.swift; sourceTree = "<group>"; };
+		561A0FEE2805CBDF0097BBE7 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		561A0FEF2805CBDF0097BBE7 /* DBdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DBdata.json; sourceTree = "<group>"; };
+		561A0FF12805CBDF0097BBE7 /* american.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = american.jpg; sourceTree = "<group>"; };
+		561A0FF22805CBDF0097BBE7 /* europian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = europian.jpg; sourceTree = "<group>"; };
+		561A0FF32805CBDF0097BBE7 /* oceanian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = oceanian.jpg; sourceTree = "<group>"; };
+		561A0FF42805CBDF0097BBE7 /* african.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = african.jpg; sourceTree = "<group>"; };
+		561A0FF52805CBDF0097BBE7 /* asian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asian.png; sourceTree = "<group>"; };
+		561A0FF72805CBDF0097BBE7 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		561A0FF82805CBDF0097BBE7 /* WorkoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		561A0FF92805CBDF0097BBE7 /* AppBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBarView.swift; sourceTree = "<group>"; };
 		561C4E1027F330C400AFAFCA /* AllWorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWorkoutsViewController.swift; sourceTree = "<group>"; };
 		56AAE41B27EDDA8400FAECE3 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		56AAE41D27EDDA9300FAECE3 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -55,18 +69,6 @@
 		56EBE40227D8E32000B8BDDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56EBE40427D8E32000B8BDDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56ED51132805A3DB005CD48E /* WorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewController.swift; sourceTree = "<group>"; };
-		56ED51172805A6ED005CD48E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		56ED51182805A6ED005CD48E /* DBdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DBdata.json; sourceTree = "<group>"; };
-		56ED511A2805A6ED005CD48E /* american.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = american.jpg; sourceTree = "<group>"; };
-		56ED511B2805A6ED005CD48E /* europian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = europian.jpg; sourceTree = "<group>"; };
-		56ED511C2805A6ED005CD48E /* oceanian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = oceanian.jpg; sourceTree = "<group>"; };
-		56ED511D2805A6ED005CD48E /* african.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = african.jpg; sourceTree = "<group>"; };
-		56ED511E2805A6ED005CD48E /* asian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asian.png; sourceTree = "<group>"; };
-		56ED51202805A6ED005CD48E /* ListVIewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListVIewModel.swift; sourceTree = "<group>"; };
-		56ED51222805A6ED005CD48E /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
-		56ED51232805A6ED005CD48E /* StoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
-		56ED51242805A6ED005CD48E /* AppBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBarView.swift; sourceTree = "<group>"; };
-		56ED51282805A6ED005CD48E /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		56EDE66227F60AD600E6E806 /* FavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavViewController.swift; sourceTree = "<group>"; };
 		81AC9838E627289B5078D95B /* Pods-LivingHealthy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LivingHealthy.debug.xcconfig"; path = "Target Support Files/Pods-LivingHealthy/Pods-LivingHealthy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +94,67 @@
 				1C1B8FE9352E070483BF1DAC /* Pods_LivingHealthy.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		561A0FE72805CBDF0097BBE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				561A0FE82805CBDF0097BBE7 /* Workout.swift */,
+				561A0FE92805CBDF0097BBE7 /* View */,
+			);
+			name = Model;
+			path = "../../../../../Desktop/MyDelivery-main/MyDelivery/Model";
+			sourceTree = "<group>";
+		};
+		561A0FE92805CBDF0097BBE7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				561A0FEA2805CBDF0097BBE7 /* StoreView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		561A0FEB2805CBDF0097BBE7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				561A0FEC2805CBDF0097BBE7 /* ListVIewModel.swift */,
+			);
+			name = ViewModel;
+			path = "../../../../../Desktop/MyDelivery-main/MyDelivery/ViewModel";
+			sourceTree = "<group>";
+		};
+		561A0FED2805CBDF0097BBE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				561A0FEE2805CBDF0097BBE7 /* Extensions.swift */,
+				561A0FEF2805CBDF0097BBE7 /* DBdata.json */,
+				561A0FF02805CBDF0097BBE7 /* assets */,
+			);
+			name = "Supporting Files";
+			path = "../../../../../Downloads/MyDelivery-main/MyDelivery/Supporting Files";
+			sourceTree = "<group>";
+		};
+		561A0FF02805CBDF0097BBE7 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				561A0FF12805CBDF0097BBE7 /* american.jpg */,
+				561A0FF22805CBDF0097BBE7 /* europian.jpg */,
+				561A0FF32805CBDF0097BBE7 /* oceanian.jpg */,
+				561A0FF42805CBDF0097BBE7 /* african.jpg */,
+				561A0FF52805CBDF0097BBE7 /* asian.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		561A0FF62805CBDF0097BBE7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				561A0FF72805CBDF0097BBE7 /* ListView.swift */,
+				561A0FF82805CBDF0097BBE7 /* WorkoutView.swift */,
+				561A0FF92805CBDF0097BBE7 /* AppBarView.swift */,
+			);
+			name = View;
+			path = "../../../../../Desktop/MyDelivery-main/MyDelivery/View";
 			sourceTree = "<group>";
 		};
 		56EBE3EA27D8E31D00B8BDDF = {
@@ -127,66 +190,14 @@
 				561C4E1027F330C400AFAFCA /* AllWorkoutsViewController.swift */,
 				56EDE66227F60AD600E6E806 /* FavViewController.swift */,
 				56EBE3FF27D8E32000B8BDDF /* Assets.xcassets */,
-				56ED51272805A6ED005CD48E /* Model */,
-				56ED51162805A6ED005CD48E /* Supporting Files */,
-				56ED51212805A6ED005CD48E /* View */,
-				56ED511F2805A6ED005CD48E /* ViewModel */,
 				56EBE40127D8E32000B8BDDF /* LaunchScreen.storyboard */,
 				56EBE40427D8E32000B8BDDF /* Info.plist */,
+				561A0FE72805CBDF0097BBE7 /* Model */,
+				561A0FED2805CBDF0097BBE7 /* Supporting Files */,
+				561A0FF62805CBDF0097BBE7 /* View */,
+				561A0FEB2805CBDF0097BBE7 /* ViewModel */,
 			);
 			path = LivingHealthy;
-			sourceTree = "<group>";
-		};
-		56ED51162805A6ED005CD48E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				56ED51172805A6ED005CD48E /* Extensions.swift */,
-				56ED51182805A6ED005CD48E /* DBdata.json */,
-				56ED51192805A6ED005CD48E /* assets */,
-			);
-			name = "Supporting Files";
-			path = "../../../../../Desktop/MyDelivery-main/MyDelivery/Supporting Files";
-			sourceTree = "<group>";
-		};
-		56ED51192805A6ED005CD48E /* assets */ = {
-			isa = PBXGroup;
-			children = (
-				56ED511A2805A6ED005CD48E /* american.jpg */,
-				56ED511B2805A6ED005CD48E /* europian.jpg */,
-				56ED511C2805A6ED005CD48E /* oceanian.jpg */,
-				56ED511D2805A6ED005CD48E /* african.jpg */,
-				56ED511E2805A6ED005CD48E /* asian.png */,
-			);
-			path = assets;
-			sourceTree = "<group>";
-		};
-		56ED511F2805A6ED005CD48E /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				56ED51202805A6ED005CD48E /* ListVIewModel.swift */,
-			);
-			name = ViewModel;
-			path = "../../../../../Desktop/MyDelivery-main/MyDelivery/ViewModel";
-			sourceTree = "<group>";
-		};
-		56ED51212805A6ED005CD48E /* View */ = {
-			isa = PBXGroup;
-			children = (
-				56ED51222805A6ED005CD48E /* ListView.swift */,
-				56ED51232805A6ED005CD48E /* StoreView.swift */,
-				56ED51242805A6ED005CD48E /* AppBarView.swift */,
-			);
-			name = View;
-			path = "../../../../../Desktop/MyDelivery-main/MyDelivery/View";
-			sourceTree = "<group>";
-		};
-		56ED51272805A6ED005CD48E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				56ED51282805A6ED005CD48E /* Store.swift */,
-			);
-			name = Model;
-			path = "../../../../../Desktop/MyDelivery-main/MyDelivery/Model";
 			sourceTree = "<group>";
 		};
 		8A009015D926BD183B293727 /* Pods */ = {
@@ -266,16 +277,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56ED512C2805A6EE005CD48E /* american.jpg in Resources */,
+				561A0FFE2805CBDF0097BBE7 /* DBdata.json in Resources */,
+				561A10012805CBDF0097BBE7 /* oceanian.jpg in Resources */,
+				561A0FFF2805CBDF0097BBE7 /* american.jpg in Resources */,
 				56EBE40327D8E32000B8BDDF /* LaunchScreen.storyboard in Resources */,
-				56ED512F2805A6EE005CD48E /* african.jpg in Resources */,
-				56ED512B2805A6EE005CD48E /* DBdata.json in Resources */,
 				56AAE42027EDE03A00FAECE3 /* GoogleService-Info.plist in Resources */,
 				56EBE40027D8E32000B8BDDF /* Assets.xcassets in Resources */,
-				56ED51302805A6EE005CD48E /* asian.png in Resources */,
+				561A10032805CBDF0097BBE7 /* asian.png in Resources */,
+				561A10022805CBDF0097BBE7 /* african.jpg in Resources */,
 				56EBE3FE27D8E31D00B8BDDF /* Main.storyboard in Resources */,
-				56ED512D2805A6EE005CD48E /* europian.jpg in Resources */,
-				56ED512E2805A6EE005CD48E /* oceanian.jpg in Resources */,
+				561A10002805CBDF0097BBE7 /* europian.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,20 +339,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56ED51362805A6EE005CD48E /* Store.swift in Sources */,
 				56AAE46027F2278600FAECE3 /* ProfileViewController.swift in Sources */,
 				561C4E1127F330C400AFAFCA /* AllWorkoutsViewController.swift in Sources */,
+				561A0FFB2805CBDF0097BBE7 /* StoreView.swift in Sources */,
 				56AAE41C27EDDA8400FAECE3 /* SigninViewController.swift in Sources */,
+				561A10052805CBDF0097BBE7 /* WorkoutView.swift in Sources */,
+				561A0FFA2805CBDF0097BBE7 /* Workout.swift in Sources */,
 				56EBE3FB27D8E31D00B8BDDF /* ViewController.swift in Sources */,
 				56AAE41E27EDDA9300FAECE3 /* SignupViewController.swift in Sources */,
-				56ED51332805A6EE005CD48E /* StoreView.swift in Sources */,
-				56ED51342805A6EE005CD48E /* AppBarView.swift in Sources */,
-				56ED512A2805A6EE005CD48E /* Extensions.swift in Sources */,
 				56EBE3F727D8E31D00B8BDDF /* AppDelegate.swift in Sources */,
+				561A0FFD2805CBDF0097BBE7 /* Extensions.swift in Sources */,
 				56EDE66327F60AD600E6E806 /* FavViewController.swift in Sources */,
-				56ED51322805A6EE005CD48E /* ListView.swift in Sources */,
+				561A10042805CBDF0097BBE7 /* ListView.swift in Sources */,
+				561A10062805CBDF0097BBE7 /* AppBarView.swift in Sources */,
 				56ED51142805A3DB005CD48E /* WorkoutsViewController.swift in Sources */,
-				56ED51312805A6EE005CD48E /* ListVIewModel.swift in Sources */,
+				561A0FFC2805CBDF0097BBE7 /* ListVIewModel.swift in Sources */,
 				56EBE3F927D8E31D00B8BDDF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
