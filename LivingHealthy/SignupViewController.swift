@@ -18,16 +18,16 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var firstName: UITextField!
     @IBOutlet weak var lastName: UITextField!
     
+    public var fnSent: ((String?) -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    
-    
     @IBAction func signUpTapped(_ sender: Any) {
+        fnSent?(firstName.text)
+        
         if email.text?.isEmpty == true {
             print("No text in email field")
             return
@@ -37,9 +37,13 @@ class SignupViewController: UIViewController {
             return
         }
         
+        
+        
 //        NotificationCenter.default.post(name: Notification.Name("text"), object: firstName.text)
         
+        
         signUp()
+        
     }
     
         
