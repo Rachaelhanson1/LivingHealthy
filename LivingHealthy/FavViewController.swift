@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 
 class FavViewController: UIViewController {
@@ -16,8 +17,17 @@ class FavViewController: UIViewController {
     
     var menuOut = false
     
+    @IBOutlet weak var contView: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let childView = UIHostingController(rootView: ListView())
+               addChild(childView)
+               childView.view.frame = contView.bounds
+               contView.addSubview(childView.view)
+               childView.didMove(toParent: self)
 
     }
     

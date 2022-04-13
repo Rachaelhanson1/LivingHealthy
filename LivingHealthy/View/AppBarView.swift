@@ -4,8 +4,8 @@ struct AppBarView: View {
     @EnvironmentObject var viewModel: ListViewModel
     @State var showSearchBar = false
     @Binding var inputText: String
-    @Binding var seletedCuisine: Food
-    @Binding var isOnSale: Bool
+    @Binding var selectedLevel: Level
+    @Binding var isWeights: Bool
     
     var SearchBarView: some View {
         VStack {
@@ -27,7 +27,7 @@ struct AppBarView: View {
                     SearchBarView
                         .transition(.move(edge: .top))
                 } else {
-                    Text("Stores list")
+                    Text("Workouts list")
                         .bold()
                 }
                  
@@ -58,17 +58,17 @@ struct AppBarView: View {
                     Text(viewModel.ratingSort.rawValue)
                         .encapulate(borderColor: .gray)
                         .onTapGesture {
-                            if (viewModel.ratingSort == .ratingASC){
-                                viewModel.ratingSort = .ratingDESC
+                            if (viewModel.ratingSort == .timeASC){
+                                viewModel.ratingSort = .timeDESC
                             } else {
-                                viewModel.ratingSort = .ratingASC
+                                viewModel.ratingSort = .timeASC
                             }
                             viewModel.sortList(by: viewModel.ratingSort)
                         }
                     
-                    Picker(seletedCuisine.rawValue,
-                           selection: $seletedCuisine) {
-                        ForEach(Food.allCases, id: \.self) { value in
+                    Picker(selectedLevel.rawValue,
+                           selection: $selectedLevel) {
+                        ForEach(Level.allCases, id: \.self) { value in
                             Text(value.rawValue)
                                 .tag(value)
                         }
@@ -78,17 +78,17 @@ struct AppBarView: View {
                     .padding(.vertical, -5)
                     .encapulate(borderColor: .gray)
                     
-                    if isOnSale {
-                        Text("On sale")
+                    if isWeights {
+                        Text("Weight")
                             .encapulate(color: .blue.opacity(0.8), foregroundColor: .white)
                             .onTapGesture {
-                                isOnSale.toggle()
+                                isWeights.toggle()
                             }
                     } else {
-                        Text("On sale")
+                        Text("Weight")
                             .encapulate(borderColor: .gray)
                             .onTapGesture {
-                                isOnSale.toggle()
+                                isWeights.toggle()
                             }
                     }
                 }

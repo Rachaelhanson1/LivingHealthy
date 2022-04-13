@@ -11,7 +11,13 @@ import SwiftUI
 class WorkoutsViewController: UIViewController {
     
     
+    @IBOutlet weak var trailing: NSLayoutConstraint!
+    @IBOutlet weak var leading: NSLayoutConstraint!
+    
+    
     @IBOutlet weak var contView: UIView!
+    
+    var menuOut = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +29,19 @@ class WorkoutsViewController: UIViewController {
                childView.didMove(toParent: self)
         
     }
-
+    
+    
+    @IBAction func menuTapped(_ sender: Any) {
+        if menuOut == false {
+            leading.constant = 150
+            trailing.constant = -150
+            menuOut = true
+        } else  {
+            leading.constant = 0
+            trailing.constant = 0
+            menuOut = false
+        }
+    }
+    
 
 }

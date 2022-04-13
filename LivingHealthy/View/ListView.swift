@@ -4,12 +4,14 @@ struct ListView: View {
     @ObservedObject var viewModel = ListViewModel()
     
     @State var inputText = ""
-    @State var seletedCuisine = Food.all
-    @State var isOnSale = false
+    @State var selectedLevel = Level.all
+    @State var isWeights = false
     
     var body: some View {
         VStack {
-            AppBarView(inputText: $inputText, seletedCuisine: $seletedCuisine, isOnSale: $isOnSale)
+            
+            //bar at the top for searching and filtering
+            AppBarView(inputText: $inputText, selectedLevel: $selectedLevel, isWeights: $isWeights)
                 .environmentObject(viewModel)
                 .padding(.bottom, 5)
                 .overlay(Divider()
@@ -17,32 +19,33 @@ struct ListView: View {
                             .background(Color.black), alignment: .bottom)
                 .padding(.bottom, 5)
                 
+            //scroll for each of the workouts
             ScrollView(showsIndicators: false) {
                 LazyVStack {
-                    ForEach(viewModel.stores.filter({ store in
-                        filterSearchText(store)
-                    }).filter({ store in
-                        filterCuisine(store)
-                    }).filter({ store in
-                        filterOnSale(store)
-                    }), id: \.self) { store in
-                        StoreView(store: store)
+                    ForEach(viewModel.workouts.filter({ workout in
+                        filterSearchText(workout)
+                    }).filter({ workout in
+                        filterLevel(workout)
+                    }).filter({ workout in
+                        filterOnSale(workout)
+                    }), id: \.self) { workout in
+                        WorkoutView(workout: workout)
                     }
                 }
             }
         }
     }
     
-    private func filterSearchText(_ store: Store) -> Bool {
-        if inputText == "" || store.name.localizedCaseInsensitiveContains(inputText) {
+    private func filterSearchText(_ workout: Workout) -> Bool {
+        if inputText == "" || workout.name.localizedCaseInsensitiveContains(inputText) {
             return true
         } else {
             return false
         }
     }
     
-    private func filterCuisine(_ store: Store) -> Bool {
-        if seletedCuisine == .all || seletedCuisine == store.type
+    private func filterLevel(_ workout: Workout) -> Bool {
+        if selectedLevel == .all || selectedLevel == workout.type
         {
             return true
         } else {
@@ -50,8 +53,8 @@ struct ListView: View {
         }
     }
     
-    private func filterOnSale(_ store: Store) -> Bool {
-        if !isOnSale || store.tags.firstIndex(of: "On sale") != nil {
+    private func filterOnSale(_ workout: Workout) -> Bool {
+        if !isWeights || workout.tags.firstIndex(of: "Weight") != nil {
             return true
         } else {
             return false
@@ -61,9 +64,6 @@ struct ListView: View {
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            ListView()
-            ListView()
-        }
+        ListView()
     }
 }
