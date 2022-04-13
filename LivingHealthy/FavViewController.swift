@@ -15,6 +15,7 @@ class FavViewController: UIViewController {
     @IBOutlet weak var trailing: NSLayoutConstraint!
     @IBOutlet weak var leading: NSLayoutConstraint!
     
+    
     var menuOut = false
     
     @IBOutlet weak var contView: UIView!

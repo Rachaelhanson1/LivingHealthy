@@ -15,6 +15,8 @@
 		561A10052805CBDF0097BBE7 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561A0FF82805CBDF0097BBE7 /* WorkoutView.swift */; };
 		561A10062805CBDF0097BBE7 /* AppBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561A0FF92805CBDF0097BBE7 /* AppBarView.swift */; };
 		561C4E1127F330C400AFAFCA /* AllWorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561C4E1027F330C400AFAFCA /* AllWorkoutsViewController.swift */; };
+		566CC1BB28072BE700D9A247 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566CC1BA28072BE700D9A247 /* SettingsViewController.swift */; };
+		566CC1BD28073E8C00D9A247 /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566CC1BC28073E8B00D9A247 /* GoalViewController.swift */; };
 		56AAE41C27EDDA8400FAECE3 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAE41B27EDDA8400FAECE3 /* SigninViewController.swift */; };
 		56AAE41E27EDDA9300FAECE3 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAE41D27EDDA9300FAECE3 /* SignupViewController.swift */; };
 		56AAE42027EDE03A00FAECE3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56AAE41F27EDE03A00FAECE3 /* GoogleService-Info.plist */; };
@@ -44,6 +46,8 @@
 		561A0FF82805CBDF0097BBE7 /* WorkoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 		561A0FF92805CBDF0097BBE7 /* AppBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBarView.swift; sourceTree = "<group>"; };
 		561C4E1027F330C400AFAFCA /* AllWorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWorkoutsViewController.swift; sourceTree = "<group>"; };
+		566CC1BA28072BE700D9A247 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		566CC1BC28073E8B00D9A247 /* GoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
 		56AAE41B27EDDA8400FAECE3 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		56AAE41D27EDDA9300FAECE3 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		56AAE41F27EDE03A00FAECE3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -154,7 +158,9 @@
 				56AAE41D27EDDA9300FAECE3 /* SignupViewController.swift */,
 				56ED51132805A3DB005CD48E /* WorkoutsViewController.swift */,
 				561C4E1027F330C400AFAFCA /* AllWorkoutsViewController.swift */,
+				566CC1BC28073E8B00D9A247 /* GoalViewController.swift */,
 				56EDE66227F60AD600E6E806 /* FavViewController.swift */,
+				566CC1BA28072BE700D9A247 /* SettingsViewController.swift */,
 				56EBE3FF27D8E32000B8BDDF /* Assets.xcassets */,
 				56EBE40127D8E32000B8BDDF /* LaunchScreen.storyboard */,
 				56EBE40427D8E32000B8BDDF /* Info.plist */,
@@ -311,8 +317,10 @@
 				561A0FFD2805CBDF0097BBE7 /* Extensions.swift in Sources */,
 				56EDE66327F60AD600E6E806 /* FavViewController.swift in Sources */,
 				561A10042805CBDF0097BBE7 /* ListView.swift in Sources */,
+				566CC1BB28072BE700D9A247 /* SettingsViewController.swift in Sources */,
 				561A10062805CBDF0097BBE7 /* AppBarView.swift in Sources */,
 				56ED51142805A3DB005CD48E /* WorkoutsViewController.swift in Sources */,
+				566CC1BD28073E8C00D9A247 /* GoalViewController.swift in Sources */,
 				561A0FFC2805CBDF0097BBE7 /* ListVIewModel.swift in Sources */,
 				56EBE3F927D8E31D00B8BDDF /* SceneDelegate.swift in Sources */,
 			);
