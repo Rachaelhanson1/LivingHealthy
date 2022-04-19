@@ -5,9 +5,11 @@
 //  Created by Rachael Hanson on 28/03/2022.
 //
 
+import Photos
+import PhotosUI
 import UIKit
 
-class ProfileViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class ProfileViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, PHPickerViewControllerDelegate {
     
     //constraints for side menu
     @IBOutlet weak var trailing: NSLayoutConstraint!
@@ -37,16 +39,20 @@ class ProfileViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var waterLabel: UILabel!
     
-    
+    //user photo
+    @IBOutlet var userPhoto: UIImageView!
     
     @IBOutlet weak var abilityView: UIView!
+    
+    @IBOutlet weak var userPic: UIView!
+    
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //creating a picker for user ability level
-        
         levelPicker.delegate = self
         levelPicker.dataSource = self
         
@@ -82,8 +88,36 @@ class ProfileViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         waterButton.maximumValue = 15
         weightButton.minimumValue = 0
         
+        userPhoto.image = UIImage.init(named: "man1")
+        
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
 
     }
+    
+    @objc private func didTapAdd() {
+        var config = PHPickerConfiguration(photoLibrary: .shared())
+        config.selectionLimit = 1
+        config.filter = .images
+        let vc = PHPickerViewController(configuration: config)
+        vc.delegate = self
+        present(vc, animated: true)
+    }
+    
+    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+        picker.dismiss(animated: true, completion: nil)
+        results.forEach { result in
+            result.itemProvider.loadObject(ofClass: UIImage.self) { reading, error in
+                guard let image = reading as? UIImage, error == nil else {
+                    return
+                }
+                print(image)
+                userPhoto = image
+            }
+        }
+    }
+    
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
