@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class SettingsViewController: UIViewController {
 
     
@@ -17,7 +18,6 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
 
         accountView.layer.cornerRadius = 10
-        
         
         
     }

@@ -13,6 +13,10 @@ class SigninViewController: UIViewController {
     
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
+
+    
+    @IBOutlet weak var emailError: UILabel!
+    @IBOutlet weak var passwordError: UILabel!
     
     
     override func viewDidLoad() {
@@ -35,11 +39,13 @@ class SigninViewController: UIViewController {
     func validateFields() {
         if email.text?.isEmpty == true {
             print("No email text")
+            emailError.text = "Please enter an email"
             return
         }
         
         if password.text?.isEmpty == true {
             print("No password text")
+            passwordError.text = "Please enter a password"
             return
         }
         signIn()

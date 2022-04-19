@@ -16,6 +16,7 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     
     @IBOutlet weak var firstName: UITextField!
+    var firstname: String = ""
     @IBOutlet weak var lastName: UITextField!
     
     public var fnSent: ((String?) -> Void)?
@@ -23,6 +24,7 @@ class SignupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        firstname = "firstname is"
     }
     
     @IBAction func signUpTapped(_ sender: Any) {
@@ -36,10 +38,6 @@ class SignupViewController: UIViewController {
             print("No text in password field")
             return
         }
-        
-        
-        
-//        NotificationCenter.default.post(name: Notification.Name("text"), object: firstName.text)
         
         
         signUp()
