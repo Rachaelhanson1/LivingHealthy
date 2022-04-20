@@ -13,17 +13,22 @@ class SigninViewController: UIViewController {
     
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
-
     
+    //all of the possible errors when creating an account
     @IBOutlet weak var emailError: UILabel!
     @IBOutlet weak var passwordError: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if UserDefaults.standard.bool(forKey: "ISUSERLOGGEDIN") == true {
+                    //user is already logged in just navigate him to home screen
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "tabBarController")
+            vc.modalPresentationStyle = .overFullScreen
+            present(vc, animated:true)
+        }
     }
-    
 
     override func viewDidAppear(_ animated: Bool) {
         checkUserInfo()
@@ -48,6 +53,8 @@ class SigninViewController: UIViewController {
             passwordError.text = "Please enter a password"
             return
         }
+
+            
         signIn()
     }
 
@@ -61,9 +68,13 @@ class SigninViewController: UIViewController {
         }
     }
     
+
+    
     func checkUserInfo() {
         if Auth.auth().currentUser != nil {
             print(Auth.auth().currentUser?.uid)
+            
+            UserDefaults.standard.set(true, forKey: "ISUSERLOGGEDIN")
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "tabBarController")

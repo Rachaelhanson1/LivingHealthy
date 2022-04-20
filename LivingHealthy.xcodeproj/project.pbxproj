@@ -33,6 +33,7 @@
 		56EBE40327D8E32000B8BDDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56EBE40127D8E32000B8BDDF /* LaunchScreen.storyboard */; };
 		56ED51142805A3DB005CD48E /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ED51132805A3DB005CD48E /* WorkoutsViewController.swift */; };
 		56EDE66327F60AD600E6E806 /* FavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EDE66227F60AD600E6E806 /* FavViewController.swift */; };
+		56F0F6F128101F3600BB200F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F0F6F028101F3600BB200F /* WelcomeViewController.swift */; };
 		8036B1AF0A7EF2ED1963B6C1 /* Pods_LivingHealthy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1B8FE9352E070483BF1DAC /* Pods_LivingHealthy.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		56EBE40427D8E32000B8BDDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56ED51132805A3DB005CD48E /* WorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewController.swift; sourceTree = "<group>"; };
 		56EDE66227F60AD600E6E806 /* FavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavViewController.swift; sourceTree = "<group>"; };
+		56F0F6F028101F3600BB200F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		81AC9838E627289B5078D95B /* Pods-LivingHealthy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LivingHealthy.debug.xcconfig"; path = "Target Support Files/Pods-LivingHealthy/Pods-LivingHealthy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +143,7 @@
 				56EDE66227F60AD600E6E806 /* FavViewController.swift */,
 				566CC1BA28072BE700D9A247 /* SettingsViewController.swift */,
 				56B7A78C28083384002C88A4 /* mainTabBarViewController.swift */,
+				56F0F6F028101F3600BB200F /* WelcomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				566CC1BD28073E8C00D9A247 /* GoalViewController.swift in Sources */,
 				561A0FFC2805CBDF0097BBE7 /* ListVIewModel.swift in Sources */,
 				56EBE3F927D8E31D00B8BDDF /* SceneDelegate.swift in Sources */,
+				56F0F6F128101F3600BB200F /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

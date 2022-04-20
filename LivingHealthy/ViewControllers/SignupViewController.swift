@@ -14,10 +14,18 @@ class SignupViewController: UIViewController {
     
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var secondPassword: UITextField!
+    
     
     @IBOutlet weak var firstName: UITextField!
     var firstname: String = ""
     @IBOutlet weak var lastName: UITextField!
+    
+    // error labels
+    @IBOutlet weak var emailError: UILabel!
+    @IBOutlet weak var passwordError: UILabel!
+    @IBOutlet weak var password2Error: UILabel!
+    @IBOutlet weak var noMatch: UILabel!
     
     public var fnSent: ((String?) -> Void)?
     
@@ -32,18 +40,33 @@ class SignupViewController: UIViewController {
         
         if email.text?.isEmpty == true {
             print("No text in email field")
+            emailError.text = "Please enter an email"
             return
         }
         if password.text?.isEmpty == true {
             print("No text in password field")
+            passwordError.text = "Please enter a password"
             return
         }
         
+        if secondPassword.text?.isEmpty == true {
+            print("No password text")
+            password2Error.text = "Please re-enter your password"
+            return
+        }
+        
+        if (password != secondPassword) {
+            print("Passwords do not match")
+            noMatch.text = "Your passwords do not match"
+            return 
+        }
         
         signUp()
         
     }
     
+    
+  
         
     func signUp() {
         Auth.auth().createUser(withEmail: email.text!, password: password.text!) { (authResult, error) in

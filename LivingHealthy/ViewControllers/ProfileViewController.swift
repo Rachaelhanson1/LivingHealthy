@@ -9,7 +9,7 @@ import Photos
 import PhotosUI
 import UIKit
 
-class ProfileViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, PHPickerViewControllerDelegate {
+class ProfileViewController: UIViewController, PHPickerViewControllerDelegate {
     
     //constraints for side menu
     @IBOutlet weak var trailing: NSLayoutConstraint!
@@ -23,11 +23,7 @@ class ProfileViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     // labels for username
     @IBOutlet weak var firstName: UILabel!
     @IBOutlet weak var lastName: UILabel!
-    
-    // ability level picker
-    @IBOutlet weak var levelPicker: UIPickerView!
-    var levelData: [String] = [String]()
-    
+        
     //steppers
     
     @IBOutlet weak var stepperStepper: UIStepper!
@@ -42,21 +38,17 @@ class ProfileViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     //user photo
     @IBOutlet var userPhoto: UIImageView!
     
-    @IBOutlet weak var abilityView: UIView!
-    
     @IBOutlet weak var userPic: UIView!
     
     
+    @IBOutlet weak var picB: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //creating a picker for user ability level
-        levelPicker.delegate = self
-        levelPicker.dataSource = self
-        
-        levelData = ["Beginner", "Intermediate", "Advanced"]
+
         
         let tabbar = tabBarController as! mainTabBarViewController
         totStepLabel.text = String(describing: tabbar.stepValue)
@@ -66,7 +58,6 @@ class ProfileViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         firstName.text = "\(SIvc.firstname)"
         
         seperators.layer.cornerRadius = 10
-        abilityView.layer.cornerRadius = 10
         
         // number of steps with incremental stepper
         totStepLabel.text = "2000"
@@ -88,17 +79,22 @@ class ProfileViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         waterButton.maximumValue = 15
         weightButton.minimumValue = 0
         
-        userPhoto.image = UIImage.init(named: "man1")
+       // userPhoto.image = UIImage.init(named: "man1")
         
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
 
+        
     }
+    @IBAction func logoutUser(_ sender: Any) {
+           UserDefaults.standard.set(false, forKey: "ISUSERLOGGEDIN")
+           self.navigationController?.popToRootViewController(animated: true)
+       }
     
     @objc private func didTapAdd() {
         var config = PHPickerConfiguration(photoLibrary: .shared())
         config.selectionLimit = 1
-        config.filter = .images
+        config.filter = PHPickerFilter.images
         let vc = PHPickerViewController(configuration: config)
         vc.delegate = self
         present(vc, animated: true)
@@ -106,28 +102,34 @@ class ProfileViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
         picker.dismiss(animated: true, completion: nil)
-        results.forEach { result in
-            result.itemProvider.loadObject(ofClass: UIImage.self) { reading, error in
-                guard let image = reading as? UIImage, error == nil else {
-                    return
-                }
-                print(image)
-                userPhoto = image
+        
+        //results.forEach { result in
+        //    result.itemProvider.loadObject(ofClass: UIImage.self) { reading, error in
+        //        guard let profile = reading as? UIImage, error == nil else {
+        //            return
+        //        }
+        //        print(profile)
+                
+        for result in results {
+           result.itemProvider.loadObject(ofClass: UIImage.self, completionHandler: { (object, error) in
+              if let image = object as? UIImage {
+                 DispatchQueue.main.async {
+                    // Use UIImage
+                    print("Selected image: \(image)")
+                 }
+              }
+           })
+                
+                
+                //self.userPhoto.image = UIImage.init(named: "profile")
+               // self.userPhoto.image = UIImage.init(named: "result")
+                
             }
         }
-    }
     
     
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return levelData.count
-    }
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return levelData[row]
-    }
+
     
     // trying to get data from sign up view controller**********
     @IBAction func didTapButton(_ sender: Any) {
