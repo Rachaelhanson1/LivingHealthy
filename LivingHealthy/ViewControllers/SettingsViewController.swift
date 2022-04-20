@@ -16,6 +16,9 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var accountView: UIView!
 
     
+    @IBOutlet weak var cardioMax: UITextField!
+    
+    @IBOutlet weak var cardioL: UILabel!
     // ability level picker
     @IBOutlet weak var levelPicker: UIPickerView!
     var levelData: [String] = [String]()
@@ -31,8 +34,18 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         levelPicker.dataSource = self
         
         levelData = ["Beginner", "Intermediate", "Advanced"]
+    }
+    
+    
+    @IBAction func confirm(_ sender: UIButton) {
+        let cardioVal = Int(cardioMax.text!)
         
         
+        let tabbar = tabBarController as! mainTabBarViewController
+        tabbar.cardioValue = cardioVal!
+        
+        cardioL.text = "\(String(describing: cardioMax.text)) \(tabbar.cardioValue)"
+        print(tabbar.cardioValue)
     }
     
     //functions for the picker view
@@ -47,11 +60,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         return levelData[row]
     }
     
-    
-    
-    //updating email to Firebase
-    
-    
+
     //updating email to Firebase
 
     @IBAction func updateUserButton(_ sender: Any) {

@@ -47,8 +47,6 @@ class ProfileViewController: UIViewController, PHPickerViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //creating a picker for user ability level
-
         
         let tabbar = tabBarController as! mainTabBarViewController
         totStepLabel.text = String(describing: tabbar.stepValue)
@@ -100,6 +98,7 @@ class ProfileViewController: UIViewController, PHPickerViewControllerDelegate {
         present(vc, animated: true)
     }
     
+    //choosing a profile picture and viewing it
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
         picker.dismiss(animated: true, completion: nil)
         
@@ -149,6 +148,8 @@ class ProfileViewController: UIViewController, PHPickerViewControllerDelegate {
         tabbar.stepValue = Int(totStepLabel.text!)!
     }
     
+    
+    //stepper
     @IBAction func stepStepper(_ sender: UIStepper) {
         totStepLabel.text = Int(sender.value).description
     }
@@ -178,11 +179,5 @@ class ProfileViewController: UIViewController, PHPickerViewControllerDelegate {
         }
         
     }
-    
-//    @objc func didGetName( _ notification: Notification) {
-//        let text = notification.object as! String?
-//        firstName.text = text
-//    }
- 
 
 }

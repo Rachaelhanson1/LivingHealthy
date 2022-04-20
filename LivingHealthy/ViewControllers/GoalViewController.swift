@@ -6,88 +6,141 @@
 //
 
 import UIKit
+import MBCircularProgressBar
 
 class GoalViewController: UIViewController {
 
-    //step tracker
-    @IBOutlet weak var stepTracker: UIProgressView!
-    @IBOutlet weak var noStepLabel: UILabel!
-    @IBOutlet weak var totStepLabel: UILabel!
     
     
-    //water tracker
-    @IBOutlet weak var noWaterLabel: UILabel!
-    @IBOutlet weak var waterTracker: UIProgressView!
     
-    //weight tracker
+    @IBOutlet weak var testtest: UILabel!
     
-    //label for goal met
-    @IBOutlet weak var goalMetLabel: UILabel!
+    // progress trackers
+    //Cardio
+    @IBOutlet weak var cardioProg: MBCircularProgressBarView!
+    @IBOutlet weak var cardioLabel: UILabel!
     
-    // minutes completed within the app progress bar
-    @IBOutlet weak var weekGoalBar: UIProgressView!
+    //flexibilty
+    @IBOutlet weak var flexProg: MBCircularProgressBarView!
+    @IBOutlet weak var flexLabel: UILabel!
     
-    // minutes completed externally to the app progress bar
-    @IBOutlet weak var outOfAppBar: UIProgressView!
+    //Strength
+    @IBOutlet weak var strenthProg: MBCircularProgressBarView!
+    @IBOutlet weak var strengthLabel: UILabel!
+    
+    //steps
+    @IBOutlet weak var stepProg: MBCircularProgressBarView!
+    @IBOutlet weak var stepLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let tabbar = tabBarController as! mainTabBarViewController
-        totStepLabel.text = String(describing: tabbar.stepValue)
-        progressBarResize()
+        self.cardioProg.value = 0
+        self.flexProg.value = 0
+        self.strenthProg.value = 0
+        self.stepProg.value = 0
         
+
     }
-    
-    //resize and position the progress bars to be vertical
-    func progressBarResize() {
-        weekGoalBar.transform = CGAffineTransform(rotationAngle: .pi * -0.5)
-        weekGoalBar.transform = weekGoalBar.transform.scaledBy(x: 1.2, y: 6)
-       
-       
-        outOfAppBar.transform = CGAffineTransform(rotationAngle: .pi * -0.5)
-        outOfAppBar.transform = outOfAppBar.transform.scaledBy(x: 1.2, y: 6)
-        
-    }
-    
-    //step increase button
-    @IBAction func stepPlus(_ sender: UIButton) {
-        let i = stepTracker.progress
-        stepTracker.progress += Float(0.1)
-        let x = Int(i*10000) //this number
-        noStepLabel.text = "\(x)/10000" //this number neeed to be the same
-    }
-    //step decrease button
-    @IBAction func stepMinus(_ sender: UIButton){
-        
-        let i = stepTracker.progress
-        stepTracker.progress -= Float(0.1)
-        let x = Int(i*10000)
-        noStepLabel.text = "\(x)/10000"
-        }
-    
-    
-    //water increase button
-    @IBAction func waterPlus(_ sender: UIButton) {
-        let i = stepTracker.progress
-        waterTracker.progress += Float(0.125)
-        let x = Int(i*10)
-        noWaterLabel.text = "\(x)/8"
-    }
-    //water decrease button
-    @IBAction func waterMinus(_ sender: UIButton) {
-        let i = stepTracker.progress
-        waterTracker.progress -= Float(0.125)
-        let x = Int(i*10)
-        noWaterLabel.text = "\(x)/8"
-    }
-    
     
     override func viewDidAppear(_ animated: Bool) {
+        //allow user to choose what their target goal is
         let tabbar = tabBarController as! mainTabBarViewController
-        totStepLabel.text = String(describing: tabbar.stepValue)
-        
+        testtest.text = String(describing: tabbar.cardioValue)
     }
+    
+    // function for Cardio plus and minus progress tracker and counter
+    @IBAction func cardioMinus(_ sender: Any) {
+        
+        guard let cValue = Int(cardioLabel!.text!) else {return}
+        let cardioValue = cValue - 10
+        cardioLabel!.text = String(cardioValue)
+        
+        UIView.animate(withDuration: 1) {
+            self.cardioProg.value = CGFloat(cardioValue)
+        }
+    }
+    @IBAction func cardioPlus(_ sender: Any) {
+        guard let cValue = Int(cardioLabel!.text!) else {return}
+        let cardioValue = cValue + 10
+        cardioLabel!.text = String(cardioValue)
+        
+        UIView.animate(withDuration: 1) {
+            self.cardioProg.value = CGFloat(cardioValue)
+        }
+    }
+    
+    // function for felxibilty plus and minus progress tracker and counter
+    @IBAction func flexMinus(_ sender: Any) {
+        guard let fValue = Int(flexLabel!.text!) else {return}
+        let flexValue = fValue - 10
+        flexLabel!.text = String(flexValue)
+        
+        UIView.animate(withDuration: 1) {
+            self.flexProg.value = CGFloat(flexValue)
+        }
+    }
+    @IBAction func flexPlus(_ sender: Any) {
+        guard let fValue = Int(flexLabel!.text!) else {return}
+        let flexValue = fValue + 10
+        flexLabel!.text = String(flexValue)
+        
+        UIView.animate(withDuration: 1) {
+            self.flexProg.value = CGFloat(flexValue)
+        }
+    }
+    
+    
+    // function for Strength training plus and minus progress tracker and counter
+    @IBAction func strengthMinus(_ sender: Any) {
+        guard let sValue = Int(strengthLabel!.text!) else {return}
+        let strengthVal = sValue - 10
+        strengthLabel!.text = String(strengthVal)
+        
+        UIView.animate(withDuration: 1) {
+            self.strenthProg.value = CGFloat(strengthVal)
+        }
+    }
+    @IBAction func strengthPlus(_ sender: Any) {
+        guard let sValue = Int(strengthLabel!.text!) else {return}
+        let strengthVal = sValue + 10
+        strengthLabel!.text = String(strengthVal)
+        
+        UIView.animate(withDuration: 1) {
+            self.strenthProg.value = CGFloat(strengthVal)
+        }
+    }
+    
+    // function for counting Steps, plus and minus progress tracker and counter
+    @IBAction func stepMinus(_ sender: Any) {
+        guard let sValue = Int(stepLabel!.text!) else {return}
+        let stepValue = sValue - 10
+        stepLabel!.text = String(stepValue)
+        
+        UIView.animate(withDuration: 1) {
+            self.stepProg.value = CGFloat(stepValue)
+        }
+    }
+    @IBAction func stepPlus(_ sender: Any) {
+        guard let sValue = Int(stepLabel!.text!) else {return}
+        let stepValue = sValue + 10
+        stepLabel!.text = String(stepValue)
+        
+        UIView.animate(withDuration: 1) {
+            self.stepProg.value = CGFloat(stepValue)
+        }
+    }
+    
+    
+    
+    
+    
+//    override func viewDidAppear(_ animated: Bool) {
+  //      let tabbar = tabBarController as! mainTabBarViewController
+//        totStepLabel.text = String(describing: tabbar.stepValue)
+
+  //  }
     
     
     

@@ -8,68 +8,106 @@
 
 /* Begin PBXBuildFile section */
 		08E06C696103054C4B32302B72F87F9B /* youtube-ios-player-helper-Assets in Resources */ = {isa = PBXBuildFile; fileRef = D674200BB0575198145B5455CF13275F /* youtube-ios-player-helper-Assets */; };
-		1787B38DA8D85E7E1E278F4BDFE3F186 /* YTPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB8290E299516843AFF3B8C541CC9DB /* YTPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3345018E2640B1B1F58E1E3616352890 /* Pods-LivingHealthy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1431502040E4856637E89EC5A21A3 /* Pods-LivingHealthy-dummy.m */; };
-		3C7B59BF6515B5893C2FFF7146AC117B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0EAF3D3A4225750A85D9907D125497E9 /* MBCircularProgressBarLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C25652600A892C7E6AC3E66C37757A /* MBCircularProgressBarLayer.m */; };
+		1787B38DA8D85E7E1E278F4BDFE3F186 /* YTPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE49AF89CEF1ED9A853C765E52061A4 /* YTPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2018B8EEBB508956A8FD7C74A42FD143 /* MBCircularProgressBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7569651AEA176DA2E79757E0445FB591 /* MBCircularProgressBar-dummy.m */; };
+		366CCE43841FAD9604BF51F96F6C43CE /* Pods-LivingHealthy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1431502040E4856637E89EC5A21A3 /* Pods-LivingHealthy-dummy.m */; };
+		3AF59972CF9DE7354BF21402CC674065 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		52A9E0586A2B09490766B11C20B5ABE9 /* YTPlayerView-iframe-player.html in Resources */ = {isa = PBXBuildFile; fileRef = DC1F93FF3AE13AD40B230C0C9DEDD1E8 /* YTPlayerView-iframe-player.html */; };
 		5366C2882BF017DCF8588BBED675F299 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A1684AC6622FED131FD0496A2B449688 /* Pods-LivingHealthy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3B7311CECFF5793F1B1F14E9F6B573 /* Pods-LivingHealthy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A68EB0E0E52D005974D46ACBF6C4096A /* YTPlayerView-iframe-player.html in Resources */ = {isa = PBXBuildFile; fileRef = 3D773F205A1EB7E2EBBF861888919C42 /* YTPlayerView-iframe-player.html */; };
-		B329893F915A170B891E3DD77F45B1EC /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC510FFA2019788C234C46692616CB1 /* YTPlayerView.m */; };
-		DAB517BA1E5F9BC057D50ACF9D7301A6 /* youtube-ios-player-helper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1FF5E2742007D012B650E911622DFDF /* youtube-ios-player-helper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF702DFFDA4EB848608C78F1E651DA1D /* youtube-ios-player-helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 248A7DEADB8B6474E6A92C731CC67BC9 /* youtube-ios-player-helper-dummy.m */; };
+		9A2923EE6EC1969B993224C9B29D2273 /* MBCircularProgressBarLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3F0476BE3C42D554A511E8215128A0 /* MBCircularProgressBarLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EF374689CD2C7341941F8EBE555B964 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B329893F915A170B891E3DD77F45B1EC /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C104F51E6D7A5D7669AEBDD2DF410C /* YTPlayerView.m */; };
+		B4BB9632B410AE70CCEC18CA02F4C48E /* MBCircularProgressBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E002756ADBB97AFF2D694DF34DB7FC0 /* MBCircularProgressBarView.m */; };
+		C9558B94B60D8AE71B4FFAD655FF3562 /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D731507862BBDD53668E6CF3BC90546 /* example.png */; };
+		CCCC3058CA8FCD02B9D38E7F50F56D83 /* MBCircularProgressBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E855CAA193A878B1F1C3C6CABA6057 /* MBCircularProgressBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D777888E19DE0E9495082EA959E75838 /* Pods-LivingHealthy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3B7311CECFF5793F1B1F14E9F6B573 /* Pods-LivingHealthy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAB517BA1E5F9BC057D50ACF9D7301A6 /* youtube-ios-player-helper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52655AF1BC45FA4EACED7FBB1420350D /* youtube-ios-player-helper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF702DFFDA4EB848608C78F1E651DA1D /* youtube-ios-player-helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDBFCA60CC8E8933A5E911DE3352B39 /* youtube-ios-player-helper-dummy.m */; };
+		F0A2A519EDFE8BF62530A46DEC8E8402 /* MBCircularProgressBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7017913B76B6C461812EFC6EDDF796F /* MBCircularProgressBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F19C698DA0C0DE5096EACCDE63A174D0 /* MBCircularProgressBar-MBCircularProgressBar in Resources */ = {isa = PBXBuildFile; fileRef = 7CB12AE789452060456EBCEC68360820 /* MBCircularProgressBar-MBCircularProgressBar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		23BD7E08F87C7632E9564D556FE720DA /* PBXContainerItemProxy */ = {
+		0C459CCCA29D333735F67E051462B794 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D1A7AF186BE136DE56FD5699070589B8;
 			remoteInfo = "youtube-ios-player-helper";
 		};
-		2CAD0CBA6DC5982ACC0FC8DC07EE73B0 /* PBXContainerItemProxy */ = {
+		4A9FD08A82BF255E0806E1CC7272DA9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BA5E348E64AFAB335EC680A67122E64;
+			remoteInfo = "MBCircularProgressBar-MBCircularProgressBar";
+		};
+		56D03B6E9A1CB85D5AC39F24E1C509BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3820B3D61248CD2A225DA312BC70F110;
 			remoteInfo = "youtube-ios-player-helper-Assets";
 		};
+		8509EEF1C5E50C4264412C72683677F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46FA1E1D7ABC29B96888E2D9085D474F;
+			remoteInfo = MBCircularProgressBar;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0AB1431502040E4856637E89EC5A21A3 /* Pods-LivingHealthy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LivingHealthy-dummy.m"; sourceTree = "<group>"; };
+		0D731507862BBDD53668E6CF3BC90546 /* example.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = example.png; path = Pod/Assets/example.png; sourceTree = "<group>"; };
+		111F661A28181271E938C907FD2D59E2 /* MBCircularProgressBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBCircularProgressBar-prefix.pch"; sourceTree = "<group>"; };
 		1E3B7311CECFF5793F1B1F14E9F6B573 /* Pods-LivingHealthy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LivingHealthy-umbrella.h"; sourceTree = "<group>"; };
-		221B06E63B8D07B2586C67D6AB275F92 /* youtube-ios-player-helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.debug.xcconfig"; sourceTree = "<group>"; };
-		248A7DEADB8B6474E6A92C731CC67BC9 /* youtube-ios-player-helper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "youtube-ios-player-helper-dummy.m"; sourceTree = "<group>"; };
-		3D773F205A1EB7E2EBBF861888919C42 /* YTPlayerView-iframe-player.html */ = {isa = PBXFileReference; includeInIndex = 1; name = "YTPlayerView-iframe-player.html"; path = "Sources/Assets/YTPlayerView-iframe-player.html"; sourceTree = "<group>"; };
+		27E855CAA193A878B1F1C3C6CABA6057 /* MBCircularProgressBarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBCircularProgressBarView.h; path = Pod/Classes/MBCircularProgressBarView.h; sourceTree = "<group>"; };
+		2EDBFCA60CC8E8933A5E911DE3352B39 /* youtube-ios-player-helper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "youtube-ios-player-helper-dummy.m"; sourceTree = "<group>"; };
+		2F7B8E342ED72F63E1B4B809BAFBF26D /* youtube-ios-player-helper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "youtube-ios-player-helper-Info.plist"; sourceTree = "<group>"; };
+		3C0F67863E86187997A375C231A8E141 /* MBCircularProgressBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBCircularProgressBar.modulemap; sourceTree = "<group>"; };
+		43C25652600A892C7E6AC3E66C37757A /* MBCircularProgressBarLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBCircularProgressBarLayer.m; path = Pod/Classes/MBCircularProgressBarLayer.m; sourceTree = "<group>"; };
 		45409B64A8A4BB8372D0DABDCF6C4A71 /* Pods-LivingHealthy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LivingHealthy.release.xcconfig"; sourceTree = "<group>"; };
-		4AEA34178540C08DD8DD6FD544C6792F /* youtube-ios-player-helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.release.xcconfig"; sourceTree = "<group>"; };
+		4AE49AF89CEF1ED9A853C765E52061A4 /* YTPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YTPlayerView.h; path = Sources/YTPlayerView.h; sourceTree = "<group>"; };
 		4E108CA8F561492DBC23772A8E05044B /* Pods-LivingHealthy-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LivingHealthy-Info.plist"; sourceTree = "<group>"; };
 		4EFCAC72D3ACB5A47EAC321CE4ABDF21 /* Pods-LivingHealthy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LivingHealthy.modulemap"; sourceTree = "<group>"; };
+		506D7921804CE8FD7832A77534B059A2 /* ResourceBundle-MBCircularProgressBar-MBCircularProgressBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MBCircularProgressBar-MBCircularProgressBar-Info.plist"; sourceTree = "<group>"; };
+		52655AF1BC45FA4EACED7FBB1420350D /* youtube-ios-player-helper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-umbrella.h"; sourceTree = "<group>"; };
+		5D3F0476BE3C42D554A511E8215128A0 /* MBCircularProgressBarLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBCircularProgressBarLayer.h; path = Pod/Classes/MBCircularProgressBarLayer.h; sourceTree = "<group>"; };
+		640B2CA36D53D84D0129B12A7FAC2E0B /* MBCircularProgressBar */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBCircularProgressBar; path = MBCircularProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D0FFC9F5FA8A3D61C1219318C704562 /* youtube-ios-player-helper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-prefix.pch"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7569651AEA176DA2E79757E0445FB591 /* MBCircularProgressBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBCircularProgressBar-dummy.m"; sourceTree = "<group>"; };
+		7CB12AE789452060456EBCEC68360820 /* MBCircularProgressBar-MBCircularProgressBar */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "MBCircularProgressBar-MBCircularProgressBar"; path = MBCircularProgressBar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E002756ADBB97AFF2D694DF34DB7FC0 /* MBCircularProgressBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBCircularProgressBarView.m; path = Pod/Classes/MBCircularProgressBarView.m; sourceTree = "<group>"; };
 		8345598116FB6B31888BC8CE9A364769 /* Pods-LivingHealthy */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LivingHealthy"; path = Pods_LivingHealthy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8498A1B2C60117E181CA67921DDAE0B6 /* youtube-ios-player-helper */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "youtube-ios-player-helper"; path = youtube_ios_player_helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		938045397E828D6C23CFB6731DE67035 /* MBCircularProgressBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBCircularProgressBar.debug.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1FF5E2742007D012B650E911622DFDF /* youtube-ios-player-helper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-umbrella.h"; sourceTree = "<group>"; };
+		A37D86EB61D4B4561048ECF3D546CFE3 /* MBCircularProgressBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBCircularProgressBar.release.xcconfig; sourceTree = "<group>"; };
 		B3C99C76897F25F75F0FD63C7980861F /* Pods-LivingHealthy-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LivingHealthy-frameworks.sh"; sourceTree = "<group>"; };
-		BDB8290E299516843AFF3B8C541CC9DB /* YTPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YTPlayerView.h; path = Sources/YTPlayerView.h; sourceTree = "<group>"; };
-		D157CDBA89E586288E59FCE4CD21C39C /* youtube-ios-player-helper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "youtube-ios-player-helper-Info.plist"; sourceTree = "<group>"; };
+		B6A3AEACB5A259F4D8D4172DB5A8A6F6 /* youtube-ios-player-helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.debug.xcconfig"; sourceTree = "<group>"; };
+		C1C104F51E6D7A5D7669AEBDD2DF410C /* YTPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YTPlayerView.m; path = Sources/YTPlayerView.m; sourceTree = "<group>"; };
+		C2716C5EB0F9291B18737474804C27A5 /* youtube-ios-player-helper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "youtube-ios-player-helper.modulemap"; sourceTree = "<group>"; };
 		D674200BB0575198145B5455CF13275F /* youtube-ios-player-helper-Assets */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "youtube-ios-player-helper-Assets"; path = Assets.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7017913B76B6C461812EFC6EDDF796F /* MBCircularProgressBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBCircularProgressBar-umbrella.h"; sourceTree = "<group>"; };
+		D7DABB38DC4A6193A274050247430F5D /* ResourceBundle-Assets-youtube-ios-player-helper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Assets-youtube-ios-player-helper-Info.plist"; sourceTree = "<group>"; };
+		DC1F93FF3AE13AD40B230C0C9DEDD1E8 /* YTPlayerView-iframe-player.html */ = {isa = PBXFileReference; includeInIndex = 1; name = "YTPlayerView-iframe-player.html"; path = "Sources/Assets/YTPlayerView-iframe-player.html"; sourceTree = "<group>"; };
 		DFB20B92D8D51A1E9BAC1DE9727C5572 /* Pods-LivingHealthy-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LivingHealthy-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E5C923EFC82AEAF602C802BCDF4A6FED /* youtube-ios-player-helper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-prefix.pch"; sourceTree = "<group>"; };
 		E9E768DB5CFC05C14E5D007ECDD9E353 /* Pods-LivingHealthy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LivingHealthy.debug.xcconfig"; sourceTree = "<group>"; };
-		EC40ED08CE2F80B6BE2A51A92E46AEE2 /* youtube-ios-player-helper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "youtube-ios-player-helper.modulemap"; sourceTree = "<group>"; };
-		EFC510FFA2019788C234C46692616CB1 /* YTPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YTPlayerView.m; path = Sources/YTPlayerView.m; sourceTree = "<group>"; };
+		F10D887401F0F220FA5F16756E320C76 /* youtube-ios-player-helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.release.xcconfig"; sourceTree = "<group>"; };
 		F6997D8FAE80EF4C2CB150DFF218AC1E /* Pods-LivingHealthy-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LivingHealthy-acknowledgements.plist"; sourceTree = "<group>"; };
-		FD3B1CBAA23C0D9656711AF0AC40A224 /* ResourceBundle-Assets-youtube-ios-player-helper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Assets-youtube-ios-player-helper-Info.plist"; sourceTree = "<group>"; };
+		F89282CA900CEF2A8D2EB8E68875E40C /* MBCircularProgressBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBCircularProgressBar-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3B1E648274A7C2D3311EBBE6662CFE09 /* Frameworks */ = {
+		3720773679F26F94F00C8F4686425FD7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C7B59BF6515B5893C2FFF7146AC117B /* Foundation.framework in Frameworks */,
+				3AF59972CF9DE7354BF21402CC674065 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +119,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF8D03CDB818E30D5BBDE2CB0E3BC5E3 /* Frameworks */ = {
+		8B0B3E939F120B81A9D67187C8CC2197 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EF374689CD2C7341941F8EBE555B964 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6CFA9E1571B25B49B24A4F63D2D0D8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6BCF5A8584A68C75853D74135EF3BA4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -108,16 +161,30 @@
 			path = "Target Support Files/Pods-LivingHealthy";
 			sourceTree = "<group>";
 		};
-		2E74FAFAE297ADB55FF071A22A0C3E23 /* youtube-ios-player-helper */ = {
+		17A0DB9E61174EB4C47FC1749E5D0631 /* MBCircularProgressBar */ = {
 			isa = PBXGroup;
 			children = (
-				BDB8290E299516843AFF3B8C541CC9DB /* YTPlayerView.h */,
-				EFC510FFA2019788C234C46692616CB1 /* YTPlayerView.m */,
-				6856C6663F5500C8120372B3D9767F5F /* Resources */,
-				F803CD644AC9EBBAE2A447B0CBB973A1 /* Support Files */,
+				5D3F0476BE3C42D554A511E8215128A0 /* MBCircularProgressBarLayer.h */,
+				43C25652600A892C7E6AC3E66C37757A /* MBCircularProgressBarLayer.m */,
+				27E855CAA193A878B1F1C3C6CABA6057 /* MBCircularProgressBarView.h */,
+				7E002756ADBB97AFF2D694DF34DB7FC0 /* MBCircularProgressBarView.m */,
+				DB4248CCA2F55B41DCB8A41072272C69 /* Resources */,
+				B5B36FA2D9C159381C4B38FC96631E83 /* Support Files */,
 			);
-			name = "youtube-ios-player-helper";
-			path = "youtube-ios-player-helper";
+			name = MBCircularProgressBar;
+			path = MBCircularProgressBar;
+			sourceTree = "<group>";
+		};
+		224598C981C67F4DF9F1D9822CD2FBDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				640B2CA36D53D84D0129B12A7FAC2E0B /* MBCircularProgressBar */,
+				7CB12AE789452060456EBCEC68360820 /* MBCircularProgressBar-MBCircularProgressBar */,
+				8345598116FB6B31888BC8CE9A364769 /* Pods-LivingHealthy */,
+				8498A1B2C60117E181CA67921DDAE0B6 /* youtube-ios-player-helper */,
+				D674200BB0575198145B5455CF13275F /* youtube-ios-player-helper-Assets */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -128,20 +195,44 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6856C6663F5500C8120372B3D9767F5F /* Resources */ = {
+		74D3BED04AAC621D31AAC336C226071F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3D773F205A1EB7E2EBBF861888919C42 /* YTPlayerView-iframe-player.html */,
+				DC1F93FF3AE13AD40B230C0C9DEDD1E8 /* YTPlayerView-iframe-player.html */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		7E82C774E6F33AA2A504913032DF4E3D /* Pods */ = {
+		77AC6A8A1C2E2C8756F02944ADD07FA0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2E74FAFAE297ADB55FF071A22A0C3E23 /* youtube-ios-player-helper */,
+				D7DABB38DC4A6193A274050247430F5D /* ResourceBundle-Assets-youtube-ios-player-helper-Info.plist */,
+				C2716C5EB0F9291B18737474804C27A5 /* youtube-ios-player-helper.modulemap */,
+				2EDBFCA60CC8E8933A5E911DE3352B39 /* youtube-ios-player-helper-dummy.m */,
+				2F7B8E342ED72F63E1B4B809BAFBF26D /* youtube-ios-player-helper-Info.plist */,
+				6D0FFC9F5FA8A3D61C1219318C704562 /* youtube-ios-player-helper-prefix.pch */,
+				52655AF1BC45FA4EACED7FBB1420350D /* youtube-ios-player-helper-umbrella.h */,
+				B6A3AEACB5A259F4D8D4172DB5A8A6F6 /* youtube-ios-player-helper.debug.xcconfig */,
+				F10D887401F0F220FA5F16756E320C76 /* youtube-ios-player-helper.release.xcconfig */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/youtube-ios-player-helper";
+			sourceTree = "<group>";
+		};
+		B5B36FA2D9C159381C4B38FC96631E83 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C0F67863E86187997A375C231A8E141 /* MBCircularProgressBar.modulemap */,
+				7569651AEA176DA2E79757E0445FB591 /* MBCircularProgressBar-dummy.m */,
+				F89282CA900CEF2A8D2EB8E68875E40C /* MBCircularProgressBar-Info.plist */,
+				111F661A28181271E938C907FD2D59E2 /* MBCircularProgressBar-prefix.pch */,
+				D7017913B76B6C461812EFC6EDDF796F /* MBCircularProgressBar-umbrella.h */,
+				938045397E828D6C23CFB6731DE67035 /* MBCircularProgressBar.debug.xcconfig */,
+				A37D86EB61D4B4561048ECF3D546CFE3 /* MBCircularProgressBar.release.xcconfig */,
+				506D7921804CE8FD7832A77534B059A2 /* ResourceBundle-MBCircularProgressBar-MBCircularProgressBar-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBCircularProgressBar";
 			sourceTree = "<group>";
 		};
 		C37A0D94CFA20E0D5D9AE2F3BB9F6237 /* Targets Support Files */ = {
@@ -157,8 +248,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				7E82C774E6F33AA2A504913032DF4E3D /* Pods */,
-				D6A06DB2A52EAA4005A28A22411080DC /* Products */,
+				FBB30E7D464EB357ACA57071F9046E05 /* Pods */,
+				224598C981C67F4DF9F1D9822CD2FBDC /* Products */,
 				C37A0D94CFA20E0D5D9AE2F3BB9F6237 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -171,30 +262,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D6A06DB2A52EAA4005A28A22411080DC /* Products */ = {
+		DB4248CCA2F55B41DCB8A41072272C69 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8345598116FB6B31888BC8CE9A364769 /* Pods-LivingHealthy */,
-				8498A1B2C60117E181CA67921DDAE0B6 /* youtube-ios-player-helper */,
-				D674200BB0575198145B5455CF13275F /* youtube-ios-player-helper-Assets */,
+				0D731507862BBDD53668E6CF3BC90546 /* example.png */,
 			);
-			name = Products;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		F803CD644AC9EBBAE2A447B0CBB973A1 /* Support Files */ = {
+		EE72887EE5160D67B331CB5E85A5D3D2 /* youtube-ios-player-helper */ = {
 			isa = PBXGroup;
 			children = (
-				FD3B1CBAA23C0D9656711AF0AC40A224 /* ResourceBundle-Assets-youtube-ios-player-helper-Info.plist */,
-				EC40ED08CE2F80B6BE2A51A92E46AEE2 /* youtube-ios-player-helper.modulemap */,
-				248A7DEADB8B6474E6A92C731CC67BC9 /* youtube-ios-player-helper-dummy.m */,
-				D157CDBA89E586288E59FCE4CD21C39C /* youtube-ios-player-helper-Info.plist */,
-				E5C923EFC82AEAF602C802BCDF4A6FED /* youtube-ios-player-helper-prefix.pch */,
-				A1FF5E2742007D012B650E911622DFDF /* youtube-ios-player-helper-umbrella.h */,
-				221B06E63B8D07B2586C67D6AB275F92 /* youtube-ios-player-helper.debug.xcconfig */,
-				4AEA34178540C08DD8DD6FD544C6792F /* youtube-ios-player-helper.release.xcconfig */,
+				4AE49AF89CEF1ED9A853C765E52061A4 /* YTPlayerView.h */,
+				C1C104F51E6D7A5D7669AEBDD2DF410C /* YTPlayerView.m */,
+				74D3BED04AAC621D31AAC336C226071F /* Resources */,
+				77AC6A8A1C2E2C8756F02944ADD07FA0 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/youtube-ios-player-helper";
+			name = "youtube-ios-player-helper";
+			path = "youtube-ios-player-helper";
+			sourceTree = "<group>";
+		};
+		FBB30E7D464EB357ACA57071F9046E05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17A0DB9E61174EB4C47FC1749E5D0631 /* MBCircularProgressBar */,
+				EE72887EE5160D67B331CB5E85A5D3D2 /* youtube-ios-player-helper */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,11 +303,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0BCE24A9CB16CB10499884A89B78BD3 /* Headers */ = {
+		444A043617DA5DACB36FA98280B0A99E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1684AC6622FED131FD0496A2B449688 /* Pods-LivingHealthy-umbrella.h in Headers */,
+				F0A2A519EDFE8BF62530A46DEC8E8402 /* MBCircularProgressBar-umbrella.h in Headers */,
+				9A2923EE6EC1969B993224C9B29D2273 /* MBCircularProgressBarLayer.h in Headers */,
+				CCCC3058CA8FCD02B9D38E7F50F56D83 /* MBCircularProgressBarView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1A0C6B12D70DAC4B2F1E4746CD7FED6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D777888E19DE0E9495082EA959E75838 /* Pods-LivingHealthy-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,11 +326,11 @@
 /* Begin PBXNativeTarget section */
 		3820B3D61248CD2A225DA312BC70F110 /* youtube-ios-player-helper-Assets */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A91A258237D533E63AF7466C0C852007 /* Build configuration list for PBXNativeTarget "youtube-ios-player-helper-Assets" */;
+			buildConfigurationList = 1FC6634D004140551C88B16723320287 /* Build configuration list for PBXNativeTarget "youtube-ios-player-helper-Assets" */;
 			buildPhases = (
-				48EEA51BFEE8EE1E9A67FBF86228912D /* Sources */,
-				CF8D03CDB818E30D5BBDE2CB0E3BC5E3 /* Frameworks */,
-				8C86E4D3AB7BFE81C3DEA58D41FC8CFE /* Resources */,
+				B244E47E2F476F6454AFC2213DEAAD8B /* Sources */,
+				E6CFA9E1571B25B49B24A4F63D2D0D8C /* Frameworks */,
+				B46DFF91C065E03F22122F0603C471E9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -237,19 +341,56 @@
 			productReference = D674200BB0575198145B5455CF13275F /* youtube-ios-player-helper-Assets */;
 			productType = "com.apple.product-type.bundle";
 		};
-		A70059AC872C689BF9F134A09EE3B4D4 /* Pods-LivingHealthy */ = {
+		46FA1E1D7ABC29B96888E2D9085D474F /* MBCircularProgressBar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 31E403CBBA8A49E9D43869E4D94505F6 /* Build configuration list for PBXNativeTarget "Pods-LivingHealthy" */;
+			buildConfigurationList = 5AD04FF097EB27A5CDEF787232EBEA72 /* Build configuration list for PBXNativeTarget "MBCircularProgressBar" */;
 			buildPhases = (
-				A0BCE24A9CB16CB10499884A89B78BD3 /* Headers */,
-				367F5289E2B2C3813F12CE994CA262A0 /* Sources */,
-				3B1E648274A7C2D3311EBBE6662CFE09 /* Frameworks */,
-				5173EF41883A01AE9337C87262FEA668 /* Resources */,
+				444A043617DA5DACB36FA98280B0A99E /* Headers */,
+				DDC0FD3C31B394FF4EBD6499334D2BF7 /* Sources */,
+				3720773679F26F94F00C8F4686425FD7 /* Frameworks */,
+				25728E4AFAFE1E1E731EBE0C7F9EF2A6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D1F87BD619D5F7D8C2C1600E1C40E9BE /* PBXTargetDependency */,
+				05D9F348657A557225C75C8D89CF18F4 /* PBXTargetDependency */,
+			);
+			name = MBCircularProgressBar;
+			productName = MBCircularProgressBar;
+			productReference = 640B2CA36D53D84D0129B12A7FAC2E0B /* MBCircularProgressBar */;
+			productType = "com.apple.product-type.framework";
+		};
+		8BA5E348E64AFAB335EC680A67122E64 /* MBCircularProgressBar-MBCircularProgressBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7178BCE1360E8B4CEAEA660709E84E85 /* Build configuration list for PBXNativeTarget "MBCircularProgressBar-MBCircularProgressBar" */;
+			buildPhases = (
+				4C9DD4286A206533F3204D1A7269473C /* Sources */,
+				F6BCF5A8584A68C75853D74135EF3BA4 /* Frameworks */,
+				759CF57C8D24125CC7BF008904D9760F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MBCircularProgressBar-MBCircularProgressBar";
+			productName = MBCircularProgressBar;
+			productReference = 7CB12AE789452060456EBCEC68360820 /* MBCircularProgressBar-MBCircularProgressBar */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A70059AC872C689BF9F134A09EE3B4D4 /* Pods-LivingHealthy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE5B53883794FF1C0BF2F01A824412A9 /* Build configuration list for PBXNativeTarget "Pods-LivingHealthy" */;
+			buildPhases = (
+				C1A0C6B12D70DAC4B2F1E4746CD7FED6 /* Headers */,
+				0D5EF5FA1C6CA54845D5F222F4B70DC6 /* Sources */,
+				8B0B3E939F120B81A9D67187C8CC2197 /* Frameworks */,
+				D71F93B77C6044C1026D487F68C6A6E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14D8968B961EE455C2ED56AC95DA38CF /* PBXTargetDependency */,
+				3E10E0BFA76B103E7D7441E037BEE708 /* PBXTargetDependency */,
 			);
 			name = "Pods-LivingHealthy";
 			productName = Pods_LivingHealthy;
@@ -268,7 +409,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A39A0FBA14A3D5BDC47CDD593094B05F /* PBXTargetDependency */,
+				F26DCCDFACB4846E9B5A818F647AD1F4 /* PBXTargetDependency */,
 			);
 			name = "youtube-ios-player-helper";
 			productName = youtube_ios_player_helper;
@@ -293,10 +434,12 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = D6A06DB2A52EAA4005A28A22411080DC /* Products */;
+			productRefGroup = 224598C981C67F4DF9F1D9822CD2FBDC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				46FA1E1D7ABC29B96888E2D9085D474F /* MBCircularProgressBar */,
+				8BA5E348E64AFAB335EC680A67122E64 /* MBCircularProgressBar-MBCircularProgressBar */,
 				A70059AC872C689BF9F134A09EE3B4D4 /* Pods-LivingHealthy */,
 				D1A7AF186BE136DE56FD5699070589B8 /* youtube-ios-player-helper */,
 				3820B3D61248CD2A225DA312BC70F110 /* youtube-ios-player-helper-Assets */,
@@ -305,10 +448,19 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5173EF41883A01AE9337C87262FEA668 /* Resources */ = {
+		25728E4AFAFE1E1E731EBE0C7F9EF2A6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19C698DA0C0DE5096EACCDE63A174D0 /* MBCircularProgressBar-MBCircularProgressBar in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		759CF57C8D24125CC7BF008904D9760F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9558B94B60D8AE71B4FFAD655FF3562 /* example.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,29 +472,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8C86E4D3AB7BFE81C3DEA58D41FC8CFE /* Resources */ = {
+		B46DFF91C065E03F22122F0603C471E9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A68EB0E0E52D005974D46ACBF6C4096A /* YTPlayerView-iframe-player.html in Resources */,
+				52A9E0586A2B09490766B11C20B5ABE9 /* YTPlayerView-iframe-player.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D71F93B77C6044C1026D487F68C6A6E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		367F5289E2B2C3813F12CE994CA262A0 /* Sources */ = {
+		0D5EF5FA1C6CA54845D5F222F4B70DC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3345018E2640B1B1F58E1E3616352890 /* Pods-LivingHealthy-dummy.m in Sources */,
+				366CCE43841FAD9604BF51F96F6C43CE /* Pods-LivingHealthy-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		48EEA51BFEE8EE1E9A67FBF86228912D /* Sources */ = {
+		4C9DD4286A206533F3204D1A7269473C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B244E47E2F476F6454AFC2213DEAAD8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC0FD3C31B394FF4EBD6499334D2BF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2018B8EEBB508956A8FD7C74A42FD143 /* MBCircularProgressBar-dummy.m in Sources */,
+				0EAF3D3A4225750A85D9907D125497E9 /* MBCircularProgressBarLayer.m in Sources */,
+				B4BB9632B410AE70CCEC18CA02F4C48E /* MBCircularProgressBarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,21 +534,102 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A39A0FBA14A3D5BDC47CDD593094B05F /* PBXTargetDependency */ = {
+		05D9F348657A557225C75C8D89CF18F4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "youtube-ios-player-helper-Assets";
-			target = 3820B3D61248CD2A225DA312BC70F110 /* youtube-ios-player-helper-Assets */;
-			targetProxy = 2CAD0CBA6DC5982ACC0FC8DC07EE73B0 /* PBXContainerItemProxy */;
+			name = "MBCircularProgressBar-MBCircularProgressBar";
+			target = 8BA5E348E64AFAB335EC680A67122E64 /* MBCircularProgressBar-MBCircularProgressBar */;
+			targetProxy = 4A9FD08A82BF255E0806E1CC7272DA9D /* PBXContainerItemProxy */;
 		};
-		D1F87BD619D5F7D8C2C1600E1C40E9BE /* PBXTargetDependency */ = {
+		14D8968B961EE455C2ED56AC95DA38CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBCircularProgressBar;
+			target = 46FA1E1D7ABC29B96888E2D9085D474F /* MBCircularProgressBar */;
+			targetProxy = 8509EEF1C5E50C4264412C72683677F1 /* PBXContainerItemProxy */;
+		};
+		3E10E0BFA76B103E7D7441E037BEE708 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "youtube-ios-player-helper";
 			target = D1A7AF186BE136DE56FD5699070589B8 /* youtube-ios-player-helper */;
-			targetProxy = 23BD7E08F87C7632E9564D556FE720DA /* PBXContainerItemProxy */;
+			targetProxy = 0C459CCCA29D333735F67E051462B794 /* PBXContainerItemProxy */;
+		};
+		F26DCCDFACB4846E9B5A818F647AD1F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "youtube-ios-player-helper-Assets";
+			target = 3820B3D61248CD2A225DA312BC70F110 /* youtube-ios-player-helper-Assets */;
+			targetProxy = 56D03B6E9A1CB85D5AC39F24E1C509BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		00B2315BE612316635932618FF6A64FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A37D86EB61D4B4561048ECF3D546CFE3 /* MBCircularProgressBar.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar.modulemap";
+				PRODUCT_MODULE_NAME = MBCircularProgressBar;
+				PRODUCT_NAME = MBCircularProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1F686D321CC940AD2FE01F2CA4AC8A78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 938045397E828D6C23CFB6731DE67035 /* MBCircularProgressBar.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar.modulemap";
+				PRODUCT_MODULE_NAME = MBCircularProgressBar;
+				PRODUCT_NAME = MBCircularProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		4214E6946993DF02ED98D89047C64016 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -439,46 +696,41 @@
 			};
 			name = Debug;
 		};
-		5B0CE27C33439E1A0917F64553771268 /* Debug */ = {
+		4748BBAF6CC34F80FA3B0AE62CC08C0A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9E768DB5CFC05C14E5D007ECDD9E353 /* Pods-LivingHealthy.debug.xcconfig */;
+			baseConfigurationReference = 938045397E828D6C23CFB6731DE67035 /* MBCircularProgressBar.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LivingHealthy/Pods-LivingHealthy-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LivingHealthy/Pods-LivingHealthy.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MBCircularProgressBar";
+				IBSC_MODULE = MBCircularProgressBar;
+				INFOPLIST_FILE = "Target Support Files/MBCircularProgressBar/ResourceBundle-MBCircularProgressBar-MBCircularProgressBar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = MBCircularProgressBar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
+		548DD9DFE7CC3B0C2509EA694E0556BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F10D887401F0F220FA5F16756E320C76 /* youtube-ios-player-helper.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/youtube-ios-player-helper";
+				IBSC_MODULE = youtube_ios_player_helper;
+				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/ResourceBundle-Assets-youtube-ios-player-helper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = Assets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		5D9FC5EAAE5F46050FA73E4AD36E758A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 221B06E63B8D07B2586C67D6AB275F92 /* youtube-ios-player-helper.debug.xcconfig */;
+			baseConfigurationReference = B6A3AEACB5A259F4D8D4172DB5A8A6F6 /* youtube-ios-player-helper.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -511,7 +763,75 @@
 			};
 			name = Debug;
 		};
-		5F488546C5495E710C3480B580AA2393 /* Release */ = {
+		809719E17778775AAD817D885191A198 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F10D887401F0F220FA5F16756E320C76 /* youtube-ios-player-helper.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper.modulemap";
+				PRODUCT_MODULE_NAME = youtube_ios_player_helper;
+				PRODUCT_NAME = youtube_ios_player_helper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8347287A440ABBC5C18DCB7BB9E07834 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A37D86EB61D4B4561048ECF3D546CFE3 /* MBCircularProgressBar.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MBCircularProgressBar";
+				IBSC_MODULE = MBCircularProgressBar;
+				INFOPLIST_FILE = "Target Support Files/MBCircularProgressBar/ResourceBundle-MBCircularProgressBar-MBCircularProgressBar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = MBCircularProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		936EE1FD0A5819AEE5EA456C2DF9A5F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6A3AEACB5A259F4D8D4172DB5A8A6F6 /* youtube-ios-player-helper.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/youtube-ios-player-helper";
+				IBSC_MODULE = youtube_ios_player_helper;
+				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/ResourceBundle-Assets-youtube-ios-player-helper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = Assets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C91F56B20A40A1A8E432A9193433CE5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 45409B64A8A4BB8372D0DABDCF6C4A71 /* Pods-LivingHealthy.release.xcconfig */;
 			buildSettings = {
@@ -548,74 +868,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		809719E17778775AAD817D885191A198 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AEA34178540C08DD8DD6FD544C6792F /* youtube-ios-player-helper.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper.modulemap";
-				PRODUCT_MODULE_NAME = youtube_ios_player_helper;
-				PRODUCT_NAME = youtube_ios_player_helper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9209C683FFC6F1A18E6628DB84364E0D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AEA34178540C08DD8DD6FD544C6792F /* youtube-ios-player-helper.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/youtube-ios-player-helper";
-				IBSC_MODULE = youtube_ios_player_helper;
-				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/ResourceBundle-Assets-youtube-ios-player-helper-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = Assets;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		A5FA35BF97BDAF8210A1E36E98A8EA8D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 221B06E63B8D07B2586C67D6AB275F92 /* youtube-ios-player-helper.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/youtube-ios-player-helper";
-				IBSC_MODULE = youtube_ios_player_helper;
-				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/ResourceBundle-Assets-youtube-ios-player-helper-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = Assets;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
 		};
 		CD85FD90473CFBE797E4264E7BBC70AF /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -679,14 +931,51 @@
 			};
 			name = Release;
 		};
+		F70D80D23012EB1D6338A7EE321F2C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9E768DB5CFC05C14E5D007ECDD9E353 /* Pods-LivingHealthy.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LivingHealthy/Pods-LivingHealthy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LivingHealthy/Pods-LivingHealthy.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		31E403CBBA8A49E9D43869E4D94505F6 /* Build configuration list for PBXNativeTarget "Pods-LivingHealthy" */ = {
+		1FC6634D004140551C88B16723320287 /* Build configuration list for PBXNativeTarget "youtube-ios-player-helper-Assets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5B0CE27C33439E1A0917F64553771268 /* Debug */,
-				5F488546C5495E710C3480B580AA2393 /* Release */,
+				936EE1FD0A5819AEE5EA456C2DF9A5F7 /* Debug */,
+				548DD9DFE7CC3B0C2509EA694E0556BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -700,11 +989,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A91A258237D533E63AF7466C0C852007 /* Build configuration list for PBXNativeTarget "youtube-ios-player-helper-Assets" */ = {
+		5AD04FF097EB27A5CDEF787232EBEA72 /* Build configuration list for PBXNativeTarget "MBCircularProgressBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A5FA35BF97BDAF8210A1E36E98A8EA8D /* Debug */,
-				9209C683FFC6F1A18E6628DB84364E0D /* Release */,
+				1F686D321CC940AD2FE01F2CA4AC8A78 /* Debug */,
+				00B2315BE612316635932618FF6A64FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7178BCE1360E8B4CEAEA660709E84E85 /* Build configuration list for PBXNativeTarget "MBCircularProgressBar-MBCircularProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4748BBAF6CC34F80FA3B0AE62CC08C0A /* Debug */,
+				8347287A440ABBC5C18DCB7BB9E07834 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -714,6 +1012,15 @@
 			buildConfigurations = (
 				5D9FC5EAAE5F46050FA73E4AD36E758A /* Debug */,
 				809719E17778775AAD817D885191A198 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE5B53883794FF1C0BF2F01A824412A9 /* Build configuration list for PBXNativeTarget "Pods-LivingHealthy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F70D80D23012EB1D6338A7EE321F2C60 /* Debug */,
+				C91F56B20A40A1A8E432A9193433CE5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
