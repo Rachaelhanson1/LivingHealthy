@@ -9,19 +9,13 @@ import UIKit
 import SwiftUI
 
 class WorkoutsViewController: UIViewController {
-    
-    var selectedName: String = ""
-    var beginner: Int = 0
-    
+
   
     @IBOutlet weak var testLabel: UILabel!
     
     @IBOutlet weak var trailing: NSLayoutConstraint!
     @IBOutlet weak var leading: NSLayoutConstraint!
-    
-//    var beginner: Bool = true
-//    var intermediate: Int = 0
-//    var advanced: Int = 0
+
     
     @IBOutlet weak var contView: UIView!
     
@@ -29,19 +23,17 @@ class WorkoutsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //to host the UIContainerView with the SwiftUI content for filtering and sorting
         
+        //to host the UIContainerView with the SwiftUI content for filtering and sorting
         let tabbar = tabBarController as! mainTabBarViewController
       
-        testLabel.text = tabbar.name
 
-        
-        let beginner = tabbar.name
+        let beginner = tabbar.begin
         let intermediate = tabbar.inter
         let advanced = tabbar.advan
         
-
-        if beginner == "yes" {
+        //if the user chooses beginner
+        if (beginner == 1) {
             let childView = UIHostingController(rootView: ListViewB())
                    addChild(childView)
                    childView.view.frame = contView.bounds
@@ -49,32 +41,31 @@ class WorkoutsViewController: UIViewController {
                    childView.didMove(toParent: self)
         }
         
+        //if the user chooses intermediate
         else if (intermediate == 1){
-            let childView = UIHostingController(rootView: ListViewB())
+            let childView = UIHostingController(rootView: ListViewI())
                    addChild(childView)
                    childView.view.frame = contView.bounds
                    contView.addSubview(childView.view)
                    childView.didMove(toParent: self)
         }
-        
-        else if advanced == 1 {
-            let childView = UIHostingController(rootView: ListView())
+        //if the user chooses advanced
+        else if (advanced == 1) {
+            let childView = UIHostingController(rootView: ListViewA())
                    addChild(childView)
                    childView.view.frame = contView.bounds
                    contView.addSubview(childView.view)
                    childView.didMove(toParent: self)
         }
+        //if the user doesn't choose a workout level
         else {
-            let tabbar = mainTabBarViewController()
-           // testLabel.text = tabbar.selectedName
             let childView = UIHostingController(rootView: ListView())
                    addChild(childView)
                    childView.view.frame = contView.bounds
                    contView.addSubview(childView.view)
                    childView.didMove(toParent: self)
             }
-        
-    }
+        }
 
    
     @IBAction func menuTapped(_ sender: Any) {

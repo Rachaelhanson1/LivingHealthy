@@ -34,6 +34,8 @@
 		56EFE6B42811614B0006DF56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56EFE6B32811614B0006DF56 /* Main.storyboard */; };
 		56EFE6BE281196D90006DF56 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFE6BD281196D90006DF56 /* ListView.swift */; };
 		56EFE6C02811E0240006DF56 /* ListViewB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFE6BF2811E0230006DF56 /* ListViewB.swift */; };
+		56EFE6C4281216240006DF56 /* ListViewI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFE6C3281216230006DF56 /* ListViewI.swift */; };
+		56EFE6C6281216930006DF56 /* ListViewA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFE6C5281216930006DF56 /* ListViewA.swift */; };
 		56F0F6F128101F3600BB200F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F0F6F028101F3600BB200F /* WelcomeViewController.swift */; };
 		8036B1AF0A7EF2ED1963B6C1 /* Pods_LivingHealthy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1B8FE9352E070483BF1DAC /* Pods_LivingHealthy.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +75,8 @@
 		56EFE6BC28116F420006DF56 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		56EFE6BD281196D90006DF56 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListView.swift; path = LivingHealthy/SwiftUI/ListView.swift; sourceTree = SOURCE_ROOT; };
 		56EFE6BF2811E0230006DF56 /* ListViewB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewB.swift; sourceTree = "<group>"; };
+		56EFE6C3281216230006DF56 /* ListViewI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewI.swift; sourceTree = "<group>"; };
+		56EFE6C5281216930006DF56 /* ListViewA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewA.swift; sourceTree = "<group>"; };
 		56F0F6F028101F3600BB200F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		81AC9838E627289B5078D95B /* Pods-LivingHealthy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LivingHealthy.debug.xcconfig"; path = "Target Support Files/Pods-LivingHealthy/Pods-LivingHealthy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +139,8 @@
 				56EFE6BD281196D90006DF56 /* ListView.swift */,
 				561A0FF92805CBDF0097BBE7 /* AppBarView.swift */,
 				56EFE6BF2811E0230006DF56 /* ListViewB.swift */,
+				56EFE6C3281216230006DF56 /* ListViewI.swift */,
+				56EFE6C5281216930006DF56 /* ListViewA.swift */,
 			);
 			name = View;
 			path = "../../../../../Desktop/MyDelivery-main/MyDelivery/View";
@@ -349,6 +355,7 @@
 				56EFE6C02811E0240006DF56 /* ListViewB.swift in Sources */,
 				56AAE41C27EDDA8400FAECE3 /* SigninViewController.swift in Sources */,
 				561A10052805CBDF0097BBE7 /* WorkoutView.swift in Sources */,
+				56EFE6C6281216930006DF56 /* ListViewA.swift in Sources */,
 				561A0FFA2805CBDF0097BBE7 /* Workout.swift in Sources */,
 				56EBE3FB27D8E31D00B8BDDF /* ViewController.swift in Sources */,
 				56AAE41E27EDDA9300FAECE3 /* SignupViewController.swift in Sources */,
@@ -358,6 +365,7 @@
 				56B7A78D28083384002C88A4 /* mainTabBarViewController.swift in Sources */,
 				566CC1BB28072BE700D9A247 /* SettingsViewController.swift in Sources */,
 				561A10062805CBDF0097BBE7 /* AppBarView.swift in Sources */,
+				56EFE6C4281216240006DF56 /* ListViewI.swift in Sources */,
 				56ED51142805A3DB005CD48E /* WorkoutsViewController.swift in Sources */,
 				566CC1BD28073E8C00D9A247 /* GoalViewController.swift in Sources */,
 				561A0FFC2805CBDF0097BBE7 /* ListVIewModel.swift in Sources */,

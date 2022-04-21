@@ -22,9 +22,9 @@ class mainTabBarViewController: UITabBarController {
     var firstnameValue: String = "Lily"
     
     
-    var begin: Int = 0
-    var inter: Int = 0
-    var advan: Int = 0
+    var begin: Int?
+    var inter: Int?
+    var advan: Int?
     
     var name: String?
     
