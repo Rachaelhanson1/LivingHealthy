@@ -65,8 +65,6 @@ class SignupViewController: UIViewController {
         
     }
     
-    
-  
         
     func signUp() {
         Auth.auth().createUser(withEmail: email.text!, password: password.text!) { (authResult, error) in

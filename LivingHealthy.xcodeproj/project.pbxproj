@@ -28,11 +28,11 @@
 		56EBE3F727D8E31D00B8BDDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EBE3F627D8E31D00B8BDDF /* AppDelegate.swift */; };
 		56EBE3F927D8E31D00B8BDDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EBE3F827D8E31D00B8BDDF /* SceneDelegate.swift */; };
 		56EBE3FB27D8E31D00B8BDDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EBE3FA27D8E31D00B8BDDF /* ViewController.swift */; };
-		56EBE3FE27D8E31D00B8BDDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56EBE3FC27D8E31D00B8BDDF /* Main.storyboard */; };
 		56EBE40027D8E32000B8BDDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56EBE3FF27D8E32000B8BDDF /* Assets.xcassets */; };
 		56EBE40327D8E32000B8BDDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56EBE40127D8E32000B8BDDF /* LaunchScreen.storyboard */; };
 		56ED51142805A3DB005CD48E /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ED51132805A3DB005CD48E /* WorkoutsViewController.swift */; };
 		56EDE66327F60AD600E6E806 /* FavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EDE66227F60AD600E6E806 /* FavViewController.swift */; };
+		56EFE6B42811614B0006DF56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56EFE6B32811614B0006DF56 /* Main.storyboard */; };
 		56F0F6F128101F3600BB200F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F0F6F028101F3600BB200F /* WelcomeViewController.swift */; };
 		8036B1AF0A7EF2ED1963B6C1 /* Pods_LivingHealthy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1B8FE9352E070483BF1DAC /* Pods_LivingHealthy.framework */; };
 /* End PBXBuildFile section */
@@ -59,12 +59,12 @@
 		56EBE3F627D8E31D00B8BDDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56EBE3F827D8E31D00B8BDDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		56EBE3FA27D8E31D00B8BDDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		56EBE3FD27D8E31D00B8BDDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56EBE3FF27D8E32000B8BDDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56EBE40227D8E32000B8BDDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56EBE40427D8E32000B8BDDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56ED51132805A3DB005CD48E /* WorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewController.swift; sourceTree = "<group>"; };
 		56EDE66227F60AD600E6E806 /* FavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavViewController.swift; sourceTree = "<group>"; };
+		56EFE6B32811614B0006DF56 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		56F0F6F028101F3600BB200F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		81AC9838E627289B5078D95B /* Pods-LivingHealthy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LivingHealthy.debug.xcconfig"; path = "Target Support Files/Pods-LivingHealthy/Pods-LivingHealthy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,7 +174,7 @@
 				56EBE3F627D8E31D00B8BDDF /* AppDelegate.swift */,
 				56EBE3F827D8E31D00B8BDDF /* SceneDelegate.swift */,
 				56EBE3FA27D8E31D00B8BDDF /* ViewController.swift */,
-				56EBE3FC27D8E31D00B8BDDF /* Main.storyboard */,
+				56EFE6B32811614B0006DF56 /* Main.storyboard */,
 				56EBE3FF27D8E32000B8BDDF /* Assets.xcassets */,
 				56EBE40127D8E32000B8BDDF /* LaunchScreen.storyboard */,
 				56EBE40427D8E32000B8BDDF /* Info.plist */,
@@ -266,8 +266,8 @@
 				561A0FFE2805CBDF0097BBE7 /* DBdata.json in Resources */,
 				56EBE40327D8E32000B8BDDF /* LaunchScreen.storyboard in Resources */,
 				56AAE42027EDE03A00FAECE3 /* GoogleService-Info.plist in Resources */,
+				56EFE6B42811614B0006DF56 /* Main.storyboard in Resources */,
 				56EBE40027D8E32000B8BDDF /* Assets.xcassets in Resources */,
-				56EBE3FE27D8E31D00B8BDDF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,14 +345,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		56EBE3FC27D8E31D00B8BDDF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				56EBE3FD27D8E31D00B8BDDF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		56EBE40127D8E32000B8BDDF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
