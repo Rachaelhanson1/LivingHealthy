@@ -55,11 +55,11 @@ class SignupViewController: UIViewController {
             return
         }
         
-//        if (password.text != secondPassword.text) {
-//            print("Passwords do not match")
-//            noMatch.text = "Your passwords do not match"
-//            return
-//        }
+        if (password.text != secondPassword.text) {
+            print("Passwords do not match")
+            noMatch.text = "Your passwords do not match"
+            return
+        }
         
         signUp()
         

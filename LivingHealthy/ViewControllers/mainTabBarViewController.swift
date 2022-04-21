@@ -20,11 +20,21 @@ class mainTabBarViewController: UITabBarController {
     var stepsValue: Int  = 1000
     
     var firstnameValue: String = "Lily"
+    
+    
+    var begin: Int = 0
+    var inter: Int = 0
+    var advan: Int = 0
+    
+    var name: String?
+    
+    var selectedName: String = "tabbar"
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.selectedIndex = 2
+        
     }
-
 }
 

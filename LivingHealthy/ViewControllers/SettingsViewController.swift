@@ -22,9 +22,8 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var stepsMax: UITextField!
     
     
-    
-    
     @IBOutlet weak var cardioL: UILabel!
+    
     // ability level picker
     @IBOutlet weak var levelPicker: UIPickerView!
     var levelData: [String] = [String]()
@@ -58,6 +57,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         let stepVal = Int(stepsMax.text!)
         tabbar.stepsValue = stepVal!
+        
         
         cardioL.text = "\(String(describing: cardioMax.text)) \(tabbar.cardioValue)"
     }

@@ -7,45 +7,83 @@
 
 import UIKit
 
-struct begButton {
-    
-    static var beginnerButton = 0
-}
-
-struct interButton {
-    
-    static var intermediateButton = 0
-}
-
-struct advanButton {
-    static var advancedButton = 0
-}
-
-public var adButton = 0
-
 class WelcomeViewController: UIViewController {
-
-    @IBOutlet weak var beginnerButton: UIButton!
-    @IBOutlet weak var intermediateButton: UIButton!
-    @IBOutlet weak var advancedButton: UIButton!
     
-//    public var beginnerbutton: Int = 0
-//    public var intermediatebutton = 0
-    public var advancedbutton = 0
+    @IBOutlet weak var beginnerButton: UIButton!
+        
+    @IBOutlet weak var testNumber: UILabel!
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    var beginV: Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-    }
-    
-    @IBAction func begButtonSelected(_ sender: Any) {
-       // beginnerbutton = 1
-        begButton.beginnerButton = 1
-    }
-    
-    
 
+    }
+
+
+    
+    @IBAction func beginnerPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "welToTab", sender: self)
+        }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "welToTab"){
+                    let displayVC = segue.destination as! mainTabBarViewController
+                    displayVC.name = nameTextField.text
+            }
+        }
+        
+        
+        
+        
+//        let workView = self.tabBarController!.viewControllers![2] as! UINavigationController
+//        let vc = workView.topViewController as! WorkoutsViewController
+//        vc.beginner = beginV
+        
+        
+//
+//        let tabbar = mainTabBarViewController()
+//        tabbar.begin = beginV
+//        testNumber.text = "value: \(tabbar.begin)"
+        
+        
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "tabBarController")
+//        vc?.modalPresentationStyle = .overFullScreen
+//        self.present(vc!, animated:true)
+    
+    
+    @IBAction func intermediatePressed(_ sender: Any) {
+        
+//        beginV = 1
+//        performSegue(withIdentifier: "interSegue", sender: beginV)
+//
+        
+//        let tabbar = tabBarController as? mainTabBarViewController
+//        tabbar?.inter = 1
+//
+//        let viewControllerWork =  mainTabBarViewController()
+//        viewControllerWork.selectedName = name;
+//
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "tabBarController")
+//        vc?.modalPresentationStyle = .overFullScreen
+//        self.present(vc!, animated:true)
+
+    }
+
+    
+    @IBAction func advancedPressed(_ sender: Any) {
+//        let tabbar = tabBarController as? mainTabBarViewController
+//        tabbar?.advan = 1
+//
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "tabBarController")
+//        vc?.modalPresentationStyle = .overFullScreen
+//        self.present(vc!, animated:true)
+//
+//
+        
+        
+    }
 
 }
-
-

@@ -3,28 +3,11 @@ import SwiftUI
 struct ListView: View {
     @ObservedObject var viewModel = ListViewModel()
     
-    let beg = begButton.beginnerButton
-
-//    if beg.value == 1 {
-//        x = beginner
-//    }
-//    else if inter == 1 {
-//        x = intermediate
-//    }
-//    else if advan == 1 {
-//        x = advanced
-//    }
-//    else{}
-    let c = adButton
-    
-    var advancedbutton = 1
-        
-    @State var selectedLevel = Level.all
-    
     @State var inputText = ""
     //change this depending on user level
+    @State var selectedLevel = Level.all
     @State var selectedExercise = Exercise.all
-//    @State var selectedTag = tags
+
     
     
     var body: some View {
@@ -81,7 +64,7 @@ struct ListView: View {
         }
     }
 
-    }
+}
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
