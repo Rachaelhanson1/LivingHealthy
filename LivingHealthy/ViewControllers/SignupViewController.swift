@@ -55,11 +55,11 @@ class SignupViewController: UIViewController {
             return
         }
         
-        if (password != secondPassword) {
-            print("Passwords do not match")
-            noMatch.text = "Your passwords do not match"
-            return 
-        }
+//        if (password.text != secondPassword.text) {
+//            print("Passwords do not match")
+//            noMatch.text = "Your passwords do not match"
+//            return
+//        }
         
         signUp()
         
@@ -72,6 +72,7 @@ class SignupViewController: UIViewController {
                 print("Error \(error?.localizedDescription)")
                 return
             }
+           
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "homePage")
             vc?.modalPresentationStyle = .overFullScreen

@@ -8,6 +8,7 @@
 import Photos
 import PhotosUI
 import UIKit
+import Firebase
 
 class ProfileViewController: UIViewController, PHPickerViewControllerDelegate {
     
@@ -165,6 +166,13 @@ class ProfileViewController: UIViewController, PHPickerViewControllerDelegate {
     }
     
     
+    @IBAction func signOut(_ sender: Any) {
+        try? Auth.auth().signOut()
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "signInVC")
+        vc?.modalPresentationStyle = .overFullScreen
+        self.present(vc!, animated:true)
+    }
     
     //move view to the side for the side menu to come out
     @IBAction func menuTapped(_ sender: Any) {

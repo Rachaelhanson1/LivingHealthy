@@ -57,7 +57,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         tabbar.strengthValue = strengthVal!
         
         let stepVal = Int(stepsMax.text!)
-        tabbar.stepValue = stepVal!
+        tabbar.stepsValue = stepVal!
         
         cardioL.text = "\(String(describing: cardioMax.text)) \(tabbar.cardioValue)"
     }

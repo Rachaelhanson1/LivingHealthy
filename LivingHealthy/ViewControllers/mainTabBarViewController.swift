@@ -13,6 +13,7 @@ class mainTabBarViewController: UITabBarController {
     var waterValue: Int = 0
     var weightValue: Int = 0
     
+    //to transfer the data so users can choose their target goals
     var cardioValue: Int = 50
     var flexValue: Int = 50
     var strengthValue: Int = 50
