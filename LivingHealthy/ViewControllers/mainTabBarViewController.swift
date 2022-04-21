@@ -18,6 +18,8 @@ class mainTabBarViewController: UITabBarController {
     var flexValue: Int = 50
     var strengthValue: Int = 50
     var stepsValue: Int  = 1000
+    
+    var firstnameValue: String = "Lily"
 
     override func viewDidLoad() {
         super.viewDidLoad()

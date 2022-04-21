@@ -72,9 +72,14 @@ class SignupViewController: UIViewController {
                 print("Error \(error?.localizedDescription)")
                 return
             }
+//            let tabbar = self.tabBarController as! mainTabBarViewController
+//
+//            let firstname = self.firstName.text
+//            tabbar.firstnameValue = firstname!
+
            
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "homePage")
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "welcomePage1")
             vc?.modalPresentationStyle = .overFullScreen
             self.present(vc!, animated:true)
            

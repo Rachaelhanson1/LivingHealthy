@@ -27,12 +27,11 @@ class ProfileViewController: UIViewController, PHPickerViewControllerDelegate {
         
     //steppers
     
-    @IBOutlet weak var stepperStepper: UIStepper!
     @IBOutlet weak var waterButton: UIStepper!
     @IBOutlet weak var weightButton: UIStepper!
     
     // steppers labels
-    @IBOutlet weak var totStepLabel: UILabel!
+
     @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var waterLabel: UILabel!
     
@@ -49,21 +48,11 @@ class ProfileViewController: UIViewController, PHPickerViewControllerDelegate {
         super.viewDidLoad()
         
         
-        let tabbar = tabBarController as! mainTabBarViewController
-        totStepLabel.text = String(describing: tabbar.stepValue)
-        
-        
         let SIvc = SignupViewController()
         firstName.text = "\(SIvc.firstname)"
         
         seperators.layer.cornerRadius = 10
-        
-        // number of steps with incremental stepper
-        totStepLabel.text = "2000"
-        stepperStepper.stepValue = 500
-        stepperStepper.maximumValue = 20000
-        weightButton.minimumValue = 0
-        
+
             
         // number for weight with incremental stepper
         weightLabel.text = "50"
@@ -85,11 +74,14 @@ class ProfileViewController: UIViewController, PHPickerViewControllerDelegate {
 
         
     }
-    @IBAction func logoutUser(_ sender: Any) {
-           UserDefaults.standard.set(false, forKey: "ISUSERLOGGEDIN")
-           self.navigationController?.popToRootViewController(animated: true)
-       }
     
+    override func viewDidAppear(_ animated: Bool) {
+        let tabbar = tabBarController as! mainTabBarViewController
+       
+        firstName.text = String(describing: tabbar.firstnameValue)
+        
+    }
+
     @objc private func didTapAdd() {
         var config = PHPickerConfiguration(photoLibrary: .shared())
         config.selectionLimit = 1
@@ -138,22 +130,7 @@ class ProfileViewController: UIViewController, PHPickerViewControllerDelegate {
             self.firstName.text = text
         }
     }
-    
-    
-    override func viewWillAppear(_ animated: Bool) {
-        totStepLabel.text = String(describing: 0)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        let tabbar = tabBarController as! mainTabBarViewController
-        tabbar.stepValue = Int(totStepLabel.text!)!
-    }
-    
-    
-    //stepper
-    @IBAction func stepStepper(_ sender: UIStepper) {
-        totStepLabel.text = Int(sender.value).description
-    }
+
     
     @IBAction func weightStepper(_ sender: UIStepper) {
         weightLabel.text = Int(sender.value).description

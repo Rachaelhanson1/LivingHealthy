@@ -12,7 +12,6 @@ import Firebase
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func WindowGroup() {
-        //ListView()
     }
 
 

@@ -11,7 +11,6 @@
 		561A0FFC2805CBDF0097BBE7 /* ListVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561A0FEC2805CBDF0097BBE7 /* ListVIewModel.swift */; };
 		561A0FFD2805CBDF0097BBE7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561A0FEE2805CBDF0097BBE7 /* Extensions.swift */; };
 		561A0FFE2805CBDF0097BBE7 /* DBdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 561A0FEF2805CBDF0097BBE7 /* DBdata.json */; };
-		561A10042805CBDF0097BBE7 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561A0FF72805CBDF0097BBE7 /* ListView.swift */; };
 		561A10052805CBDF0097BBE7 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561A0FF82805CBDF0097BBE7 /* WorkoutView.swift */; };
 		561A10062805CBDF0097BBE7 /* AppBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561A0FF92805CBDF0097BBE7 /* AppBarView.swift */; };
 		561C4E1127F330C400AFAFCA /* AllWorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561C4E1027F330C400AFAFCA /* AllWorkoutsViewController.swift */; };
@@ -33,6 +32,7 @@
 		56ED51142805A3DB005CD48E /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ED51132805A3DB005CD48E /* WorkoutsViewController.swift */; };
 		56EDE66327F60AD600E6E806 /* FavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EDE66227F60AD600E6E806 /* FavViewController.swift */; };
 		56EFE6B42811614B0006DF56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56EFE6B32811614B0006DF56 /* Main.storyboard */; };
+		56EFE6BE281196D90006DF56 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EFE6BD281196D90006DF56 /* ListView.swift */; };
 		56F0F6F128101F3600BB200F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F0F6F028101F3600BB200F /* WelcomeViewController.swift */; };
 		8036B1AF0A7EF2ED1963B6C1 /* Pods_LivingHealthy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1B8FE9352E070483BF1DAC /* Pods_LivingHealthy.framework */; };
 /* End PBXBuildFile section */
@@ -44,7 +44,6 @@
 		561A0FEC2805CBDF0097BBE7 /* ListVIewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListVIewModel.swift; sourceTree = "<group>"; };
 		561A0FEE2805CBDF0097BBE7 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		561A0FEF2805CBDF0097BBE7 /* DBdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DBdata.json; sourceTree = "<group>"; };
-		561A0FF72805CBDF0097BBE7 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		561A0FF82805CBDF0097BBE7 /* WorkoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 		561A0FF92805CBDF0097BBE7 /* AppBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBarView.swift; sourceTree = "<group>"; };
 		561C4E1027F330C400AFAFCA /* AllWorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWorkoutsViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +71,7 @@
 		56EFE6BA28116F420006DF56 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 		56EFE6BB28116F420006DF56 /* AppBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBarView.swift; sourceTree = "<group>"; };
 		56EFE6BC28116F420006DF56 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		56EFE6BD281196D90006DF56 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListView.swift; path = LivingHealthy/SwiftUI/ListView.swift; sourceTree = SOURCE_ROOT; };
 		56F0F6F028101F3600BB200F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		81AC9838E627289B5078D95B /* Pods-LivingHealthy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LivingHealthy.debug.xcconfig"; path = "Target Support Files/Pods-LivingHealthy/Pods-LivingHealthy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,8 +130,8 @@
 		561A0FF62805CBDF0097BBE7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				561A0FF72805CBDF0097BBE7 /* ListView.swift */,
 				561A0FF82805CBDF0097BBE7 /* WorkoutView.swift */,
+				56EFE6BD281196D90006DF56 /* ListView.swift */,
 				561A0FF92805CBDF0097BBE7 /* AppBarView.swift */,
 			);
 			name = View;
@@ -343,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56AAE46027F2278600FAECE3 /* ProfileViewController.swift in Sources */,
+				56EFE6BE281196D90006DF56 /* ListView.swift in Sources */,
 				561C4E1127F330C400AFAFCA /* AllWorkoutsViewController.swift in Sources */,
 				56AAE41C27EDDA8400FAECE3 /* SigninViewController.swift in Sources */,
 				561A10052805CBDF0097BBE7 /* WorkoutView.swift in Sources */,
@@ -352,7 +353,6 @@
 				56EBE3F727D8E31D00B8BDDF /* AppDelegate.swift in Sources */,
 				561A0FFD2805CBDF0097BBE7 /* Extensions.swift in Sources */,
 				56EDE66327F60AD600E6E806 /* FavViewController.swift in Sources */,
-				561A10042805CBDF0097BBE7 /* ListView.swift in Sources */,
 				56B7A78D28083384002C88A4 /* mainTabBarViewController.swift in Sources */,
 				566CC1BB28072BE700D9A247 /* SettingsViewController.swift in Sources */,
 				561A10062805CBDF0097BBE7 /* AppBarView.swift in Sources */,

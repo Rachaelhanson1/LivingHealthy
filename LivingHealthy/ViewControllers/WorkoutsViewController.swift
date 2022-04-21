@@ -21,7 +21,12 @@ class WorkoutsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //to host the UIContainerView with the SwiftUI content for filtering and sorting
         
+      //  if segue to here was beginnerButton present {ListViewB()}
+        
+        
+            
         let childView = UIHostingController(rootView: ListView())
                addChild(childView)
                childView.view.frame = contView.bounds
