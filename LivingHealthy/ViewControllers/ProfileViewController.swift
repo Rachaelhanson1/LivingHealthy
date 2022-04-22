@@ -37,8 +37,7 @@ class ProfileViewController: UIViewController, PHPickerViewControllerDelegate {
     
     //user photo
     @IBOutlet var userPhoto: UIImageView!
-    
-    @IBOutlet weak var userPic: UIView!
+    @IBOutlet weak var addPicButton: UIButton!
     
     
     @IBOutlet weak var picB: UIButton!
@@ -66,63 +65,30 @@ class ProfileViewController: UIViewController, PHPickerViewControllerDelegate {
         waterButton.stepValue = 1
         waterButton.maximumValue = 15
         weightButton.minimumValue = 0
-        
-       // userPhoto.image = UIImage.init(named: "man1")
-        
-        
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
 
+        
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapChangeProfilePic))
+            
+            addPicButton.addGestureRecognizer(gesture)
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
         let tabbar = tabBarController as! mainTabBarViewController
-       
         firstName.text = String(describing: tabbar.firstnameValue)
         
     }
-
-    @objc private func didTapAdd() {
-        var config = PHPickerConfiguration(photoLibrary: .shared())
-        config.selectionLimit = 1
-        config.filter = PHPickerFilter.images
-        let vc = PHPickerViewController(configuration: config)
-        vc.delegate = self
-        present(vc, animated: true)
+    
+    
+    
+    // invoked when user taps on profile picture
+    @objc private func didTapChangeProfilePic() {
+        presentPhotoActionSheet()
     }
-    
-    //choosing a profile picture and viewing it
-    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
-        picker.dismiss(animated: true, completion: nil)
-        
-        //results.forEach { result in
-        //    result.itemProvider.loadObject(ofClass: UIImage.self) { reading, error in
-        //        guard let profile = reading as? UIImage, error == nil else {
-        //            return
-        //        }
-        //        print(profile)
-                
-        for result in results {
-           result.itemProvider.loadObject(ofClass: UIImage.self, completionHandler: { (object, error) in
-              if let image = object as? UIImage {
-                 DispatchQueue.main.async {
-                    // Use UIImage
-                    print("Selected image: \(image)")
-                 }
-              }
-           })
-                
-                
-                //self.userPhoto.image = UIImage.init(named: "profile")
-               // self.userPhoto.image = UIImage.init(named: "result")
-                
-            }
-        }
-    
-    
-    
+
 
     
+
     // trying to get data from sign up view controller**********
     @IBAction func didTapButton(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "other") as! SignupViewController
@@ -164,5 +130,43 @@ class ProfileViewController: UIViewController, PHPickerViewControllerDelegate {
         }
         
     }
-
 }
+extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func presentPhotoActionSheet(){
+        let actionSheet = UIAlertController(title: "Profile Picture", message: "How would you like to select a picture for you profile?", preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        actionSheet.addAction(UIAlertAction(title: "Take Photo", style: .default, handler: {[weak self]_ in self?.presentCamera()}))
+        actionSheet.addAction(UIAlertAction(title: "Choose Photo", style: .default, handler: {[weak self]_ in self?.presentPhotoPicker()}))
+        present(actionSheet, animated: true)
+    }
+    func presentCamera() {
+        let vc = UIImagePickerController()
+        vc.sourceType = .camera
+        vc.delegate = self
+        vc.allowsEditing = true
+        present(vc, animated: true)
+    }
+    
+    func presentPhotoPicker() {
+        let vc = UIImagePickerController()
+        vc.sourceType = .photoLibrary
+        vc.delegate = self
+        vc.allowsEditing = true
+        present(vc, animated: true)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        guard let selectedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else {return}
+        
+        
+        self.userPhoto.image = selectedImage
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+}
+
+
