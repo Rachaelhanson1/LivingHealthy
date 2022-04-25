@@ -46,7 +46,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         levelData = ["Beginner", "Intermediate", "Advanced"]
     }
     
-    
+    //updating user weekly goals and sending results to tabbar controller to get passed to workouts VC
     @IBAction func confirm(_ sender: UIButton) {
         
         let tabbar = tabBarController as! mainTabBarViewController

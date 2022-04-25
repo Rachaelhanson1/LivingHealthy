@@ -148,21 +148,7 @@ class GoalViewController: UIViewController {
             self.stepProg.value = CGFloat(stepValue)
         }
     }
-    
-    
-    
-    
-    
-//    override func viewDidAppear(_ animated: Bool) {
-  //      let tabbar = tabBarController as! mainTabBarViewController
-//        totStepLabel.text = String(describing: tabbar.stepValue)
 
-  //  }
-    
-    
-    
-    // if progress goal bar == 1 then change goalMetLabel to "Goal Met!"
-    
     
     //move view to the side for the side menu to come out
     @IBAction func menuTapped(_ sender: Any) {

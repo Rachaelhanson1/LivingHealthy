@@ -11,7 +11,8 @@ import Firebase
 
 class WorkoutsViewController: UIViewController {
 
-  
+    @IBOutlet weak var nameTest: UILabel!
+    
     @IBOutlet weak var testLabel: UILabel!
     
     @IBOutlet weak var trailing: NSLayoutConstraint!
@@ -24,6 +25,8 @@ class WorkoutsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //nameTest.text = fullName.firstName
+
         
         //to host the UIContainerView with the SwiftUI content for filtering and sorting
         let tabbar = tabBarController as! mainTabBarViewController

@@ -22,7 +22,7 @@ class ProfileViewController: UIViewController {
     
     
     // labels for username
-    @IBOutlet weak var firstName: UILabel!
+    @IBOutlet weak var first: UILabel!
     @IBOutlet weak var lastName: UILabel!
     
     
@@ -35,35 +35,37 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var beforeImage: UIImageView!
     @IBOutlet weak var afterImage: UIImageView!
     @IBOutlet weak var addBeforeButton: UIButton!
+    @IBOutlet weak var addAfterButton: UIButton!
+    
     
     var imageNum = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        let SIvc = SignupViewController()
-        firstName.text = "\(SIvc.firstname)"
-        
+        first.text = fullName.firstName
+    
+        //corners of the menu separators
         seperators.layer.cornerRadius = 10
         separator2.layer.cornerRadius = 10
         separator3.layer.cornerRadius = 10
+        
+        userPhoto.layer.cornerRadius = 50
 
+        //tapping  the plus buttons to add pictures
         let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapChangeProfilePic))
         let gesture2 = UITapGestureRecognizer(target: self, action: #selector(didTapChangeBeforePic))
         let gesture3 = UITapGestureRecognizer(target: self, action: #selector(didTapChangeBeforePic))
         
-            
         addPicButton.addGestureRecognizer(gesture)
         addBeforeButton.addGestureRecognizer(gesture2)
-        afterImage.addGestureRecognizer(gesture3)
+        addAfterButton.addGestureRecognizer(gesture3)
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let tabbar = tabBarController as! mainTabBarViewController
-        firstName.text = String(describing: tabbar.firstnameValue)
-        
+//        let tabbar = tabBarController as! mainTabBarViewController
+//        first.text = tabbar.firstnameValue
     }
     
     
@@ -82,17 +84,7 @@ class ProfileViewController: UIViewController {
         presentBeforeActionSheet()
     }
 
-    
 
-    // trying to get data from sign up view controller**********
-    @IBAction func didTapButton(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "other") as! SignupViewController
-        vc.fnSent = { text in
-            self.firstName.text = text
-        }
-    }
-
-    
     // user signs out
     @IBAction func signOut(_ sender: Any) {
         try? Auth.auth().signOut()
@@ -184,7 +176,5 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }
-    
-    
     }
 }

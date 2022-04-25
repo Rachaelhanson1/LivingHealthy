@@ -10,6 +10,7 @@ import UIKit
 class WelcomeViewController: UIViewController {
 
         
+    @IBOutlet weak var nameTest: UILabel!
     
     @IBOutlet weak var nameTextField: UITextField!
     
@@ -19,6 +20,7 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameTest.text = fullName.firstName
 
     }
 
@@ -40,22 +42,17 @@ class WelcomeViewController: UIViewController {
         if(segue.identifier == "begToTab"){
            
             let tabbar = segue.destination as! mainTabBarViewController
-//            let beginVal = Int(nameTextField.text!)
-//            tabbar.begin = beginVal!
+
             tabbar.begin = beginV
             }
         
         if(segue.identifier == "intToTab"){
             
             let tabbar = segue.destination as! mainTabBarViewController
-//            let interVal = Int(nameTextField.text!)
-//            tabbar.inter = interVal!
             tabbar.inter = interV
         }
         if(segue.identifier == "adToTab"){
             let tabbar = segue.destination as! mainTabBarViewController
-            
-//            let advanVal = Int(nameTextField.text!)
             tabbar.advan = advanV
             
         }

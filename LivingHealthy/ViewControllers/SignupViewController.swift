@@ -9,16 +9,20 @@ import UIKit
 import FirebaseAuth
 import Firebase
 
+struct fullName {
+    static var firstName = ""
+}
+
+
 class SignupViewController: UIViewController {
     
-    
+    //email and password labels
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var secondPassword: UITextField!
     
-    
+    //name labels
     @IBOutlet weak var firstName: UITextField!
-    var firstname: String = ""
     @IBOutlet weak var lastName: UITextField!
     
     // error labels
@@ -27,16 +31,20 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var password2Error: UILabel!
     @IBOutlet weak var noMatch: UILabel!
     
-    public var fnSent: ((String?) -> Void)?
+    public var firstN = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        firstname = "firstname is"
     }
     
     @IBAction func signUpTapped(_ sender: Any) {
-        fnSent?(firstName.text)
+//        let tabbar = tabBarController as! mainTabBarViewController
+//
+//        let fn = firstName.text
+//        tabbar.firstnameValue = fn!
+
+        
+        fullName.firstName = firstName.text!
         
         if email.text?.isEmpty == true {
             print("No text in email field")
