@@ -7,6 +7,7 @@
 
 import UIKit
 import MBCircularProgressBar
+import Firebase
 
 class GoalViewController: UIViewController {
 
@@ -175,6 +176,13 @@ class GoalViewController: UIViewController {
             menuOut = false
         }
         
+    }
+    @IBAction func signOut(_ sender: Any) {
+        try? Auth.auth().signOut()
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "signInVC")
+        vc?.modalPresentationStyle = .overFullScreen
+        self.present(vc!, animated:true)
     }
     
 }

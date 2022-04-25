@@ -10,7 +10,7 @@ import PhotosUI
 import UIKit
 import Firebase
 
-class ProfileViewController: UIViewController, PHPickerViewControllerDelegate {
+class ProfileViewController: UIViewController {
     
     //constraints for side menu
     @IBOutlet weak var trailing: NSLayoutConstraint!
@@ -24,23 +24,11 @@ class ProfileViewController: UIViewController, PHPickerViewControllerDelegate {
     // labels for username
     @IBOutlet weak var firstName: UILabel!
     @IBOutlet weak var lastName: UILabel!
-        
-    //steppers
     
-    @IBOutlet weak var waterButton: UIStepper!
-    @IBOutlet weak var weightButton: UIStepper!
-    
-    // steppers labels
-
-    @IBOutlet weak var weightLabel: UILabel!
-    @IBOutlet weak var waterLabel: UILabel!
     
     //user photo
     @IBOutlet var userPhoto: UIImageView!
     @IBOutlet weak var addPicButton: UIButton!
-    
-    
-    @IBOutlet weak var picB: UIButton!
     
     
     override func viewDidLoad() {
@@ -51,22 +39,9 @@ class ProfileViewController: UIViewController, PHPickerViewControllerDelegate {
         firstName.text = "\(SIvc.firstname)"
         
         seperators.layer.cornerRadius = 10
+        separator2.layer.cornerRadius = 10
+        separator3.layer.cornerRadius = 10
 
-            
-        // number for weight with incremental stepper
-        weightLabel.text = "50"
-        weightButton.value = 50
-        weightButton.stepValue = 2
-        weightButton.maximumValue = 100
-        weightButton.minimumValue = 0
-      
-        // number for water of glasses drank with incremental stepper
-        waterLabel.text = "1"
-        waterButton.stepValue = 1
-        waterButton.maximumValue = 15
-        weightButton.minimumValue = 0
-
-        
         let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapChangeProfilePic))
             
             addPicButton.addGestureRecognizer(gesture)
@@ -97,16 +72,6 @@ class ProfileViewController: UIViewController, PHPickerViewControllerDelegate {
         }
     }
 
-    
-    @IBAction func weightStepper(_ sender: UIStepper) {
-        weightLabel.text = Int(sender.value).description
-
-    }
-    
-    @IBAction func waterStepper(_ sender: UIStepper) {
-        waterLabel.text = Int(sender.value).description
-
-    }
     
     
     @IBAction func signOut(_ sender: Any) {

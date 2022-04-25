@@ -17,7 +17,7 @@ class mainTabBarViewController: UITabBarController {
     var cardioValue: Int = 50
     var flexValue: Int = 50
     var strengthValue: Int = 50
-    var stepsValue: Int  = 1000
+    var stepsValue: Int  = 50
     
     var firstnameValue: String = "Lily"
     

@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import Firebase
 
 class WorkoutsViewController: UIViewController {
 
@@ -78,6 +79,14 @@ class WorkoutsViewController: UIViewController {
             trailing.constant = 0
             menuOut = false
         }
+    }
+    
+    @IBAction func signOut(_ sender: Any) {
+        try? Auth.auth().signOut()
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "signInVC")
+        vc?.modalPresentationStyle = .overFullScreen
+        self.present(vc!, animated:true)
     }
     
 
