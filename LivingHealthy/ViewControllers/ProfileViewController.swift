@@ -26,10 +26,17 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var lastName: UILabel!
     
     
-    //user photo
+    //user profile photo
     @IBOutlet var userPhoto: UIImageView!
     @IBOutlet weak var addPicButton: UIButton!
     
+    
+    // user comparison photos - before and after
+    @IBOutlet weak var beforeImage: UIImageView!
+    @IBOutlet weak var afterImage: UIImageView!
+    @IBOutlet weak var addBeforeButton: UIButton!
+    
+    var imageNum = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,8 +50,13 @@ class ProfileViewController: UIViewController {
         separator3.layer.cornerRadius = 10
 
         let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapChangeProfilePic))
+        let gesture2 = UITapGestureRecognizer(target: self, action: #selector(didTapChangeBeforePic))
+        let gesture3 = UITapGestureRecognizer(target: self, action: #selector(didTapChangeBeforePic))
+        
             
-            addPicButton.addGestureRecognizer(gesture)
+        addPicButton.addGestureRecognizer(gesture)
+        addBeforeButton.addGestureRecognizer(gesture2)
+        afterImage.addGestureRecognizer(gesture3)
         
     }
     
@@ -60,7 +72,15 @@ class ProfileViewController: UIViewController {
     @objc private func didTapChangeProfilePic() {
         presentPhotoActionSheet()
     }
-
+    // invoked when the user taps on the Before Picture
+    @objc private func didTapChangeBeforePic() {
+        presentBeforeActionSheet()
+    }
+    
+    // invoked when the user taps on the After Picture
+    @objc private func didTapChangeAfterPic() {
+        presentBeforeActionSheet()
+    }
 
     
 
@@ -73,7 +93,7 @@ class ProfileViewController: UIViewController {
     }
 
     
-    
+    // user signs out
     @IBAction func signOut(_ sender: Any) {
         try? Auth.auth().signOut()
         
@@ -96,15 +116,36 @@ class ProfileViewController: UIViewController {
         
     }
 }
+//selection of profile photo
 extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func presentPhotoActionSheet(){
+        imageNum = 1
         let actionSheet = UIAlertController(title: "Profile Picture", message: "How would you like to select a picture for you profile?", preferredStyle: .actionSheet)
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         actionSheet.addAction(UIAlertAction(title: "Take Photo", style: .default, handler: {[weak self]_ in self?.presentCamera()}))
         actionSheet.addAction(UIAlertAction(title: "Choose Photo", style: .default, handler: {[weak self]_ in self?.presentPhotoPicker()}))
         present(actionSheet, animated: true)
     }
+    //selection of before picture
+    func presentBeforeActionSheet(){
+        imageNum = 2
+        let actionSheet = UIAlertController(title: "Before Picture", message: "How would you like to select a picture of you?", preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        actionSheet.addAction(UIAlertAction(title: "Take Photo", style: .default, handler: {[weak self]_ in self?.presentCamera()}))
+        actionSheet.addAction(UIAlertAction(title: "Choose Photo", style: .default, handler: {[weak self]_ in self?.presentPhotoPicker()}))
+        present(actionSheet, animated: true)
+    }
+    //selection of After picture
+    func presentAfterActionSheet(){
+        imageNum = 2
+        let actionSheet = UIAlertController(title: "After Picture", message: "How would you like to select a current or recent picture of you?", preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        actionSheet.addAction(UIAlertAction(title: "Take Photo", style: .default, handler: {[weak self]_ in self?.presentCamera()}))
+        actionSheet.addAction(UIAlertAction(title: "Choose Photo", style: .default, handler: {[weak self]_ in self?.presentPhotoPicker()}))
+        present(actionSheet, animated: true)
+    }
+    //function to allow user to select to inport a photo using the camera
     func presentCamera() {
         let vc = UIImagePickerController()
         vc.sourceType = .camera
@@ -112,7 +153,7 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
         vc.allowsEditing = true
         present(vc, animated: true)
     }
-    
+    // function to allow users to import a photo from their camera roll
     func presentPhotoPicker() {
         let vc = UIImagePickerController()
         vc.sourceType = .photoLibrary
@@ -121,17 +162,29 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
         present(vc, animated: true)
     }
     
+    
+    //which picture and where it should be displayed.
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true, completion: nil)
-        guard let selectedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else {return}
         
-        
-        self.userPhoto.image = selectedImage
+        if imageNum == 1 {
+            guard let selectedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else {return}
+                        self.userPhoto.image = selectedImage
+        }
+        else if imageNum == 2 {
+            guard let selectedImage2 = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else {return}
+            self.beforeImage.image = selectedImage2
+        }
+        else if imageNum == 3 {
+            guard let selectedImage3 = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else {return}
+            self.afterImage.image = selectedImage3
+  
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }
+    
+    
+    }
 }
-
-

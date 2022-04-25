@@ -14,6 +14,9 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     @IBOutlet weak var updateEmailField: UITextField!
     @IBOutlet weak var accountView: UIView!
+    @IBOutlet weak var targetView: UIView!
+    @IBOutlet weak var abilityView: UIView!
+    
 
     //choosing taget goals gor goal tracker page
     @IBOutlet weak var cardioMax: UITextField!
@@ -33,6 +36,8 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         super.viewDidLoad()
 
         accountView.layer.cornerRadius = 10
+        targetView.layer.cornerRadius = 10
+        abilityView.layer.cornerRadius = 10
         
         //creating a picker for user ability level
         levelPicker.delegate = self
