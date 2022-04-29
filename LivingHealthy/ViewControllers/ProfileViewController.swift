@@ -44,6 +44,7 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         
         first.text = fullName.firstName
+        lastName.text = Auth.auth().currentUser?.email
     
         //corners of the menu separators
         seperators.layer.cornerRadius = 10

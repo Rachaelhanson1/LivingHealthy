@@ -64,7 +64,7 @@ class SigninViewController: UIViewController {
     }
     
 
-    
+    // automatically log the user in, if they have been previously logged in on this device and if they have not logged out
     func checkUserInfo() {
         if Auth.auth().currentUser != nil {
             print(Auth.auth().currentUser?.uid)

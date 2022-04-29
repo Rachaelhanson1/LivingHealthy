@@ -808,26 +808,26 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="updated email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R30-Mn-np8">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R30-Mn-np8">
                                         <rect key="frame" x="166" y="92" width="194" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="updateEmailField:" destination="wZS-yl-Fa3" eventType="editingDidEnd" id="BkP-Yc-okm"/>
-                                        </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="new password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z3u-bg-r9E">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z3u-bg-r9E">
                                         <rect key="frame" x="166" y="136" width="194" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EqQ-Z7-Yyt">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EqQ-Z7-Yyt">
                                         <rect key="frame" x="166" y="46" width="194" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="updateUserButton:" destination="wZS-yl-Fa3" eventType="editingDidEnd" id="wcF-ft-BO4"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzk-TK-DdS">
                                         <rect key="frame" x="126" y="181" width="99" height="31"/>
@@ -970,7 +970,9 @@
                         <outlet property="stepsMax" destination="Y9X-9z-YR7" id="LBX-KS-CSz"/>
                         <outlet property="strengthMax" destination="SCs-tl-Kde" id="A4H-DM-PeQ"/>
                         <outlet property="targetView" destination="qxZ-Ce-cj3" id="TBh-1n-itE"/>
-                        <outlet property="updateEmailField" destination="R30-Mn-np8" id="Cb7-IB-Yuq"/>
+                        <outlet property="updateEmailField" destination="R30-Mn-np8" id="dXP-f2-9x7"/>
+                        <outlet property="updateName" destination="EqQ-Z7-Yyt" id="QUF-JG-eXA"/>
+                        <outlet property="updatePasswordField" destination="Z3u-bg-r9E" id="4w1-v6-4dB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2y-ix-tEa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1471,7 +1473,7 @@
                                 <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lV7-ZR-jbp">
-                                <rect key="frame" x="0.0" y="56" width="394" height="757"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="757"/>
                                 <color key="backgroundColor" red="0.80894970889999995" green="0.94859880210000003" blue="0.97255426649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <segue destination="eDb-1s-XyX" kind="embed" id="O4M-Bt-hQL"/>
@@ -1511,7 +1513,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hyf-in-Ro1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9641" y="1087"/>
+            <point key="canvasLocation" x="9640.579710144928" y="1086.8303571428571"/>
         </scene>
         <!--My Goal Tracker-->
         <scene sceneID="zzF-SE-gSg">
@@ -2364,7 +2366,7 @@
             <objects>
                 <viewController id="eDb-1s-XyX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ktm-34-ev9">
-                        <rect key="frame" x="0.0" y="0.0" width="394" height="757"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="757"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="3IB-9z-rrC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

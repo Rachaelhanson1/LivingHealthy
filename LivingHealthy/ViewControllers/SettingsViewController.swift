@@ -7,12 +7,19 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 
 class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
-    
+    //account info
     @IBOutlet weak var updateEmailField: UITextField!
+    @IBOutlet weak var updatePasswordField: UITextField!
+    @IBOutlet weak var updateName: UITextField!
+    
+    
+    
+    //the three views
     @IBOutlet weak var accountView: UIView!
     @IBOutlet weak var targetView: UIView!
     @IBOutlet weak var abilityView: UIView!
@@ -44,6 +51,9 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         levelPicker.dataSource = self
         
         levelData = ["Beginner", "Intermediate", "Advanced"]
+        
+        updateName.placeholder = "test"
+        updateEmailField.placeholder = Auth.auth().currentUser?.email
     }
     
     //updating user weekly goals and sending results to tabbar controller to get passed to workouts VC
@@ -67,6 +77,8 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         cardioL.text = "\(String(describing: cardioMax.text)) \(tabbar.cardioValue)"
     }
     
+    
+    
     //functions for the picker view
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -80,19 +92,27 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     
 
-    //updating email to Firebase
+    //updating user details
 
     @IBAction func updateUserButton(_ sender: Any) {
-        let auth = Auth.auth()
-            guard let email = self.updateEmailField.text ?? auth.currentUser?.email else { return }
-                // email that i have to update with current user email
-            auth.currentUser?.updateEmail(to: (email), completion: { (error) in
-                    if error == nil{
 
-                    }else{
-                    }
-                })
+        //update user email
+        let email = updateEmailField.text!
+                
+        Auth.auth().currentUser?.updateEmail(to: email, completion: { (error) in
+            if error == nil{
+            }else{ }
+        })
+        //update user password
+        let password = updatePasswordField.text!
+                
+        Auth.auth().currentUser?.updatePassword(to: password, completion: { (error) in
+            if error == nil{
+            }else{ }
+        })
 
+        //updates the users name on the Profile page
+        fullName.firstName = updateName.text!
     }
     
     
