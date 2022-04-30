@@ -23,7 +23,8 @@ class ProfileViewController: UIViewController {
     
     // labels for username
     @IBOutlet weak var first: UILabel!
-    @IBOutlet weak var lastName: UILabel!
+    @IBOutlet weak var last: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
     
     
     //user profile photo
@@ -44,7 +45,8 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         
         first.text = fullName.firstName
-        lastName.text = Auth.auth().currentUser?.email
+        last.text = "Hello \(fullName.lastName)"
+        emailLabel.text = Auth.auth().currentUser?.email!
     
         //corners of the menu separators
         seperators.layer.cornerRadius = 10
@@ -56,21 +58,27 @@ class ProfileViewController: UIViewController {
         //tapping  the plus buttons to add pictures
         let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapChangeProfilePic))
         let gesture2 = UITapGestureRecognizer(target: self, action: #selector(didTapChangeBeforePic))
-        let gesture3 = UITapGestureRecognizer(target: self, action: #selector(didTapChangeBeforePic))
+        let gesture3 = UITapGestureRecognizer(target: self, action: #selector(didTapChangeAfterPic))
         
         addPicButton.addGestureRecognizer(gesture)
         addBeforeButton.addGestureRecognizer(gesture2)
         addAfterButton.addGestureRecognizer(gesture3)
         
+        //Styling shadows for the plus buttons
+        addBeforeButton.layer.shadowColor = UIColor.black.cgColor
+        addBeforeButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+        addBeforeButton.layer.shadowRadius = 5
+        addBeforeButton.layer.shadowOpacity = 1.0
+        addAfterButton.layer.shadowColor = UIColor.black.cgColor
+        addAfterButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+        addAfterButton.layer.shadowRadius = 5
+        addAfterButton.layer.shadowOpacity = 1.0
+        addPicButton.layer.shadowColor = UIColor.black.cgColor
+        addPicButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+        addPicButton.layer.shadowRadius = 5
+        addPicButton.layer.shadowOpacity = 1.0
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-//        let tabbar = tabBarController as! mainTabBarViewController
-//        first.text = tabbar.firstnameValue
-    }
-    
-    
-    
+   
     // invoked when user taps on profile picture
     @objc private func didTapChangeProfilePic() {
         presentPhotoActionSheet()
@@ -82,7 +90,7 @@ class ProfileViewController: UIViewController {
     
     // invoked when the user taps on the After Picture
     @objc private func didTapChangeAfterPic() {
-        presentBeforeActionSheet()
+        presentAfterActionSheet()
     }
 
 

@@ -7,14 +7,14 @@ struct ListView: View {
     //change this depending on user level
     @State var selectedLevel = Level.all
     @State var selectedExercise = Exercise.all
-
+    @State var selectedChallenge = Challenge.all
     
     
     var body: some View {
         VStack {
             
             //bar at the top for searching and filtering
-            AppBarView(inputText: $inputText, selectedLevel: $selectedLevel, selectedExercise: $selectedExercise)
+            AppBarView(inputText: $inputText, selectedLevel: $selectedLevel, selectedExercise: $selectedExercise, selectedChallenge: $selectedChallenge)
                 .environmentObject(viewModel)
                 .padding(.bottom, 5)
                 .overlay(Divider()
@@ -22,7 +22,7 @@ struct ListView: View {
                             .background(Color.black), alignment: .bottom)
                 .padding(.bottom, 5)
                 
-            //scroll for each of the workouts
+            //filter for each of the workouts
             ScrollView(showsIndicators: false) {
                 LazyVStack {
                     ForEach(viewModel.workouts.filter({ workout in
@@ -31,6 +31,9 @@ struct ListView: View {
                         filterLevel(workout)
                     }).filter({ workout in
                         filterExercise(workout)
+                    }).filter({ workout in
+                        filterChallenge(workout)
+                        
                     }), id: \.self) { workout in
                         WorkoutView(workout: workout)
                     }
@@ -57,6 +60,14 @@ struct ListView: View {
     }
     private func filterExercise(_ workout: Workout) -> Bool {
         if selectedExercise == .all || selectedExercise == workout.exercise
+        {
+            return true
+        } else {
+            return false
+        }
+    }
+    private func filterChallenge(_ workout: Workout) -> Bool {
+        if selectedChallenge == .all || selectedChallenge == workout.challenge
         {
             return true
         } else {

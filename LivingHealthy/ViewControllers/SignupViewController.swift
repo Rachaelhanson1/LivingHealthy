@@ -11,6 +11,7 @@ import Firebase
 
 struct fullName {
     static var firstName = ""
+    static var lastName = ""
 }
 
 
@@ -40,6 +41,7 @@ class SignupViewController: UIViewController {
     @IBAction func signUpTapped(_ sender: Any) {
 
         fullName.firstName = firstName.text!
+        fullName.lastName = lastName.text!
         
         if email.text?.isEmpty == true {
             print("No text in email field")

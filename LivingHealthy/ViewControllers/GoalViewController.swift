@@ -41,6 +41,19 @@ class GoalViewController: UIViewController {
     @IBOutlet weak var stepGoal: UILabel!
     
     
+    //buttons
+    @IBOutlet weak var cardMinus: UIButton!
+    @IBOutlet weak var cardPlus: UIButton!
+    @IBOutlet weak var flaxMinus: UIButton!
+    @IBOutlet weak var flexPlus: UIButton!
+    @IBOutlet weak var strenMinus: UIButton!
+    @IBOutlet weak var strenPlus: UIButton!
+    @IBOutlet weak var balaMinus: UIButton!
+    @IBOutlet weak var balaPlus: UIButton!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,6 +61,40 @@ class GoalViewController: UIViewController {
         self.flexProg.value = 0
         self.strenthProg.value = 0
         self.stepProg.value = 0
+        
+        //button styling
+        cardMinus.layer.shadowColor = UIColor.black.cgColor
+        cardMinus.layer.shadowOffset = CGSize(width: 2, height: 2)
+        cardMinus.layer.shadowRadius = 5
+        cardMinus.layer.shadowOpacity = 0.8
+        cardPlus.layer.shadowColor = UIColor.black.cgColor
+        cardPlus.layer.shadowOffset = CGSize(width: 2, height: 2)
+        cardPlus.layer.shadowRadius = 5
+        cardPlus.layer.shadowOpacity = 0.8
+        flaxMinus.layer.shadowColor = UIColor.black.cgColor
+        flaxMinus.layer.shadowOffset = CGSize(width: 2, height: 2)
+        flaxMinus.layer.shadowRadius = 5
+        flaxMinus.layer.shadowOpacity = 0.8
+        flexPlus.layer.shadowColor = UIColor.black.cgColor
+        flexPlus.layer.shadowOffset = CGSize(width: 2, height: 2)
+        flexPlus.layer.shadowRadius = 5
+        flexPlus.layer.shadowOpacity = 0.8
+        strenMinus.layer.shadowColor = UIColor.black.cgColor
+        strenMinus.layer.shadowOffset = CGSize(width: 2, height: 2)
+        strenMinus.layer.shadowRadius = 5
+        strenMinus.layer.shadowOpacity = 0.8
+        strenPlus.layer.shadowColor = UIColor.black.cgColor
+        strenPlus.layer.shadowOffset = CGSize(width: 2, height: 2)
+        strenPlus.layer.shadowRadius = 5
+        strenPlus.layer.shadowOpacity = 0.8
+        balaMinus.layer.shadowColor = UIColor.black.cgColor
+        balaMinus.layer.shadowOffset = CGSize(width: 2, height: 2)
+        balaMinus.layer.shadowRadius = 5
+        balaMinus.layer.shadowOpacity = 0.8
+        balaPlus.layer.shadowColor = UIColor.black.cgColor
+        balaPlus.layer.shadowOffset = CGSize(width: 2, height: 2)
+        balaPlus.layer.shadowRadius = 5
+        balaPlus.layer.shadowOpacity = 0.8
     }
     
     override func viewDidAppear(_ animated: Bool) {

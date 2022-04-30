@@ -9,10 +9,15 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
-        
-    @IBOutlet weak var nameTest: UILabel!
+    //buttons
+    @IBOutlet weak var begButton: UIButton!
+    @IBOutlet weak var interButton: UIButton!
+    @IBOutlet weak var advanButton: UIButton!
     
-    @IBOutlet weak var nameTextField: UITextField!
+    
+    
+    
+    @IBOutlet weak var welcomeLabel: UILabel!
     
     var beginV: Int = 1
     var interV: Int = 1
@@ -20,8 +25,21 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameTest.text = fullName.firstName
+        welcomeLabel.text = "Welcome \(fullName.firstName)"
 
+        //button shadows
+        begButton.layer.shadowColor = UIColor.black.cgColor
+        begButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+        begButton.layer.shadowRadius = 5
+        begButton.layer.shadowOpacity = 1.0
+        interButton.layer.shadowColor = UIColor.black.cgColor
+        interButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+        interButton.layer.shadowRadius = 5
+        interButton.layer.shadowOpacity = 1.0
+        advanButton.layer.shadowColor = UIColor.black.cgColor
+        advanButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+        advanButton.layer.shadowRadius = 5
+        advanButton.layer.shadowOpacity = 1.0
     }
 
 

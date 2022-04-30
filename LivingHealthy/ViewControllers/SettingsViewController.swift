@@ -52,8 +52,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         levelData = ["Beginner", "Intermediate", "Advanced"]
         
-        updateName.placeholder = "test"
-        updateEmailField.placeholder = Auth.auth().currentUser?.email
+
     }
     
     //updating user weekly goals and sending results to tabbar controller to get passed to workouts VC
@@ -78,6 +77,20 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     
     
+//    @IBAction func confirmAbility(_ sender: Any) {
+//        let tabbar = tabBarController as! mainTabBarViewController
+//
+//        pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
+//        if row == 0 {
+//            tabbar.begin = 1
+//            
+//        }else if row == 1 {
+//            tabbar.inter = 1
+//
+//        } else if row == 2 {
+//            tabbar.advan = 1
+//            }
+//    }
     
     //functions for the picker view
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -87,9 +100,24 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return levelData.count
     }
+    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return levelData[row]
     }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let tabbar = tabBarController as! mainTabBarViewController
+
+        if row == 0 {
+            tabbar.begin = 1
+            
+        }else if row == 1 {
+            tabbar.inter = 1
+
+        } else if row == 2 {
+            tabbar.advan = 1
+            }
+        }
     
 
     //updating user details
