@@ -1,3 +1,10 @@
+//
+//  WorkoutView.swift
+//  LivingHealthy
+//
+//  Created by Rachael Hanson
+//
+
 import SwiftUI
 
 struct WorkoutView: View {
@@ -27,15 +34,15 @@ struct WorkoutView: View {
                 .padding(.bottom, 1)
                 
                 HStack(spacing: 0) {
-                    Image(systemName: "star.fill")
-                        .foregroundColor(.yellow)
+                    Image(systemName: "person.circle")
+                        .foregroundColor(.orange)
                     Text(workout.instructor)
                         .padding(.trailing)
                     Text(workout.type.rawValue)
                         .foregroundColor(.gray)
                     Spacer()
-                    Text(workout.exercise.rawValue)
-                        .encapulate(color: .black.opacity(0.8), foregroundColor : .white)
+                    Text(workout.challenge.rawValue)
+                        .foregroundColor(Color(red: 0.4627, green: 0.8392, blue: 1.0))
                 }
                 .padding(.bottom, 1)
                 
@@ -43,7 +50,7 @@ struct WorkoutView: View {
                 HStack {
                     ForEach(workout.tags, id: \.self) { tag in
                         Text(tag)
-                            .encapulate(color: .black.opacity(0.8), foregroundColor : .white)
+                            .encapulate(color: Color(red: 0.4627, green: 0.8392, blue: 1.0).opacity(0.8), foregroundColor : .white)
                     }
                     Spacer()
                 }

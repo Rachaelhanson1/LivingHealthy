@@ -1,13 +1,21 @@
+//
+//  ListViewA.swift
+//  LivingHealthy
+//
+//  Created by Rachael Hanson on 30/04/2022.
+//
+
 import SwiftUI
 
-struct ListView: View {
+struct ListViewA: View {
     @ObservedObject var viewModel = ListViewModel()
-    
+  
     @State var inputText = ""
     //change this depending on user level
-    @State var selectedLevel = Level.all
+    @State var selectedLevel = Level.advanced
     @State var selectedExercise = Exercise.all
     @State var selectedChallenge = Challenge.all
+
     
     
     var body: some View {
@@ -22,7 +30,7 @@ struct ListView: View {
                             .background(Color.black), alignment: .bottom)
                 .padding(.bottom, 5)
                 
-            //filter for each of the workouts
+            //scroll for each of the workouts
             ScrollView(showsIndicators: false) {
                 LazyVStack {
                     ForEach(viewModel.workouts.filter({ workout in
@@ -74,11 +82,10 @@ struct ListView: View {
             return false
         }
     }
-
 }
 
-struct ListView_Previews: PreviewProvider {
+struct ListView_PreviewsA: PreviewProvider {
     static var previews: some View {
-        ListView()
+        ListViewA()
     }
 }

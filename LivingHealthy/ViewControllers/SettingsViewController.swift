@@ -43,6 +43,9 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         super.viewDidLoad()
 
         accountView.layer.cornerRadius = 10
+        accountView.layer.borderWidth = 2
+        accountView.layer.borderColor = UIColor.gray.cgColor
+        
         targetView.layer.cornerRadius = 10
         abilityView.layer.cornerRadius = 10
         
@@ -83,7 +86,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
 //        pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
 //        if row == 0 {
 //            tabbar.begin = 1
-//            
+//
 //        }else if row == 1 {
 //            tabbar.inter = 1
 //
@@ -121,7 +124,6 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
 
     //updating user details
-
     @IBAction func updateUserButton(_ sender: Any) {
 
         //update user email

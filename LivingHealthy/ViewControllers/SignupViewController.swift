@@ -32,10 +32,22 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var password2Error: UILabel!
     @IBOutlet weak var noMatch: UILabel!
     
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var signUpView: UIView!
+    
     public var firstN = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        signUpButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        signUpButton.layer.shadowOffset = CGSize(width: 1, height: 2)
+        signUpButton.layer.shadowRadius = 10
+        signUpButton.layer.shadowOpacity = 1
+        
+        signUpView.layer.cornerRadius = 10
+        signUpView.layer.borderWidth = 2
+        signUpView.layer.borderColor = UIColor.gray.cgColor
     }
     
     @IBAction func signUpTapped(_ sender: Any) {

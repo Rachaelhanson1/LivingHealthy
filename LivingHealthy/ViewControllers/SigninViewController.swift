@@ -20,8 +20,20 @@ class SigninViewController: UIViewController {
     @IBOutlet weak var passwordError: UILabel!
     
     
+    @IBOutlet weak var signButton: UIButton!
+    @IBOutlet weak var signInView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        signButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        signButton.layer.shadowOffset = CGSize(width: 1, height: 2)
+        signButton.layer.shadowRadius = 10
+        signButton.layer.shadowOpacity = 1
+        
+        signInView.layer.cornerRadius = 10
+        signInView.layer.borderWidth = 2
+        signInView.layer.borderColor = UIColor.gray.cgColor
 
     }
 
@@ -67,16 +79,10 @@ class SigninViewController: UIViewController {
     // automatically log the user in, if they have been previously logged in on this device and if they have not logged out
     func checkUserInfo() {
         if Auth.auth().currentUser != nil {
-            print(Auth.auth().currentUser?.uid)
-
-            
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "tabBarController")
             vc.modalPresentationStyle = .overFullScreen
             present(vc, animated:true)
-            
-            
-        
         }
     }
 }

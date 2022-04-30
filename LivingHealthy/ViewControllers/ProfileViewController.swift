@@ -39,10 +39,16 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var addAfterButton: UIButton!
     
     
+    @IBOutlet weak var nowView: UIView!
+    
     var imageNum = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nowView.layer.cornerRadius = 20
+        nowView.layer.borderWidth = 2
+        nowView.layer.borderColor = UIColor.gray.cgColor
         
         first.text = fullName.firstName
         last.text = "Hello \(fullName.lastName)"
@@ -139,7 +145,7 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
     }
     //selection of After picture
     func presentAfterActionSheet(){
-        imageNum = 2
+        imageNum = 3
         let actionSheet = UIAlertController(title: "After Picture", message: "How would you like to select a current or recent picture of you?", preferredStyle: .actionSheet)
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         actionSheet.addAction(UIAlertAction(title: "Take Photo", style: .default, handler: {[weak self]_ in self?.presentCamera()}))
@@ -170,7 +176,7 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
         
         if imageNum == 1 {
             guard let selectedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else {return}
-                        self.userPhoto.image = selectedImage
+            self.userPhoto.image = selectedImage
         }
         else if imageNum == 2 {
             guard let selectedImage2 = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else {return}

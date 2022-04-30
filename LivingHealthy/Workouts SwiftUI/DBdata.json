@@ -2,8 +2,9 @@
     {
         "ytURL":"H1qPzxQDj2w",
         "level": "Beginner",
-        "exercise": "Balance"
+        "exercise": "Balance",
         "name": "Legs, Bums, Tums",
+        "challenge": "7 days",
         "instructor": "Joe",
         "time": 15,
         "tags": ["Balance", "Aerobics"],
@@ -11,8 +12,9 @@
     {
         "ytURL":"H1qPzxQDj2w",
         "level": "Beginner",
-        "exercise": "Balance"
+        "exercise": "Balance",
         "name": "Leg workout",
+        "challenge": "7 days",
         "instructor": "Shelly",
         "time": 30,
         "tags": ["Weight"],
@@ -20,8 +22,9 @@
     {
         "ytURL":"H1qPzxQDj2w",
         "level": "Intermediate",
-        "exercise": "Balance"
+        "exercise": "Balance",
         "name": "Upper body focus",
+        "challenge": "7 days",
         "instructor": "Joe",
         "time": 20,
         "tags": ["Aerobics"],
@@ -29,8 +32,9 @@
     {
         "ytURL":"H1qPzxQDj2w",
         "level": "Intermediate",
-        "exercise": "Balance"
+        "exercise": "Balance",
         "name": "Back Muscles",
+        "challenge": "7 days",
         "instructor": "Shelly",
         "time": 60,
         "tags": ["Balance", "Aerobics", "Weight"],
@@ -38,8 +42,9 @@
     {
         "ytURL":"H1qPzxQDj2w",
         "level": "Intermediate",
-        "exercise": "Balance"
+        "exercise": "Balance",
         "name": "Arm Weights",
+        "challenge": "7 days",
         "instructor": "Joe Wicks",
         "time": 20,
         "tags": ["Weight", "strength"],
@@ -48,8 +53,9 @@
     {
         "ytURL":"H1qPzxQDj2w",
         "level": "Advanced",
-        "exercise": "Balance"
+        "exercise": "Balance",
         "name": "Run",
+        "challenge": "7 days",
         "instructor": "Shelly",
         "time": 10,
         "tags": ["Weight", "Aerobics", "Balance"],
@@ -58,8 +64,9 @@
     {
         "ytURL":"H1qPzxQDj2w",
         "level": "Advanced",
-        "exercise": "Balance"
+        "exercise": "Balance",
         "name": "Yoga",
+        "challenge": "7 days",
         "instructor": "Emma",
         "time": 50,
         "tags": ["Balance", "Yoga"],
@@ -68,8 +75,9 @@
     {
         "ytURL":"H1qPzxQDj2w",
         "level": "Advanced",
-        "exercise": "Balance"
+        "exercise": "Balance",
         "name": "Step Fit",
+        "challenge": "7 days",
         "instructor": "Emma",
         "time": 15,
         "tags": ["Strength", "Cardio"],

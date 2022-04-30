@@ -1,11 +1,19 @@
+//
+//  AppBarView1.swift
+//  LivingHealthy
+//
+//  Created by Rachael Hanson on 30/04/2022.
+//
 import SwiftUI
 
 struct AppBarView: View {
     @EnvironmentObject var viewModel: ListViewModel
-    @State var showSearchBar = false
+    @State var showSearchBar = true
     @Binding var inputText: String
     @Binding var selectedLevel: Level
     @Binding var selectedExercise: Exercise
+    @Binding var selectedChallenge: Challenge
+
     
     
     var SearchBarView: some View {
@@ -21,15 +29,11 @@ struct AppBarView: View {
     var body: some View {
         VStack {
             HStack {
-               // Image(systemName: "ellipsis")
-               // Spacer()
                 
                 if showSearchBar {
                     SearchBarView
                         .transition(.move(edge: .top))
                 } else {
-               //     Text("Workouts list")
-               //         .bold()
                 }
                  
                 Spacer()
@@ -68,6 +72,7 @@ struct AppBarView: View {
                             viewModel.sortList(by: viewModel.timeSort)
                         }
                     
+                    //select level type filter
                     Picker(selectedLevel.rawValue,
                            selection: $selectedLevel) {
                         ForEach(Level.allCases, id: \.self) { value in
@@ -80,6 +85,7 @@ struct AppBarView: View {
                    .padding(.vertical, -5)
                    .encapulate(borderColor: .gray)
                     
+                    //select exercise type filter
                     Picker(selectedExercise.rawValue,
                            selection: $selectedExercise) {
                         ForEach(Exercise.allCases, id: \.self) { value in
@@ -92,10 +98,24 @@ struct AppBarView: View {
                     .padding(.vertical, -5)
                     .encapulate(borderColor: .gray)
  
+                
+                //select challenge level type filter
+                Picker(selectedChallenge.rawValue,
+                       selection: $selectedChallenge) {
+                    ForEach(Challenge.allCases, id: \.self) { value in
+                        Text(value.rawValue)
+                            .tag(value)
+                    }
                 }
+               .colorMultiply(.black)
+               .pickerStyle(.menu)
+               .padding(.vertical, -5)
+               .encapulate(borderColor: .gray)
                 .padding(.vertical, 3)
+                }
             }
         }
         .frame(width: UIScreen.main.bounds.width-30, height: 100)
     }
+
 }

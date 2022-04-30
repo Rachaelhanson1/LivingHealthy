@@ -1,9 +1,18 @@
+//
+//  Extensions1.swift
+//  LivingHealthy
+//
+//  Created by Rachael Hanson
+//
+
 
 import SwiftUI
 import WebKit
 
 struct VideoView: UIViewRepresentable {
     
+    @State private var showingAlert = false
+
     //embeding youtube videos into app
     let videoID: String
     func makeUIView(context: Context) -> WKWebView {
@@ -15,7 +24,13 @@ struct VideoView: UIViewRepresentable {
         uiView.scrollView.isScrollEnabled = false
         uiView.load(URLRequest(url: ytURL))
     }
-}
+
+
+func webViewDidClose(_ videoView: WKWebView) {
+    
+    Alert(title: Text("Title"), message: Text("did close"), dismissButton: .default(Text("Close")))
+    
+}}
 
 
 extension View {
@@ -26,7 +41,7 @@ extension View {
             .background(Capsule().fill(color))
             .foregroundColor(foregroundColor)
     }
-    
+
     func encapulate(borderColor: Color) -> some View {
         return self
             .padding(7)

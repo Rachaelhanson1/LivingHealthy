@@ -1,18 +1,27 @@
+//
+//  Workout.swift
+//  LivingHealthy
+//
+//  Created by Rachael Hanson on 30/04/2022.
+//
+
 import SwiftUI
 
 struct Workout: Codable, Hashable {
     let ytURL: String
     let type: Level
     let exercise: Exercise
+    let challenge: Challenge
     let name: String
     let instructor: String
-    let time: Double
-    var tags: [String]
+    let time: Int
+    let tags: [String]
     
     enum CodingKeys: String, CodingKey {
         case ytURL, name, instructor, time, tags
         case type = "level"
         case exercise = "exercise"
+        case challenge = "challenge"
     }
 }
 
@@ -31,6 +40,13 @@ enum Exercise: String, Codable, CaseIterable {
     case balance = "Balance"
 }
 
+enum Challenge: String, Codable, CaseIterable {
+    case all = "All challenges"
+    case short = "7 days"
+    case med = "14 days"
+    case long = "28 days"
+    case single = "Single"
+}
 
 extension Level {
     enum ErrorType: Error {
@@ -94,7 +110,7 @@ extension Exercise {
             self = .balance
         
         default:
-            print("Error occurs while decoding 'Level' key.")
+            print("Error occurs while decoding 'Exercise' key.")
             throw ErrorType.decoding
         }
     }
@@ -111,6 +127,51 @@ extension Exercise {
             try container.encode("Strength Training")
         case .balance:
             try container.encode("Balance")
+        case .all:
+            try container.encode("None")
+
+        }
+    }
+}
+
+extension Challenge {
+    enum ErrorType: Error {
+        case encoding
+        case decoding
+    }
+    
+    init(from decoder: Decoder) throws {
+        let value = try decoder.singleValueContainer()
+        let decodedValue = try value.decode(String.self)
+        
+        switch decodedValue {
+        case "7 days":
+            self = .short
+        case "14 days":
+            self = .med
+        case "28 days":
+            self = .long
+        case "Single":
+            self = .single
+        
+        default:
+            print("Error occurs while decoding 'Level' key.")
+            throw ErrorType.decoding
+        }
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        
+        switch self {
+        case .short:
+            try container.encode("7 days")
+        case .med:
+            try container.encode("14 days")
+        case .long:
+            try container.encode("28 days")
+        case .single:
+            try container.encode("Single")
         case .all:
             try container.encode("None")
 
