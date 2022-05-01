@@ -17,5 +17,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         //nameLabel.text = fullName.firstName
         welcomeLabel.text = "Welcome \(fullName.firstName)!"
+        
     }
 }

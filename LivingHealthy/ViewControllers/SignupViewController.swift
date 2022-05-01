@@ -17,6 +17,8 @@ struct fullName {
 
 class SignupViewController: UIViewController {
     
+//    var docRef: DocumentReference!
+    
     //email and password labels
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
@@ -37,8 +39,11 @@ class SignupViewController: UIViewController {
     
     public var firstN = ""
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
         
         signUpButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
         signUpButton.layer.shadowOffset = CGSize(width: 1, height: 2)
@@ -48,6 +53,7 @@ class SignupViewController: UIViewController {
         signUpView.layer.cornerRadius = 10
         signUpView.layer.borderWidth = 2
         signUpView.layer.borderColor = UIColor.gray.cgColor
+        
     }
     
     @IBAction func signUpTapped(_ sender: Any) {
@@ -84,12 +90,25 @@ class SignupViewController: UIViewController {
     
         
     func signUp() {
-        Auth.auth().createUser(withEmail: email.text!, password: password.text!) { (authResult, error) in
+        Auth.auth().createUser(withEmail: email.text!, password: password.text!) { [self] (authResult, error) in
             guard let user = authResult?.user, error == nil else {
                 print("Error \(error?.localizedDescription)")
                 return
             }
+//            let firstName = firstName.text
+//            let lastName = lastName.text
+//
+//            let dataSave: [String: Any] = ["FirstName": firstName, "Lastname": lastName]
+//            docRef.setData(dataSave) { (error) in
+//                if let error = error {
+//                    print("Error has occurred")
+//                }
+//                else {
+//                    print("Data has been saved")
+//                }
+//            }
 
+            
            // send the user to the welcome screen once they have signed up and clicked the 'sign up' button
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "welcomePage1")

@@ -11,6 +11,9 @@ target 'LivingHealthy' do
 pod 'youtube-ios-player-helper'
 
 
-pod "MBCircularProgressBar"
+pod 'MBCircularProgressBar'
+
+# pod 'Firebase/Auth'
+
 
 end
