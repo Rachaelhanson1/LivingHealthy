@@ -14,14 +14,15 @@ struct Workout: Codable, Hashable {
     let challenge: Challenge
     let name: String
     let instructor: String
-    let time: Int
+    let time: Time
     let tags: [String]
     
     enum CodingKeys: String, CodingKey {
-        case ytURL, name, instructor, time, tags
+        case ytURL, name, instructor, tags
         case type = "level"
         case exercise = "exercise"
         case challenge = "challenge"
+        case time = "time"
     }
 }
 
@@ -47,6 +48,15 @@ enum Challenge: String, Codable, CaseIterable {
     case long = "28 days"
     case single = "Single"
 }
+enum Time: String, Codable, CaseIterable {
+    case all = "All Durations"
+    case mini = "10 mins"
+    case quarter = "15 mins"
+    case half = "30 mins"
+    case three = "45 mins"
+    case hour = "60 mins"
+}
+
 
 extension Level {
     enum ErrorType: Error {
@@ -172,6 +182,55 @@ extension Challenge {
             try container.encode("28 days")
         case .single:
             try container.encode("Single")
+        case .all:
+            try container.encode("None")
+
+        }
+    }
+}
+
+extension Time {
+    enum ErrorType: Error {
+        case encoding
+        case decoding
+    }
+    
+    init(from decoder: Decoder) throws {
+        let value = try decoder.singleValueContainer()
+        let decodedValue = try value.decode(String.self)
+        
+        switch decodedValue {
+        case "10 mins":
+            self = .mini
+        case "15 mins":
+            self = .quarter
+        case "30 mins":
+            self = .half
+        case "45 mins":
+            self = .three
+        case "60 mins":
+            self = .hour
+        
+        default:
+            print("Error occurs while decoding 'Level' key.")
+            throw ErrorType.decoding
+        }
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        
+        switch self {
+        case .mini:
+            try container.encode("10 mins")
+        case .quarter:
+            try container.encode("15 mins")
+        case .half:
+            try container.encode("30 mins")
+        case .three:
+            try container.encode("45 mins")
+        case .hour:
+            try container.encode("60 mins")
         case .all:
             try container.encode("None")
 

@@ -9,7 +9,7 @@ import Foundation
 class ListViewModel: ObservableObject {
     @Published var workouts = [Workout]()
     @Published var nameSort = SortBy.nameASC
-    @Published var timeSort = SortBy.timeASC
+//    @Published var timeSort = SortBy.timeASC
     
     init() {
         print("SSS")
@@ -46,21 +46,21 @@ class ListViewModel: ObservableObject {
             workouts.sort {
                 $0.name.lowercased() > $1.name.lowercased()
             }
-        case .timeASC:
-            workouts.sort {
-                $0.time < $1.time
-            }
-        case .timeDESC:
-            workouts.sort {
-                $0.time > $1.time
-            }
+//        case .timeASC:
+//            workouts.sort {
+//                $0.time < $1.time
+//            }
+//        case .timeDESC:
+//            workouts.sort {
+//                $0.time > $1.time
+//            }
         }
     }
     
     enum SortBy: String {
         case nameASC = "Name △"
         case nameDESC = "Name ▽"
-        case timeASC = "Time △"
-        case timeDESC = "Time ▽"
+//        case timeASC = "Time △"
+//        case timeDESC = "Time ▽"
     }
 }

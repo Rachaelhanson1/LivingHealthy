@@ -15,6 +15,8 @@ struct ListViewB: View {
     @State var selectedLevel = Level.beginner
     @State var selectedExercise = Exercise.all
     @State var selectedChallenge = Challenge.all
+    @State var selectedTime = Time.all
+
 
     
     
@@ -22,7 +24,7 @@ struct ListViewB: View {
         VStack {
             
             //bar at the top for searching and filtering
-            AppBarView(inputText: $inputText, selectedLevel: $selectedLevel, selectedExercise: $selectedExercise, selectedChallenge: $selectedChallenge)
+            AppBarView(inputText: $inputText, selectedLevel: $selectedLevel, selectedExercise: $selectedExercise, selectedChallenge: $selectedChallenge, selectedTime: $selectedTime)
                 .environmentObject(viewModel)
                 .padding(.bottom, 5)
                 .overlay(Divider()
@@ -41,7 +43,8 @@ struct ListViewB: View {
                         filterExercise(workout)
                     }).filter({ workout in
                         filterChallenge(workout)
-                        
+                    }).filter({ workout in
+                        filterTime(workout)
                     }), id: \.self) { workout in
                         WorkoutView(workout: workout)
                     }
@@ -76,6 +79,14 @@ struct ListViewB: View {
     }
     private func filterChallenge(_ workout: Workout) -> Bool {
         if selectedChallenge == .all || selectedChallenge == workout.challenge
+        {
+            return true
+        } else {
+            return false
+        }
+    }
+    private func filterTime(_ workout: Workout) -> Bool {
+        if selectedTime == .all || selectedTime == workout.time
         {
             return true
         } else {

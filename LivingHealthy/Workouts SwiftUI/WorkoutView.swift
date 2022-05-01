@@ -28,7 +28,7 @@ struct WorkoutView: View {
                         .font(.title)
                         .bold()
                     Spacer()
-                    Text(String(workout.time) + " mins")
+                    Text(workout.time.rawValue)
                         .font(.subheadline)
                 }
                 .padding(.bottom, 1)

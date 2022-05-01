@@ -1,85 +1,148 @@
 [
+
     {
-        "ytURL":"H1qPzxQDj2w",
+        "ytURL":"8sUFKRzP9Uc",
+        "level": "Beginner",
+        "exercise": "Strength Training",
+        "name": "Day 2 of 14 - Build Muscle",
+        "challenge": "14 days",
+        "instructor": "Schellea",
+        "time": "10 mins",
+        "tags": ["Weights", "Weight lose"],
+    },
+    {
+        "ytURL":"5Xc1n9oVW9A",
+        "level": "Advanced",
+        "exercise": "Strength Training",
+        "name": "Day 1 of 28 - Power Strength Workout",
+        "challenge": "28 days",
+        "instructor": "",
+        "time": "30 mins",
+        "tags": ["Weights", "Muscle"],
+    },
+
+    {
+        "ytURL":"vvB8NYoQtv0",
+        "level": "Intermediate",
+        "exercise": "Strength Training",
+        "name": "Day 3 of 7 - Full body Strength",
+        "challenge": "7 days",
+        "instructor": "Sydney",
+        "time": "60 mins",
+        "tags": ["Stength", "Power" ,"Weights"],
+    },
+    
+    
+    
+    
+    {
+        "ytURL":"wnHsrXCTjnM",
         "level": "Beginner",
         "exercise": "Balance",
-        "name": "Legs, Bums, Tums",
-        "challenge": "7 days",
-        "instructor": "Joe",
-        "time": 15,
-        "tags": ["Balance", "Aerobics"],
+        "name": "Day 2 of 28 - Balance Workout",
+        "challenge": "28 days",
+        "instructor": "Meredith",
+        "time": "10 mins",
+        "tags": ["Stability", "Movement"],
     },
     {
-        "ytURL":"H1qPzxQDj2w",
+        "ytURL":"kb2lVRsi7-M",
+        "level": "Advanced",
+        "exercise": "Balance",
+        "name": "Balance Exercises for Seniors",
+        "challenge": "Single",
+        "instructor": "Stacy",
+        "time": "45 mins",
+        "tags": ["Fall prevention", "Toning"],
+    },
+    {
+        "ytURL":"pfJFjCRvz1U",
+        "level": "Intermediate",
+        "exercise": "Balance",
+        "name": "Day 2 of 7 - Balance, Strenth & Core",
+        "challenge": "7 days",
+        "instructor": "Lauren",
+        "time": "15 mins",
+        "tags": ["Weights", "Core"],
+    },
+    
+    
+    
+    
+    
+    {
+        "ytURL":"PWic8ckZ1q0",
+        "level": "Intermediate",
+        "exercise": "Cardio",
+        "name": "Low Impact Cardio Workout",
+        "challenge": "Single",
+        "instructor": "Joe",
+        "time": "15 mins",
+        "tags": ["Jumping", "Rotations"],
+    },
+    {
+        "ytURL":"UCLVootTYqU",
         "level": "Beginner",
-        "exercise": "Balance",
-        "name": "Leg workout",
-        "challenge": "7 days",
-        "instructor": "Shelly",
-        "time": 30,
-        "tags": ["Weight"],
+        "exercise": "Cardio",
+        "name": "Day 1 of 14 - Indoor Walk Challenge",
+        "challenge": "14 days",
+        "instructor": "Schellea",
+        "time": "30 mins",
+        "tags": [""],
     },
     {
-        "ytURL":"H1qPzxQDj2w",
-        "level": "Intermediate",
-        "exercise": "Balance",
-        "name": "Upper body focus",
-        "challenge": "7 days",
-        "instructor": "Joe",
-        "time": 20,
-        "tags": ["Aerobics"],
-    },
-    {
-        "ytURL":"H1qPzxQDj2w",
-        "level": "Intermediate",
-        "exercise": "Balance",
-        "name": "Back Muscles",
-        "challenge": "7 days",
-        "instructor": "Shelly",
-        "time": 60,
-        "tags": ["Balance", "Aerobics", "Weight"],
-    },
-    {
-        "ytURL":"H1qPzxQDj2w",
-        "level": "Intermediate",
-        "exercise": "Balance",
-        "name": "Arm Weights",
-        "challenge": "7 days",
-        "instructor": "Joe Wicks",
-        "time": 20,
-        "tags": ["Weight", "strength"],
+        "ytURL":"Ci_5ilrpieY",
+        "level": "Advanced",
+        "exercise": "Cardio",
+        "name": "Day 3 of 28 - HIIT workout",
+        "challenge": "28 days",
+        "instructor": "Hannah",
+        "time": "60 mins",
+        "tags": ["No equipment", "High intensity"],
     },
     
-    {
-        "ytURL":"H1qPzxQDj2w",
-        "level": "Advanced",
-        "exercise": "Balance",
-        "name": "Run",
-        "challenge": "7 days",
-        "instructor": "Shelly",
-        "time": 10,
-        "tags": ["Weight", "Aerobics", "Balance"],
-    },
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     {
-        "ytURL":"H1qPzxQDj2w",
+        "ytURL":"lNPaDikuRhU",
         "level": "Advanced",
-        "exercise": "Balance",
-        "name": "Yoga",
-        "challenge": "7 days",
-        "instructor": "Emma",
-        "time": 50,
-        "tags": ["Balance", "Yoga"],
+        "exercise": "Flexibility",
+        "name": "Flexibility for Older Adults",
+        "challenge": "Single",
+        "instructor": "Jessica",
+        "time": "15 mins",
+        "tags": ["Mobility", "Floor-based"],
     },
-    
     {
-        "ytURL":"H1qPzxQDj2w",
-        "level": "Advanced",
-        "exercise": "Balance",
-        "name": "Step Fit",
+        "ytURL":"DDSSD_N-Bak",
+        "level": "Intermediate",
+        "exercise": "Flexibility",
+        "name": "Day 1 of 7 - Stretch and Mobility",
         "challenge": "7 days",
-        "instructor": "Emma",
-        "time": 15,
-        "tags": ["Strength", "Cardio"],
+        "instructor": "Dan",
+        "time": "45 mins",
+        "tags": ["Mobility", "Stretching"],
     },
+    {
+        "ytURL":"qULTwquOuT4",
+        "level": "Beginner",
+        "exercise": "Flexibility",
+        "name": "Day 3 of 14 - Flexibility",
+        "challenge": "14 days",
+        "instructor": "Maddie",
+        "time": "30 mins",
+        "tags": ["Stretch", "Easy"],
+    },
+
 ]

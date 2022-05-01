@@ -13,6 +13,7 @@ struct AppBarView: View {
     @Binding var selectedLevel: Level
     @Binding var selectedExercise: Exercise
     @Binding var selectedChallenge: Challenge
+    @Binding var selectedTime: Time
 
     
     
@@ -61,16 +62,16 @@ struct AppBarView: View {
                             }
                             viewModel.sortList(by: viewModel.nameSort)
                         }
-                    Text(viewModel.timeSort.rawValue)
-                        .encapulate(borderColor: .gray)
-                        .onTapGesture {
-                            if (viewModel.timeSort == .timeASC){
-                                viewModel.timeSort = .timeDESC
-                            } else {
-                                viewModel.timeSort = .timeASC
-                            }
-                            viewModel.sortList(by: viewModel.timeSort)
-                        }
+//                    Text(viewModel.timeSort.rawValue)
+//                        .encapulate(borderColor: .gray)
+//                        .onTapGesture {
+//                            if (viewModel.timeSort == .timeASC){
+//                                viewModel.timeSort = .timeDESC
+//                            } else {
+//                                viewModel.timeSort = .timeASC
+//                            }
+//                            viewModel.sortList(by: viewModel.timeSort)
+//                        }
                     
                     //select level type filter
                     Picker(selectedLevel.rawValue,
@@ -103,6 +104,20 @@ struct AppBarView: View {
                 Picker(selectedChallenge.rawValue,
                        selection: $selectedChallenge) {
                     ForEach(Challenge.allCases, id: \.self) { value in
+                        Text(value.rawValue)
+                            .tag(value)
+                    }
+                }
+               .colorMultiply(.black)
+               .pickerStyle(.menu)
+               .padding(.vertical, -5)
+               .encapulate(borderColor: .gray)
+                .padding(.vertical, 3)
+                    
+                //select challenge time duration filter
+                Picker(selectedTime.rawValue,
+                       selection: $selectedTime) {
+                    ForEach(Time.allCases, id: \.self) { value in
                         Text(value.rawValue)
                             .tag(value)
                     }
