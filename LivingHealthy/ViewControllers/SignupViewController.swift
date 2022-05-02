@@ -50,9 +50,11 @@ class SignupViewController: UIViewController {
         signUpButton.layer.shadowRadius = 10
         signUpButton.layer.shadowOpacity = 1
         
-        signUpView.layer.cornerRadius = 10
-        signUpView.layer.borderWidth = 2
-        signUpView.layer.borderColor = UIColor.gray.cgColor
+        signUpView.layer.cornerRadius = 15
+        signUpView.layer.shadowColor = UIColor.lightGray.cgColor
+        signUpView.layer.shadowOffset = CGSize(width: 1, height: 2)
+        signUpView.layer.shadowRadius = 10
+        signUpView.layer.shadowOpacity = 1
         
     }
     
@@ -95,19 +97,6 @@ class SignupViewController: UIViewController {
                 print("Error \(error?.localizedDescription)")
                 return
             }
-//            let firstName = firstName.text
-//            let lastName = lastName.text
-//
-//            let dataSave: [String: Any] = ["FirstName": firstName, "Lastname": lastName]
-//            docRef.setData(dataSave) { (error) in
-//                if let error = error {
-//                    print("Error has occurred")
-//                }
-//                else {
-//                    print("Data has been saved")
-//                }
-//            }
-
             
            // send the user to the welcome screen once they have signed up and clicked the 'sign up' button
             let storyboard = UIStoryboard(name: "Main", bundle: nil)

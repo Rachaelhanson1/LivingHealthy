@@ -50,8 +50,9 @@ class ProfileViewController: UIViewController {
         nowView.layer.borderWidth = 2
         nowView.layer.borderColor = UIColor.gray.cgColor
         
-        first.text = fullName.firstName
-        last.text = "Hello \(fullName.lastName)"
+        
+        first.text = "Hello \(fullName.firstName)"
+        last.text = fullName.lastName
         emailLabel.text = Auth.auth().currentUser?.email!
     
         //corners of the menu separators

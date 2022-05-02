@@ -32,7 +32,6 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var stepsMax: UITextField!
     
     
-    @IBOutlet weak var cardioL: UILabel!
     
     // ability level picker
     @IBOutlet weak var levelPicker: UIPickerView!
@@ -42,12 +41,18 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //styling for the views
         accountView.layer.cornerRadius = 10
         accountView.layer.borderWidth = 2
         accountView.layer.borderColor = UIColor.gray.cgColor
         
         targetView.layer.cornerRadius = 10
+        targetView.layer.borderWidth = 2
+        targetView.layer.borderColor = UIColor.gray.cgColor
+        
         abilityView.layer.cornerRadius = 10
+        abilityView.layer.borderWidth = 2
+        abilityView.layer.borderColor = UIColor.gray.cgColor
         
         //creating a picker for user ability level
         levelPicker.delegate = self
@@ -75,25 +80,30 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         let stepVal = Int(stepsMax.text!)
         tabbar.stepsValue = stepVal!
         
+    }
+    
+    // Changing level in the settings - changes the sorted level in the all workouts page
+    internal func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent  component: Int) {
+        let tabbar = tabBarController as! mainTabBarViewController
+
+        let selectedValue = levelData[row] as String
         
-        cardioL.text = "\(String(describing: cardioMax.text)) \(tabbar.cardioValue)"
+        if selectedValue == "Beginner" {
+            tabbar.begin = 1
+
+        }else if selectedValue == "Intermediate" {
+            tabbar.inter = 1
+
+        } else if selectedValue == "Advanced" {
+            tabbar.advan = 1
+            }
+        else {
+            print("No selection")
+        }
     }
     
     
-//    @IBAction func confirmAbility(_ sender: Any) {
-//        let tabbar = tabBarController as! mainTabBarViewController
-//
-//        pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
-//        if row == 0 {
-//            tabbar.begin = 1
-//
-//        }else if row == 1 {
-//            tabbar.inter = 1
-//
-//        } else if row == 2 {
-//            tabbar.advan = 1
-//            }
-//    }
+
     
     //functions for the picker view
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -108,20 +118,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         return levelData[row]
     }
     
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        let tabbar = tabBarController as! mainTabBarViewController
 
-        if row == 0 {
-            tabbar.begin = 1
-            
-        }else if row == 1 {
-            tabbar.inter = 1
-
-        } else if row == 2 {
-            tabbar.advan = 1
-            }
-        }
-    
 
     //updating user details
     @IBAction func updateUserButton(_ sender: Any) {

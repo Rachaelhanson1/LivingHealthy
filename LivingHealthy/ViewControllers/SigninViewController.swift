@@ -31,9 +31,11 @@ class SigninViewController: UIViewController {
         signButton.layer.shadowRadius = 10
         signButton.layer.shadowOpacity = 1
         
-        signInView.layer.cornerRadius = 10
-        signInView.layer.borderWidth = 2
-        signInView.layer.borderColor = UIColor.gray.cgColor
+        signInView.layer.cornerRadius = 15
+        signInView.layer.shadowColor = UIColor.lightGray.cgColor
+        signInView.layer.shadowOffset = CGSize(width: 1, height: 2)
+        signInView.layer.shadowRadius = 10
+        signInView.layer.shadowOpacity = 1
 
     }
 
