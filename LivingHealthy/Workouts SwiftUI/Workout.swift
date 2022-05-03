@@ -34,7 +34,7 @@ enum Level: String, Codable, CaseIterable {
 }
 
 enum Exercise: String, Codable, CaseIterable {
-    case all = "All exercises"
+    case all = "Exercise Type"
     case cardio = "Cardio"
     case flexibility = "Flexibility"
     case strength = "Strength Training"
@@ -42,14 +42,14 @@ enum Exercise: String, Codable, CaseIterable {
 }
 
 enum Challenge: String, Codable, CaseIterable {
-    case all = "All challenges"
+    case all = "Challenges"
     case short = "7 days"
     case med = "14 days"
     case long = "28 days"
-    case single = "Single"
+    case single = "No challenges"
 }
 enum Time: String, Codable, CaseIterable {
-    case all = "All Durations"
+    case all = "Duration"
     case mini = "10 mins"
     case quarter = "15 mins"
     case half = "30 mins"

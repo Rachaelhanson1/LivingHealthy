@@ -8,16 +8,12 @@ import Foundation
 
 class ListViewModel: ObservableObject {
     @Published var workouts = [Workout]()
-    @Published var nameSort = SortBy.nameASC
-//    @Published var timeSort = SortBy.timeASC
     
     init() {
-        print("SSS")
         workouts = loadJsonFile()
     }
     
     //importing the video data for each workout from the database
-    
     private func loadJsonFile() -> [Workout]{
         var dbData = [Workout]()
         do {
@@ -36,31 +32,4 @@ class ListViewModel: ObservableObject {
         return dbData
     }
     
-    func sortList(by sortType: SortBy) {
-        switch sortType {
-        case .nameASC:
-            workouts.sort {
-                $0.name.lowercased() < $1.name.lowercased()
-            }
-        case .nameDESC:
-            workouts.sort {
-                $0.name.lowercased() > $1.name.lowercased()
-            }
-//        case .timeASC:
-//            workouts.sort {
-//                $0.time < $1.time
-//            }
-//        case .timeDESC:
-//            workouts.sort {
-//                $0.time > $1.time
-//            }
-        }
-    }
-    
-    enum SortBy: String {
-        case nameASC = "Name △"
-        case nameDESC = "Name ▽"
-//        case timeASC = "Time △"
-//        case timeDESC = "Time ▽"
-    }
 }

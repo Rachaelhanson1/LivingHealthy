@@ -18,6 +18,8 @@ class WelcomeViewController: UIViewController {
     
     
     @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var welcomeView: UIView!
+    
     
     var beginV: Int = 1
     var interV: Int = 1
@@ -26,6 +28,11 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         welcomeLabel.text = "Welcome \(fullName.firstName)"
+        welcomeView.layer.cornerRadius = 25
+        welcomeView.layer.shadowColor = UIColor.lightGray.cgColor
+        welcomeView.layer.shadowOffset = CGSize(width: 1, height: 2)
+        welcomeView.layer.shadowRadius = 10
+        welcomeView.layer.shadowOpacity = 1
 
         //button shadows
         begButton.layer.shadowColor = UIColor.black.cgColor

@@ -123,6 +123,14 @@ class ProfileViewController: UIViewController {
         }
         
     }
+    
+    @IBAction func menuClosed(_ sender: Any) {
+        leading.constant = 0
+        trailing.constant = 0
+        menuOut = false
+        
+    }
+    
 }
 //selection of profile photo
 extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {

@@ -52,6 +52,7 @@ class GoalViewController: UIViewController {
     @IBOutlet weak var balaPlus: UIButton!
     
     
+    @IBOutlet weak var confirmLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -62,40 +63,15 @@ class GoalViewController: UIViewController {
         self.strenthProg.value = 0
         self.stepProg.value = 0
         
-        //button styling
-        cardMinus.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
-        cardMinus.layer.shadowOffset = CGSize(width: 2, height: 2)
-        cardMinus.layer.shadowRadius = 5
-        cardMinus.layer.shadowOpacity = 0.8
-        cardPlus.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
-        cardPlus.layer.shadowOffset = CGSize(width: 2, height: 2)
-        cardPlus.layer.shadowRadius = 5
-        cardPlus.layer.shadowOpacity = 0.8
-        flaxMinus.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
-        flaxMinus.layer.shadowOffset = CGSize(width: 2, height: 2)
-        flaxMinus.layer.shadowRadius = 5
-        flaxMinus.layer.shadowOpacity = 0.8
-        flexPlus.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
-        flexPlus.layer.shadowOffset = CGSize(width: 2, height: 2)
-        flexPlus.layer.shadowRadius = 5
-        flexPlus.layer.shadowOpacity = 0.8
-        strenMinus.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
-        strenMinus.layer.shadowOffset = CGSize(width: 2, height: 2)
-        strenMinus.layer.shadowRadius = 5
-        strenMinus.layer.shadowOpacity = 0.8
-        strenPlus.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
-        strenPlus.layer.shadowOffset = CGSize(width: 2, height: 2)
-        strenPlus.layer.shadowRadius = 5
-        strenPlus.layer.shadowOpacity = 0.8
-        balaMinus.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
-        balaMinus.layer.shadowOffset = CGSize(width: 2, height: 2)
-        balaMinus.layer.shadowRadius = 5
-        balaMinus.layer.shadowOpacity = 0.8
-        balaPlus.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
-        balaPlus.layer.shadowOffset = CGSize(width: 2, height: 2)
-        balaPlus.layer.shadowRadius = 5
-        balaPlus.layer.shadowOpacity = 0.8
+        styleButtons()
+        
+        leading.constant = 0
+        trailing.constant = 0
+        menuOut = false
+
     }
+    
+    
     
     override func viewDidAppear(_ animated: Bool) {
         //allow the user to choose their own target goals
@@ -156,6 +132,13 @@ class GoalViewController: UIViewController {
     }
     
     
+    @IBAction func confirmTapped(_ sender: Any) {
+        confirmLabel.text = "Progress tracker has been updated!"
+        
+    }
+    
+    
+    
     // function for Strength training plus and minus progress tracker and counter
     @IBAction func strengthMinus(_ sender: Any) {
         guard let sValue = Int(strengthLabel!.text!) else {return}
@@ -210,12 +193,59 @@ class GoalViewController: UIViewController {
         }
         
     }
+    
+    @IBAction func menuClosed(_ sender: Any) {
+        leading.constant = 0
+        trailing.constant = 0
+        menuOut = false
+    }
+    
+    
     @IBAction func signOut(_ sender: Any) {
         try? Auth.auth().signOut()
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "signInVC")
         vc?.modalPresentationStyle = .overFullScreen
         self.present(vc!, animated:true)
+    }
+    
+    
+    
+    
+    func styleButtons() {
+        //button styling
+        cardMinus.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        cardMinus.layer.shadowOffset = CGSize(width: 2, height: 2)
+        cardMinus.layer.shadowRadius = 5
+        cardMinus.layer.shadowOpacity = 0.8
+        cardPlus.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        cardPlus.layer.shadowOffset = CGSize(width: 2, height: 2)
+        cardPlus.layer.shadowRadius = 5
+        cardPlus.layer.shadowOpacity = 0.8
+        flaxMinus.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        flaxMinus.layer.shadowOffset = CGSize(width: 2, height: 2)
+        flaxMinus.layer.shadowRadius = 5
+        flaxMinus.layer.shadowOpacity = 0.8
+        flexPlus.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        flexPlus.layer.shadowOffset = CGSize(width: 2, height: 2)
+        flexPlus.layer.shadowRadius = 5
+        flexPlus.layer.shadowOpacity = 0.8
+        strenMinus.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        strenMinus.layer.shadowOffset = CGSize(width: 2, height: 2)
+        strenMinus.layer.shadowRadius = 5
+        strenMinus.layer.shadowOpacity = 0.8
+        strenPlus.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        strenPlus.layer.shadowOffset = CGSize(width: 2, height: 2)
+        strenPlus.layer.shadowRadius = 5
+        strenPlus.layer.shadowOpacity = 0.8
+        balaMinus.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        balaMinus.layer.shadowOffset = CGSize(width: 2, height: 2)
+        balaMinus.layer.shadowRadius = 5
+        balaMinus.layer.shadowOpacity = 0.8
+        balaPlus.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        balaPlus.layer.shadowOffset = CGSize(width: 2, height: 2)
+        balaPlus.layer.shadowRadius = 5
+        balaPlus.layer.shadowOpacity = 0.8
     }
     
 }

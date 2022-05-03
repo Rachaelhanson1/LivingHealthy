@@ -10,7 +10,7 @@ import Firebase
 import FirebaseAuth
 
 
-class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class SettingsViewController: UIViewController {
 
     //account info
     @IBOutlet weak var updateEmailField: UITextField!
@@ -22,20 +22,22 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     //the three views
     @IBOutlet weak var accountView: UIView!
     @IBOutlet weak var targetView: UIView!
-    @IBOutlet weak var abilityView: UIView!
+//    @IBOutlet weak var abilityView: UIView!
     
 
-    //choosing taget goals gor goal tracker page
+    //choosing target goals gor goal tracker page
     @IBOutlet weak var cardioMax: UITextField!
     @IBOutlet weak var flexMax: UITextField!
     @IBOutlet weak var strengthMax: UITextField!
     @IBOutlet weak var stepsMax: UITextField!
     
+    @IBOutlet weak var targetConfirm: UILabel!
+    @IBOutlet weak var accountConfirm: UILabel!
     
     
-    // ability level picker
-    @IBOutlet weak var levelPicker: UIPickerView!
-    var levelData: [String] = [String]()
+//    // ability level picker
+//    @IBOutlet weak var levelPicker: UIPickerView!
+//    var levelData: [String] = [String]()
     
     
     override func viewDidLoad() {
@@ -49,16 +51,16 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         targetView.layer.cornerRadius = 10
         targetView.layer.borderWidth = 2
         targetView.layer.borderColor = UIColor.gray.cgColor
+//
+//        abilityView.layer.cornerRadius = 10
+//        abilityView.layer.borderWidth = 2
+//        abilityView.layer.borderColor = UIColor.gray.cgColor
         
-        abilityView.layer.cornerRadius = 10
-        abilityView.layer.borderWidth = 2
-        abilityView.layer.borderColor = UIColor.gray.cgColor
-        
-        //creating a picker for user ability level
-        levelPicker.delegate = self
-        levelPicker.dataSource = self
-        
-        levelData = ["Beginner", "Intermediate", "Advanced"]
+//        //creating a picker for user ability level
+//        levelPicker.delegate = self
+//        levelPicker.dataSource = self
+//
+//        levelData = ["Beginner", "Intermediate", "Advanced"]
         
 
     }
@@ -80,44 +82,46 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         let stepVal = Int(stepsMax.text!)
         tabbar.stepsValue = stepVal!
         
+        targetConfirm.text = "New Weekly Targets Confirmed"
+        
     }
     
     // Changing level in the settings - changes the sorted level in the all workouts page
-    internal func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent  component: Int) {
-        let tabbar = tabBarController as! mainTabBarViewController
-
-        let selectedValue = levelData[row] as String
-        
-        if selectedValue == "Beginner" {
-            tabbar.begin = 1
-
-        }else if selectedValue == "Intermediate" {
-            tabbar.inter = 1
-
-        } else if selectedValue == "Advanced" {
-            tabbar.advan = 1
-            }
-        else {
-            print("No selection")
-        }
-    }
+//    internal func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent  component: Int) {
+//        let tabbar = tabBarController as! mainTabBarViewController
+//
+//        let selectedValue = levelData[row] as String
+//
+//        if selectedValue == "Beginner" {
+//            tabbar.begin = 1
+//
+//        }else if selectedValue == "Intermediate" {
+//            tabbar.inter = 1
+//
+//        } else if selectedValue == "Advanced" {
+//            tabbar.advan = 1
+//            }
+//        else {
+//            print("No selection")
+//        }
+//    }
     
     
 
     
-    //functions for the picker view
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return levelData.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return levelData[row]
-    }
-    
+//    //functions for the picker view
+//    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+//        return 1
+//    }
+//
+//    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+//        return levelData.count
+//    }
+//
+//    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+//        return levelData[row]
+//    }
+//
 
 
     //updating user details
@@ -140,9 +144,10 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
 
         //updates the users name on the Profile page
         fullName.firstName = updateName.text!
+        
+        accountConfirm.text = "Account information updated!"
     }
-    
-    
+   
 }
     
 

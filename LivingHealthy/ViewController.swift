@@ -19,7 +19,11 @@ class ViewController: UIViewController {
         //nameLabel.text = fullName.firstName
         welcomeLabel.text = "Welcome \(fullName.firstName)!"
         
-        welcomeView.layer.cornerRadius = 15
+        welcomeView.layer.cornerRadius = 25
+        welcomeView.layer.shadowColor = UIColor.lightGray.cgColor
+        welcomeView.layer.shadowOffset = CGSize(width: 1, height: 2)
+        welcomeView.layer.shadowRadius = 10
+        welcomeView.layer.shadowOpacity = 1
         
     }
 }

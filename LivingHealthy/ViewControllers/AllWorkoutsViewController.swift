@@ -51,13 +51,4 @@ class AllWorkoutsViewController: UIViewController {
         starButton.isSelected.toggle()
     }
 }
-    
-
-
-
-// if empty star is pressed, convert star to a filled star      ----DONE
-// if filled star is pressed, convert star to empty star        ----DONE
-
-// if star is pressed, add video to favoruites page at position 'positon filled'
-//position filled = 0
-//PF + 1 each time star is clicked
+ 

@@ -27,6 +27,7 @@
 		56AAE45C27EDEDEF00FAECE3 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 56AAE45B27EDEDEF00FAECE3 /* FirebaseAppCheck */; };
 		56AAE45E27EDEDEF00FAECE3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 56AAE45D27EDEDEF00FAECE3 /* FirebaseAuth */; };
 		56AAE46027F2278600FAECE3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAE45F27F2278500FAECE3 /* ProfileViewController.swift */; };
+		56AFCFC2282165490024CF01 /* helpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AFCFC1282165490024CF01 /* helpViewController.swift */; };
 		56B7A78D28083384002C88A4 /* mainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B7A78C28083384002C88A4 /* mainTabBarViewController.swift */; };
 		56EBE3F727D8E31D00B8BDDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EBE3F627D8E31D00B8BDDF /* AppDelegate.swift */; };
 		56EBE3F927D8E31D00B8BDDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EBE3F827D8E31D00B8BDDF /* SceneDelegate.swift */; };
@@ -60,6 +61,8 @@
 		56AAE41D27EDDA9300FAECE3 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		56AAE41F27EDE03A00FAECE3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		56AAE45F27F2278500FAECE3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		56AFCFC1282165490024CF01 /* helpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = helpViewController.swift; path = LivingHealthy/ViewControllers/helpViewController.swift; sourceTree = SOURCE_ROOT; };
+		56AFCFC3282169700024CF01 /* tutorial.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = tutorial.mp4; sourceTree = "<group>"; };
 		56B7A78C28083384002C88A4 /* mainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTabBarViewController.swift; sourceTree = "<group>"; };
 		56EBE3F327D8E31D00B8BDDF /* LivingHealthy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivingHealthy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56EBE3F627D8E31D00B8BDDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +104,7 @@
 		56B7A78B28083242002C88A4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				56AFCFC1282165490024CF01 /* helpViewController.swift */,
 				56AAE45F27F2278500FAECE3 /* ProfileViewController.swift */,
 				56AAE41B27EDDA8400FAECE3 /* SigninViewController.swift */,
 				56AAE41D27EDDA9300FAECE3 /* SignupViewController.swift */,
@@ -136,6 +140,7 @@
 		56EBE3F527D8E31D00B8BDDF /* LivingHealthy */ = {
 			isa = PBXGroup;
 			children = (
+				56AFCFC3282169700024CF01 /* tutorial.mp4 */,
 				56EFE6B528116F330006DF56 /* Workouts SwiftUI */,
 				56B7A78B28083242002C88A4 /* ViewControllers */,
 				56AAE41F27EDE03A00FAECE3 /* GoogleService-Info.plist */,
@@ -315,6 +320,7 @@
 				56EDE66327F60AD600E6E806 /* FavViewController.swift in Sources */,
 				56B7A78D28083384002C88A4 /* mainTabBarViewController.swift in Sources */,
 				566CC1BB28072BE700D9A247 /* SettingsViewController.swift in Sources */,
+				56AFCFC2282165490024CF01 /* helpViewController.swift in Sources */,
 				5612BDF7281D9010005196F5 /* ListViewModel.swift in Sources */,
 				56ED51142805A3DB005CD48E /* WorkoutsViewController.swift in Sources */,
 				5612BDF3281D8FF4005196F5 /* ListViewI.swift in Sources */,

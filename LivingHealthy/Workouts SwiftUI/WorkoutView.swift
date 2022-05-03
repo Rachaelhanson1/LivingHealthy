@@ -19,10 +19,11 @@ struct WorkoutView: View {
                     .scaledToFill()
                     .frame(width: UIScreen.main.bounds.width-50, height: 200)
                     .clipped()
+                    .cornerRadius(CGFloat(5))
             
             
-            //gets name of workout
-            VStack {
+            //formatting the layout each of the workouts 
+                VStack {
                 HStack {
                     Text(workout.name)
                         .font(.title)
@@ -30,6 +31,7 @@ struct WorkoutView: View {
                     Spacer()
                     Text(workout.time.rawValue)
                         .font(.subheadline)
+                        .bold()
                 }
                 .padding(.bottom, 1)
                 
@@ -38,11 +40,12 @@ struct WorkoutView: View {
                         .foregroundColor(.orange)
                     Text(workout.instructor)
                         .padding(.trailing)
-                    Text(workout.type.rawValue)
+                        .foregroundColor(.orange)
+                    Text(workout.challenge.rawValue)
                         .foregroundColor(.gray)
                     Spacer()
-                    Text(workout.challenge.rawValue)
-                        .foregroundColor(Color(red: 0.4627, green: 0.8392, blue: 1.0))
+                    Text(workout.type.rawValue)
+                        .foregroundColor(Color(red: 0.4431, green: 0.902, blue: 0.9294))
                 }
                 .padding(.bottom, 1)
                 
@@ -50,7 +53,7 @@ struct WorkoutView: View {
                 HStack {
                     ForEach(workout.tags, id: \.self) { tag in
                         Text(tag)
-                            .encapulate(color: Color(red: 0.4627, green: 0.8392, blue: 1.0).opacity(0.8), foregroundColor : .white)
+                            .encapulate(color: Color(red: 0.9137, green: 0.2, blue: 0.3922), foregroundColor : .white)
                     }
                     Spacer()
                 }

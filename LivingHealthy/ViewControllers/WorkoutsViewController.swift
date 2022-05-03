@@ -10,8 +10,7 @@ import SwiftUI
 import Firebase
 
 class WorkoutsViewController: UIViewController {
-
-
+    
     @IBOutlet weak var trailing: NSLayoutConstraint!
     @IBOutlet weak var leading: NSLayoutConstraint!
 
@@ -26,7 +25,6 @@ class WorkoutsViewController: UIViewController {
         //to host the UIContainerView with the SwiftUI content for filtering and sorting
         let tabbar = tabBarController as! mainTabBarViewController
       
-
         let beginner = tabbar.begin
         let intermediate = tabbar.inter
         let advanced = tabbar.advan
@@ -79,6 +77,14 @@ class WorkoutsViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func closeMenu(_ sender: Any) {
+        leading.constant = 0
+        trailing.constant = 0
+        menuOut = false
+    }
+    
+    
     @IBAction func signOut(_ sender: Any) {
         try? Auth.auth().signOut()
         
@@ -86,6 +92,4 @@ class WorkoutsViewController: UIViewController {
         vc?.modalPresentationStyle = .overFullScreen
         self.present(vc!, animated:true)
     }
-    
-
 }

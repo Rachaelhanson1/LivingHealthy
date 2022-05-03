@@ -8,7 +8,7 @@
         "challenge": "14 days",
         "instructor": "Schellea",
         "time": "10 mins",
-        "tags": ["Weights", "Weight lose"],
+        "tags": ["Strength", "Weight lose"],
     },
     {
         "ytURL":"5Xc1n9oVW9A",
@@ -16,9 +16,9 @@
         "exercise": "Strength Training",
         "name": "Day 1 of 28 - Power Strength Workout",
         "challenge": "28 days",
-        "instructor": "",
+        "instructor": "Lauren",
         "time": "30 mins",
-        "tags": ["Weights", "Muscle"],
+        "tags": ["Strength", "Weights", "Muscle"],
     },
 
     {
@@ -29,7 +29,7 @@
         "challenge": "7 days",
         "instructor": "Sydney",
         "time": "60 mins",
-        "tags": ["Stength", "Power" ,"Weights"],
+        "tags": ["Strength", "Power" ,"Weights"],
     },
     
     
@@ -78,7 +78,7 @@
         "challenge": "Single",
         "instructor": "Joe",
         "time": "15 mins",
-        "tags": ["Jumping", "Rotations"],
+        "tags": ["Cardio", "Rotations"],
     },
     {
         "ytURL":"UCLVootTYqU",
@@ -88,7 +88,7 @@
         "challenge": "14 days",
         "instructor": "Schellea",
         "time": "30 mins",
-        "tags": [""],
+        "tags": ["Cardio", "No equipment"],
     },
     {
         "ytURL":"Ci_5ilrpieY",
@@ -98,17 +98,8 @@
         "challenge": "28 days",
         "instructor": "Hannah",
         "time": "60 mins",
-        "tags": ["No equipment", "High intensity"],
+        "tags": ["Cardio", "High intensity"],
     },
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
@@ -122,7 +113,7 @@
         "challenge": "Single",
         "instructor": "Jessica",
         "time": "15 mins",
-        "tags": ["Mobility", "Floor-based"],
+        "tags": ["Flexibility", "Floor-based"],
     },
     {
         "ytURL":"DDSSD_N-Bak",
@@ -142,7 +133,7 @@
         "challenge": "14 days",
         "instructor": "Maddie",
         "time": "30 mins",
-        "tags": ["Stretch", "Easy"],
+        "tags": ["Flexibility", "Stretch"],
     },
 
 ]

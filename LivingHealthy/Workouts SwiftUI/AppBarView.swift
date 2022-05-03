@@ -30,49 +30,17 @@ struct AppBarView: View {
     var body: some View {
         VStack {
             HStack {
-                
-                if showSearchBar {
-                    SearchBarView
-                        .transition(.move(edge: .top))
-                } else {
-                }
-                 
+                SearchBarView
                 Spacer()
                 Image(systemName: "magnifyingglass")
-                    .onTapGesture {
-                        withAnimation(.easeInOut) {
-                            showSearchBar.toggle()
-                            inputText = ""
-                        }
-                    }
             }
+
             .font(.system(size: 25))
             .frame(height: 50)
             
             //horizontal scroll to allow for many different filter and sort options
             ScrollView(.horizontal) {
                 HStack(spacing: 10) {
-                    Text(viewModel.nameSort.rawValue)
-                        .encapulate(borderColor: .gray)
-                        .onTapGesture {
-                            if (viewModel.nameSort == .nameASC){
-                                viewModel.nameSort = .nameDESC
-                            } else {
-                                viewModel.nameSort = .nameASC
-                            }
-                            viewModel.sortList(by: viewModel.nameSort)
-                        }
-//                    Text(viewModel.timeSort.rawValue)
-//                        .encapulate(borderColor: .gray)
-//                        .onTapGesture {
-//                            if (viewModel.timeSort == .timeASC){
-//                                viewModel.timeSort = .timeDESC
-//                            } else {
-//                                viewModel.timeSort = .timeASC
-//                            }
-//                            viewModel.sortList(by: viewModel.timeSort)
-//                        }
-                    
                     //select level type filter
                     Picker(selectedLevel.rawValue,
                            selection: $selectedLevel) {
@@ -81,10 +49,11 @@ struct AppBarView: View {
                                 .tag(value)
                         }
                     }
-                   .colorMultiply(.black)
-                   .pickerStyle(.menu)
-                   .padding(.vertical, -5)
-                   .encapulate(borderColor: .gray)
+                    .colorMultiply(.black)
+                    .pickerStyle(.menu)
+                    .padding(.vertical, -5)
+                    .encapulate(borderColor: .black)
+                    
                     
                     //select exercise type filter
                     Picker(selectedExercise.rawValue,
@@ -97,36 +66,37 @@ struct AppBarView: View {
                     .colorMultiply(.black)
                     .pickerStyle(.menu)
                     .padding(.vertical, -5)
-                    .encapulate(borderColor: .gray)
+                    .encapulate(borderColor: .black)
  
                 
-                //select challenge level type filter
-                Picker(selectedChallenge.rawValue,
-                       selection: $selectedChallenge) {
-                    ForEach(Challenge.allCases, id: \.self) { value in
-                        Text(value.rawValue)
-                            .tag(value)
+                    //select challenge time duration filter
+                    Picker(selectedTime.rawValue,
+                           selection: $selectedTime) {
+                        ForEach(Time.allCases, id: \.self) { value in
+                            Text(value.rawValue)
+                                .tag(value)
+                        }
                     }
-                }
-               .colorMultiply(.black)
-               .pickerStyle(.menu)
-               .padding(.vertical, -5)
-               .encapulate(borderColor: .gray)
-                .padding(.vertical, 3)
-                    
-                //select challenge time duration filter
-                Picker(selectedTime.rawValue,
-                       selection: $selectedTime) {
-                    ForEach(Time.allCases, id: \.self) { value in
-                        Text(value.rawValue)
-                            .tag(value)
+                       .colorMultiply(.black)
+                       .pickerStyle(.menu)
+                       .padding(.vertical, -5)
+                       .encapulate(borderColor: .black)
+                       .padding(.vertical, 3)
+                        
+                        
+                    //select challenge level type filter
+                    Picker(selectedChallenge.rawValue,
+                           selection: $selectedChallenge) {
+                        ForEach(Challenge.allCases, id: \.self) { value in
+                            Text(value.rawValue)
+                                .tag(value)
+                        }
                     }
-                }
-               .colorMultiply(.black)
-               .pickerStyle(.menu)
-               .padding(.vertical, -5)
-               .encapulate(borderColor: .gray)
-                .padding(.vertical, 3)
+                        .colorMultiply(.black)
+                        .pickerStyle(.menu)
+                        .padding(.vertical, -5)
+                        .encapulate(borderColor: .black)
+                        .padding(.vertical, 3)
                 }
             }
         }
@@ -134,3 +104,5 @@ struct AppBarView: View {
     }
 
 }
+
+
