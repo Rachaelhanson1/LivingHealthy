@@ -2,7 +2,7 @@
 //  Workout.swift
 //  LivingHealthy
 //
-//  Created by Rachael Hanson on 30/04/2022.
+//  Created by Rachael Hanson
 //
 
 import SwiftUI
@@ -165,7 +165,7 @@ extension Challenge {
             self = .single
         
         default:
-            print("Error occurs while decoding 'Level' key.")
+            print("Error occurs while decoding 'Challenge' key.")
             throw ErrorType.decoding
         }
     }
@@ -212,7 +212,7 @@ extension Time {
             self = .hour
         
         default:
-            print("Error occurs while decoding 'Level' key.")
+            print("Error occurs while decoding 'Time' key.")
             throw ErrorType.decoding
         }
     }

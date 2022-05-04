@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Oaz-tM-8LU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pc8-N8-YAU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -422,7 +422,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="V9y-Xe-6HM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="8695.652173913044" y="1086.8303571428571"/>
+            <point key="canvasLocation" x="8812" y="194"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="4Pt-Q6-jnj">
@@ -650,7 +650,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kDo-zt-C30" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9641" y="-532"/>
+            <point key="canvasLocation" x="9641" y="-1352"/>
         </scene>
         <!--Signin View Controller-->
         <scene sceneID="els-sv-Tfh">
@@ -1141,7 +1141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2y-ix-tEa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8249" y="2147"/>
+            <point key="canvasLocation" x="8812" y="1165"/>
         </scene>
         <!--Help-->
         <scene sceneID="0q6-KD-Cf3">
@@ -1251,7 +1251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7gU-g1-Jtx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10231.884057971016" y="2146.875"/>
+            <point key="canvasLocation" x="10586" y="1165"/>
         </scene>
         <!--Profile-->
         <scene sceneID="J4Y-XJ-JXP">
@@ -1275,7 +1275,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WMp-8l-20Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8697" y="339"/>
+            <point key="canvasLocation" x="8812" y="-532"/>
         </scene>
         <!--All Workouts-->
         <scene sceneID="DCx-Sh-X1K">
@@ -1710,7 +1710,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hyf-in-Ro1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9640.579710144928" y="1086.8303571428571"/>
+            <point key="canvasLocation" x="9641" y="194"/>
         </scene>
         <!--My Goal Tracker-->
         <scene sceneID="zzF-SE-gSg">
@@ -2242,7 +2242,7 @@
                                             <action selector="confirmTapped:" destination="lxH-AB-Wmk" eventType="touchUpInside" id="Mt5-jS-RuN"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Z1Y-k7-hDD">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Z1Y-k7-hDD">
                                         <rect key="frame" x="11" y="614" width="388" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -2305,7 +2305,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lay-7u-srd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10585.507246376812" y="1086.8303571428571"/>
+            <point key="canvasLocation" x="10586" y="194"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Iqa-kx-Lkn">
@@ -2700,7 +2700,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M81-KT-Xv4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9739" y="1177"/>
+            <point key="canvasLocation" x="9804" y="522"/>
         </scene>
         <!--All Workouts-->
         <scene sceneID="a6O-bx-Bsq">
@@ -2723,7 +2723,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pbx-As-cwr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9641" y="339"/>
+            <point key="canvasLocation" x="9641" y="-532"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="wfZ-eI-OJl">
@@ -2767,7 +2767,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Wm-Qr-eHU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10586" y="339"/>
+            <point key="canvasLocation" x="10586" y="-532"/>
         </scene>
         <!--My Goal Tracker-->
         <scene sceneID="k9g-XX-lhR">
@@ -3399,15 +3399,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="keS-j5-Exo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9321.7391304347839" y="2146.875"/>
+            <point key="canvasLocation" x="9641" y="1165"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="1Iu-pB-hlh"/>
-        <segue reference="uAi-wy-Bgs"/>
         <segue reference="Eiv-gH-bd8"/>
         <segue reference="ZFv-zX-BDE"/>
-        <segue reference="fe5-av-InK"/>
+        <segue reference="inH-dP-RHc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="afterPic" width="265" height="431"/>

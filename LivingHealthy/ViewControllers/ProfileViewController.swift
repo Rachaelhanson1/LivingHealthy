@@ -71,19 +71,7 @@ class ProfileViewController: UIViewController {
         addBeforeButton.addGestureRecognizer(gesture2)
         addAfterButton.addGestureRecognizer(gesture3)
         
-        //Styling shadows for the plus buttons
-        addBeforeButton.layer.shadowColor = UIColor.black.cgColor
-        addBeforeButton.layer.shadowOffset = CGSize(width: 5, height: 5)
-        addBeforeButton.layer.shadowRadius = 5
-        addBeforeButton.layer.shadowOpacity = 1.0
-        addAfterButton.layer.shadowColor = UIColor.black.cgColor
-        addAfterButton.layer.shadowOffset = CGSize(width: 5, height: 5)
-        addAfterButton.layer.shadowRadius = 5
-        addAfterButton.layer.shadowOpacity = 1.0
-        addPicButton.layer.shadowColor = UIColor.black.cgColor
-        addPicButton.layer.shadowOffset = CGSize(width: 5, height: 5)
-        addPicButton.layer.shadowRadius = 5
-        addPicButton.layer.shadowOpacity = 1.0
+        buttonStyling()
     }
    
     // invoked when user taps on profile picture
@@ -129,6 +117,22 @@ class ProfileViewController: UIViewController {
         trailing.constant = 0
         menuOut = false
         
+    }
+    
+    func buttonStyling() {
+        //Styling shadows for the plus buttons
+        addBeforeButton.layer.shadowColor = UIColor.black.cgColor
+        addBeforeButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+        addBeforeButton.layer.shadowRadius = 5
+        addBeforeButton.layer.shadowOpacity = 1.0
+        addAfterButton.layer.shadowColor = UIColor.black.cgColor
+        addAfterButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+        addAfterButton.layer.shadowRadius = 5
+        addAfterButton.layer.shadowOpacity = 1.0
+        addPicButton.layer.shadowColor = UIColor.black.cgColor
+        addPicButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+        addPicButton.layer.shadowRadius = 5
+        addPicButton.layer.shadowOpacity = 1.0
     }
     
 }
@@ -199,6 +203,6 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
-    }
+        }
     }
 }

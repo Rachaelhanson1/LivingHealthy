@@ -50,11 +50,10 @@ class WelcomeViewController: UIViewController {
     }
 
 
-    
+    // send specific value data depending on which button has been selected
     @IBAction func beginnerPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "begToTab", sender: self)
         }
-    
     @IBAction func intermediatePressed(_ sender: Any) {
         self.performSegue(withIdentifier: "intToTab", sender: self)
         }
@@ -62,24 +61,18 @@ class WelcomeViewController: UIViewController {
         self.performSegue(withIdentifier: "adToTab", sender: self)
     }
     
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "begToTab"){
-           
             let tabbar = segue.destination as! mainTabBarViewController
-
             tabbar.begin = beginV
             }
-        
         if(segue.identifier == "intToTab"){
-            
             let tabbar = segue.destination as! mainTabBarViewController
             tabbar.inter = interV
         }
         if(segue.identifier == "adToTab"){
             let tabbar = segue.destination as! mainTabBarViewController
             tabbar.advan = advanV
-            
         }
     }
     

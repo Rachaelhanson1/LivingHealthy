@@ -16,7 +16,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //nameLabel.text = fullName.firstName
         welcomeLabel.text = "Welcome \(fullName.firstName)!"
         
         welcomeView.layer.cornerRadius = 25

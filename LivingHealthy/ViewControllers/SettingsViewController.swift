@@ -51,7 +51,8 @@ class SettingsViewController: UIViewController {
         targetView.layer.cornerRadius = 10
         targetView.layer.borderWidth = 2
         targetView.layer.borderColor = UIColor.gray.cgColor
-//
+        
+        
 //        abilityView.layer.cornerRadius = 10
 //        abilityView.layer.borderWidth = 2
 //        abilityView.layer.borderColor = UIColor.gray.cgColor
@@ -83,8 +84,7 @@ class SettingsViewController: UIViewController {
         tabbar.stepsValue = stepVal!
         
         targetConfirm.text = "New Weekly Targets Confirmed"
-        
-    }
+        }
     
     // Changing level in the settings - changes the sorted level in the all workouts page
 //    internal func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent  component: Int) {
@@ -126,17 +126,14 @@ class SettingsViewController: UIViewController {
 
     //updating user details
     @IBAction func updateUserButton(_ sender: Any) {
-
         //update user email
         let email = updateEmailField.text!
-                
         Auth.auth().currentUser?.updateEmail(to: email, completion: { (error) in
             if error == nil{
             }else{ }
         })
         //update user password
         let password = updatePasswordField.text!
-                
         Auth.auth().currentUser?.updatePassword(to: password, completion: { (error) in
             if error == nil{
             }else{ }
@@ -145,9 +142,10 @@ class SettingsViewController: UIViewController {
         //updates the users name on the Profile page
         fullName.firstName = updateName.text!
         
+        //confirmation messgage to show info updated
         accountConfirm.text = "Account information updated!"
     }
-   
+    
 }
     
 

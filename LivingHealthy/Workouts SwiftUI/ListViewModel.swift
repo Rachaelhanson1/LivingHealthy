@@ -2,7 +2,7 @@
 //  ListViewModel.swift
 //  LivingHealthy
 //
-//  Created by Rachael Hanson on 30/04/2022.
+//  Created by Rachael Hanson
 //
 import Foundation
 
@@ -13,7 +13,7 @@ class ListViewModel: ObservableObject {
         workouts = loadJsonFile()
     }
     
-    //importing the video data for each workout from the database
+    //importing the data for each workout from the database
     private func loadJsonFile() -> [Workout]{
         var dbData = [Workout]()
         do {

@@ -65,9 +65,9 @@ class GoalViewController: UIViewController {
         
         styleButtons()
         
+        menuOut = false
         leading.constant = 0
         trailing.constant = 0
-        menuOut = false
 
     }
     
@@ -131,14 +131,7 @@ class GoalViewController: UIViewController {
         }
     }
     
-    
-    @IBAction func confirmTapped(_ sender: Any) {
-        confirmLabel.text = "Progress tracker has been updated!"
-        
-    }
-    
-    
-    
+
     // function for Strength training plus and minus progress tracker and counter
     @IBAction func strengthMinus(_ sender: Any) {
         guard let sValue = Int(strengthLabel!.text!) else {return}
@@ -178,7 +171,11 @@ class GoalViewController: UIViewController {
             self.stepProg.value = CGFloat(stepValue)
         }
     }
-
+    
+    @IBAction func confirmTapped(_ sender: Any) {
+        confirmLabel.text = "Progress tracker has been updated!"
+        
+    }
     
     //move view to the side for the side menu to come out
     @IBAction func menuTapped(_ sender: Any) {
