@@ -52,7 +52,7 @@ class GoalViewController: UIViewController {
     @IBOutlet weak var balaPlus: UIButton!
     
     
-    @IBOutlet weak var confirmLabel: UILabel!
+   // @IBOutlet weak var confirmLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -172,10 +172,10 @@ class GoalViewController: UIViewController {
         }
     }
     
-    @IBAction func confirmTapped(_ sender: Any) {
-        confirmLabel.text = "Progress tracker has been updated!"
-        
-    }
+//    @IBAction func confirmTapped(_ sender: Any) {
+//        confirmLabel.text = "Progress tracker has been updated!"
+//        
+//    }
     
     //move view to the side for the side menu to come out
     @IBAction func menuTapped(_ sender: Any) {
