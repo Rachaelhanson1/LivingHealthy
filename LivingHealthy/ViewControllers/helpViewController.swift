@@ -19,7 +19,7 @@ class helpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        videoTutorial.load(withVideoId: "oOKBRf_zu2E")
+        videoTutorial.load(withVideoId: "AGMk_YMITdQ")
 
     }
 

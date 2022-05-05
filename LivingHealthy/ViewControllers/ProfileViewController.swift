@@ -50,6 +50,9 @@ class ProfileViewController: UIViewController {
         nowView.layer.borderWidth = 2
         nowView.layer.borderColor = UIColor.gray.cgColor
         
+        beforeImage.layer.cornerRadius = 20
+        afterImage.layer.cornerRadius = 20
+        
         
         first.text = "Hello \(fullName.firstName)"
         last.text = fullName.lastName
