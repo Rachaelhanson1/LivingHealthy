@@ -863,11 +863,11 @@
             <objects>
                 <viewController title="Settings" modalPresentationStyle="fullScreen" id="wZS-yl-Fa3" customClass="SettingsViewController" customModule="LivingHealthy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X8k-Eu-lkn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="bN4-8C-oSd">
-                                <rect key="frame" x="20" y="505" width="374" height="286"/>
+                                <rect key="frame" x="20" y="460" width="374" height="286"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yI-cP-PaX">
@@ -942,7 +942,7 @@
                                 <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qxZ-Ce-cj3" userLabel="goalMaxView">
-                                <rect key="frame" x="20" y="150" width="374" height="332"/>
+                                <rect key="frame" x="20" y="136" width="374" height="332"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Set your exercise targets for each week" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWg-km-p4k">
@@ -1072,7 +1072,7 @@
             <objects>
                 <viewController title="Help" id="jZj-KJ-4L3" customClass="helpViewController" customModule="LivingHealthy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Sm-9i-VsE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How can I view only the beginner workouts?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLd-16-hB7">
@@ -3325,9 +3325,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="qBM-lY-VYD"/>
-        <segue reference="uOH-xI-TbT"/>
-        <segue reference="mag-JR-taZ"/>
-        <segue reference="HMv-D8-B4j"/>
+        <segue reference="ZyZ-D0-asL"/>
+        <segue reference="lbf-DG-qaH"/>
         <segue reference="inH-dP-RHc"/>
     </inferredMetricsTieBreakers>
     <resources>
